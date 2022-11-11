@@ -1,0 +1,79 @@
+@startuml
+
+
+class CategoryRegistrationUI {
++run(Void)
+}
+
+class CategoryRegistrationController {
+
++registerCategory(String,String, Category)
++persistCategory(Void)
+
+
+}
+
+class CategoryManagementService {
+
++buildCategory(String,String,Category)
++persistCategory(Void)
+}
+
+
+
+class Category {
+-alphanumericCode
+-description
+-superCategory
++setAlphanumericCode(String)
++setDescription(String)
++setSuperCategory(Category)
++buildCategory(Void)
+}
+
+class CategoryRepository {
+
++save(Category)
+}
+
+class RepositoryFactory{
++CategoryRepository(Void)
+}
+
+class PersistenceContext{
++repositories(Void)
+}
+
+class CategoryMapper {
++toDTO(category)
+}
+
+class CategoryDTO {
+showListofCategories()
+}
+
+
+CategoryRegistrationUI .-> CategoryRegistrationController
+CategoryRegistrationController .-> CategoryManagementService
+CategoryManagementService .-> PersistenceContext
+CategoryManagementService .-> RepositoryFactory
+CategoryManagementService .->CategoryRepository
+PersistenceContext .-> RepositoryFactory
+RepositoryFactory .-> CategoryRepository
+CategoryRepository .-> Category
+CategoryManagementService .-> CategoryMapper
+CategoryMapper .-> CategoryDTO
+
+
+
+
+
+
+
+
+
+
+
+
+
+@enduml

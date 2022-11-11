@@ -1,0 +1,94 @@
+@startuml
+
+class SetWarehousePlantUI{
+}
+
+class SetWarehousePlantController{
+    warehouses()
+    findWarehouseByName(name)
+    importFile(warehouseDTO, path)
+}
+
+class ImportFileService{
+    warehouses()
+    findWarehouseByName(name)
+    importPlantFromJsonFile(warehouseDTO, path)
+    importAisles(warehouse, mainJsonObject)
+    importAgvDocks(warehouse, mainJsonObject);
+}
+
+class WarehouseMapper {
+}
+
+class PersistenceContext{
+    repositories()
+}
+
+class RepositoryFactory{
+}
+
+class WarehouseDTO{
+}
+
+class WarehouseRepository{
+    findAll()
+    getWarehouseByName(warehouseName)
+    save(warehouse)
+}
+
+class AisleRepository{
+    save(aisle)
+}
+
+class RowRepository{
+    save(row)
+}
+
+class AgvDockRepository{
+    save(agvDock)
+}
+
+class Warehouse{
+    setPlant(warehousePlant)
+}
+
+class WarehousePlant{
+}
+
+class Aisle{
+}
+
+class Row{
+}
+
+class AgvDock{
+}
+
+SetWarehousePlantUI ..> SetWarehousePlantController
+SetWarehousePlantController ..> ImportFileService
+
+ImportFileService ..> WarehouseRepository
+ImportFileService ..> AisleRepository
+ImportFileService ..> RowRepository
+ImportFileService ..> AgvDockRepository
+
+ImportFileService ..> PersistenceContext
+ImportFileService ..> WarehouseMapper
+WarehouseMapper ..> WarehouseDTO
+
+PersistenceContext ..> RepositoryFactory
+RepositoryFactory ..> WarehouseRepository
+RepositoryFactory ..> AisleRepository
+RepositoryFactory ..> RowRepository
+RepositoryFactory ..> AgvDockRepository
+
+WarehouseRepository ..> Warehouse
+Warehouse ..> WarehousePlant
+
+AisleRepository ..> Aisle
+
+RowRepository ..> Row
+
+AgvDockRepository ..> AgvDock
+
+@enduml

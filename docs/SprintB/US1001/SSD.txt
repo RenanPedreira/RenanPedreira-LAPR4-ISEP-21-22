@@ -1,0 +1,33 @@
+@startuml
+autonumber
+actor "Sales Clerk" as SC
+
+activate SC
+SC -> ":System" : Specify a new product
+activate ":System"
+":System" --> SC : shows and requests to chose one category
+deactivate ":System"
+
+SC -> ":System" : selects one category 
+activate ":System"
+":System" --> SC : shows and requests to chose one location
+deactivate ":System"
+
+SC -> ":System" : selects one location 
+activate ":System"
+":System" --> SC : requests the rest of data(shortDescription,longDescription,tecDescription,internalCode,productionCode,barCode,reference,brand,photo,price)
+deactivate ":System"
+
+SC -> ":System" : types requested data
+activate ":System"
+
+":System" --> SC : shows the data and requests confirmation
+deactivate ":System"
+
+SC -> ":System" : confirms the data
+activate ":System"
+":System" --> SC : informs operation success
+deactivate ":System"
+
+deactivate SC
+@enduml

@@ -1,0 +1,69 @@
+
+actor "Sales Clerk" as sc
+participant "System" as s
+
+activate sc
+sc -> s: create a new products order on behalf of a given customer
+activate s
+
+
+
+
+s --> sc : requests data about the order (sourceChannel, comment, paymentMethod)
+
+
+
+sc->s: types requested data
+
+s-->sc: requests data about the client (clientEmail, billingAddress, deliveringAddress)
+
+sc->s: types requested data
+
+s-->sc: shows all inputed data and asks for confrimation
+
+sc->s: confirms data
+s-->sc: asks user which filters should be applied on the search
+
+loop add products
+loop  add filters
+sc->s: selects a filter()
+
+alt category
+s-->sc: asks for a category
+sc->s: inputs category
+end
+
+alt description
+s-->sc: asks for a description
+sc->s: inputs description
+end
+
+alt brand
+s-->sc: asks for a brand
+sc->s: inputs brand
+end
+
+alt reset filters
+s-->sc: asks for confirmation of filter reset
+sc->s: confirms reset
+end
+end
+
+s-->sc: asks user which sort method should be applied on the search
+sc->s: select a sort method
+
+s-->sc: shows list of filtered products
+
+sc->s: starts adding products data
+
+loop adds one or more products from filter result
+s-->sc: asks user to select a product by list index
+sc->s: inputs the product's index
+
+s-->sc: asks for product quantity
+sc->s: inputs the product's quantity
+end
+end 
+s-->sc: shows complete list of products to be ordered and asks for confirmation
+sc->s: confirms order
+s-->sc: informs of operation success

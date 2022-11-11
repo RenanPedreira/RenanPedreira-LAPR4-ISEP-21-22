@@ -1,0 +1,41 @@
+
+participant "<<Client>>\nCustomerApplication" as c
+
+participant "OrderDaemon" as d
+participant "<<Server>>\nOrderServer" as s
+participant "<<Thread>>\nHandleClient " as t
+
+activate d
+d->s: new
+loop true
+d->s: start
+deactivateafter d
+activate s
+
+s->s: accept
+activate c
+c-->s: sends requests using sockets
+
+
+s->t: start
+activate t
+
+t->parser: check which resquest type was recieved
+activate parser
+parser-->t:request type
+deactivateafter parser
+
+
+t->RequestHandler: sends client's request
+activate RequestHandler
+
+RequestHandler-> ProtocolService:
+activate ProtocolService
+ProtocolService-->RequestHandler:
+deactivateafter ProtocolService
+
+RequestHandler-->t: response
+deactivateafter RequestHandler
+
+t-->c: response
+end

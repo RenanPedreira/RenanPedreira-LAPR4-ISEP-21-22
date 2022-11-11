@@ -1,0 +1,91 @@
+BOOK22-01
+
+
+				Books Questionnaire 
+
+Dear customer, due to your purchase history you've been selected to answer a 5-minute surveyabout books in order to help us in a study about the reading habits of adults in the United States.
+All the answers provided are anonymous and will only be used for product quality and customersatisfaction assessment.
+
+
+
+				1 - Basic Personal Information
+
+The section at hand aims to collect basic personal information of the customer solely forstatistical analysis.
+Obligatoriness: Mandatory;
+
+
+{1} Which gender do you identify with the most?
+Instructions: Please select a single option which is applicable to your current situation/status/preference among the list presented, adding additional context if required;
+Obligatoriness: Mandatory;
+Type: Single-Choice with Input;
+
+Gender List:
+	1: Male;
+	2: Female;
+	3: Non-Binary;
+	4: Prefer not to answer;
+	5: Other (Please specify);
+
+Answer: Male;
+
+{2} What's your age group?
+Instructions: Please select a single option which is applicable to your current situation/status/preference among the list presented;
+Obligatoriness: Mandatory;
+Type: Single-Choice;
+
+
+Age Group List:
+    1: 18 - 25;
+    2: 26 - 50;
+    3: 51 - 69;
+    4: Over 70;
+    5: Prefer not to answer;
+
+Answer: 18 - 25;
+
+
+
+
+				2 - Reading Habits Assessment and Book Genres
+
+
+The section at hand aims to understand the reading habits and the preferred literary type of the person doing the questionnaire.
+Obligatoriness: Mandatory;
+
+{1} How much time do you spend reading during a given week?
+Instructions: Please select a single option which is applicable to your current situation among the list presented;
+Obligatoriness: Mandatory;
+Type: Single-Choice;
+
+Option List:
+
+	1: Less than an hour;
+	2: Between an hour and 3 hours;
+	3: Between 4 hours and 6 hours;
+	4: More than 7 hours; 
+	
+
+Answer: More than 7 hours;
+
+
+
+{2} Which book genres are your favourite?
+Instructions: Please select a single option which is applicable to your current situation among the list presented;
+Obligatoriness: Mandatory;
+Type: Multiple-Choice with Input;
+
+
+Option List :
+	
+	1: Drama;
+	2: Horror;
+	3: Romance;
+	4: Other (Please specify);
+	
+Answer: Drama;
+	
+	                                    END OF SURVEY
+
+Thank you for completing the survey.
+Your help and collaboration is instrumental towards our goal of providing our customers the most enjoyable and fruitful experience.
+We continue to strive in defining the golden standard in the market.

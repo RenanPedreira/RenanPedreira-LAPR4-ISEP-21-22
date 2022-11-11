@@ -1,0 +1,1366 @@
+commit fac4373f44f265f25f33fdbc7acb3b8565f30cb2
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:47:28 2022 +0100
+
+    L2S23-85 - Commit of class HistoryMapper.
+
+A	base.core/src/main/java/eapli/base/customermanagement/domain/dto/HistoryMapper.java
+
+commit fd32010064b73a41de108ab6c8645b30e0d7e23f
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:47:20 2022 +0100
+
+    L2S23-85 - Commit of class HistoryDTO.
+
+A	base.core/src/main/java/eapli/base/customermanagement/domain/dto/HistoryDTO.java
+
+commit 3a8e27bd6c925ac4eacb9c7ef4522473b0c18a15
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:46:50 2022 +0100
+
+    L2S23-85 - Commit of class AnswerQuestionnaireUI.
+
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/customer/AnswerQuestionnaireUI.java
+
+commit 983bc38509c24bb2831b1bf39fb8b15b645148e5
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:46:38 2022 +0100
+
+    L2S23-85 - Commit of class AnswerQuestionnaireService.
+
+A	base.core/src/main/java/eapli/base/customermanagement/application/AnswerQuestionnaireService.java
+A	base.core/src/main/java/eapli/base/customermanagement/domain/model/History.java
+
+commit 17102af48793ae9a9c5206cd4dd44f24dc58dbf6
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:46:02 2022 +0100
+
+    L2S23-85 - Commit of class AnswerQuestionnaireController.
+
+A	base.core/src/main/java/eapli/base/customermanagement/application/AnswerQuestionnaireController.java
+
+commit 6e7772ab2cf7afa32ff83bc23041659868d652f9
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:45:41 2022 +0100
+
+    L2S23-85 - Commit of class AnswerQuestionnaireAction.
+
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/customer/AnswerQuestionnaireAction.java
+
+commit d83f0035bbb8049749056fd63b1f9ad5f3b287bf
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:45:02 2022 +0100
+
+    L2S23-85 - Update of file Questionnaire3.txt.
+
+M	docs/SprintD/US3002/Questionnaire3.txt
+
+commit e2accbab50bdab14091c51a7e41432765115eac3
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:44:49 2022 +0100
+
+    L2S23-85 - Update of file pom.xml.
+
+M	base.core/pom.xml
+
+commit eb991f2fbca8b1672d05f529ff3d6c12952f4bc0
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:44:41 2022 +0100
+
+    L2S23-85 - Update of file persistence.xml.
+
+M	base.persistence.impl/src/main/resources/META-INF/persistence.xml
+
+commit 5e492f69e8ee095bf6da3e26bfcf32e5f117b5a0
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:44:28 2022 +0100
+
+    L2S23-85 - Update of interface CustomerRepository.
+
+M	base.core/src/main/java/eapli/base/customermanagement/repositories/CustomerRepository.java
+
+commit a0ea79a965074ae068bf6792c7ae0cef59182f1c
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:44:16 2022 +0100
+
+    L2S23-85 - Update of class JpaCustomerRepository.
+
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaCustomerRepository.java
+
+commit bcbaf86d7e0e8d2a192fb1d4750debaeb5ad9669
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:44:03 2022 +0100
+
+    L2S23-85 - Update of class InMemoryCustomerRepository.
+
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/inmemory/InMemoryCustomerRepository.java
+
+commit 81b4c5471220a6c6e4efa04b929013b3a7b625dc
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:43:53 2022 +0100
+
+    L2S23-85 - Update of class RegisterCustomerService.
+
+M	base.core/src/main/java/eapli/base/customermanagement/application/RegisterCustomerService.java
+
+commit a8e7becd98efa6a71218f38cac296f8f476f3c0a
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:43:40 2022 +0100
+
+    L2S23-85 - Update of class ViewStatusOfOpenOrdersUI.
+
+M	base.app.user.console/src/main/java/eapli/base/app/user/console/presentation/ViewStatusOfOpenOrdersUI.java
+
+commit bcd113426db015bccdee6a2391067db4c95f6f72
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:43:24 2022 +0100
+
+    L2S23-85 - Update of class Section.
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/domain/Section.java
+
+commit 58776bc53e56c4637f115f9756876079aacabea4
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:43:07 2022 +0100
+
+    L2S23-85 - Update of Test Planning of US3002.
+
+M	docs/SprintD/US3002/Read Me - US3002.md
+
+commit a69c9535a4f82a078b8dbecc4d77c851c64fab96
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:41:11 2022 +0100
+
+    L2S23-91 - Update of file QuestionnaireGrammar.g4.
+
+M	base.core/QuestionnaireGrammar.g4
+
+commit a09b5cc1060fdb802cd1c5c4c77e62358d7c6b4d
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:40:59 2022 +0100
+
+    L2S23-91 - Update of files generated by ANTLR.
+
+M	base.core/src/main/java/eapli/base/grammarutils/QuestionnaireGrammar.interp
+M	base.core/src/main/java/eapli/base/grammarutils/QuestionnaireGrammar.tokens
+M	base.core/src/main/java/eapli/base/grammarutils/QuestionnaireGrammarLexer.interp
+M	base.core/src/main/java/eapli/base/grammarutils/QuestionnaireGrammarLexer.tokens
+
+commit 6b1229dfee2cb7cdecde129e87586512891d773d
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:40:48 2022 +0100
+
+    L2S23-91 - Update of interfaces generated by ANTLR.
+
+M	base.core/src/main/java/eapli/base/grammarutils/QuestionnaireGrammarListener.java
+M	base.core/src/main/java/eapli/base/grammarutils/QuestionnaireGrammarVisitor.java
+
+commit db89c24ca434f57a29ba10b7e8f405c90b7426b1
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:40:21 2022 +0100
+
+    L2S23-85 - Update of classes generated by ANTLR.
+
+M	base.core/src/main/java/eapli/base/grammarutils/QuestionnaireGrammarBaseVisitor.java
+M	base.core/src/main/java/eapli/base/grammarutils/QuestionnaireGrammarLexer.java
+M	base.core/src/main/java/eapli/base/grammarutils/QuestionnaireGrammarParser.java
+
+commit 980fde498c59b80876f30f1e5343947520e6b1a4
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:39:48 2022 +0100
+
+    L2S23-85 - Update of class QuestionMapper.
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/dto/QuestionMapper.java
+
+commit 1bf2279b1ed14f48d2630d02af2e3d5a771ca45c
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:39:30 2022 +0100
+
+    L2S23-85 - Update of class QuestionBuilder.
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/factory/QuestionBuilder.java
+
+commit e8dfd013b935bd6c4807085657e44ac3b5f80ab9
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:39:22 2022 +0100
+
+    L2S23-85 - Update of class Question.
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/domain/Question.java
+
+commit a835156e80c573229d53197b32015b816ad9f7d1
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:39:05 2022 +0100
+
+    L2S23-85 - Update of test OrdreTest.
+
+M	base.core/src/test/java/eapli/base/ordermanagement/domain/OrdreTest.java
+
+commit 75e4b838682d279ab819187593540d6b95b1297f
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:38:48 2022 +0100
+
+    L2S23-85 - Update of class Interrogation.
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/domain/Interrogation.java
+
+commit dea251dde9f0430d940ace065857af1b678d5b7d
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:38:34 2022 +0100
+
+    L2S23-85 - Update of class Instruction.
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/domain/Instruction.java
+
+commit 36e12751fbccfc5514ef51a8b51b53ad7c2e2388
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:38:21 2022 +0100
+
+    L2S23-85 - Update of class CustomerMenu.
+
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/CustomerMenu.java
+
+commit 72128fdb1b4074a76cf45a049ba36c68339741c9
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:38:08 2022 +0100
+
+    L2S23-85 - Update of class CustomerMapper.
+
+M	base.core/src/main/java/eapli/base/customermanagement/domain/dto/CustomerMapper.java
+
+commit 097f57e3733fda894ae68d08f4f829525beecdf8
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:37:59 2022 +0100
+
+    L2S23-85 - Update of class CustomerDTO.
+
+M	base.core/src/main/java/eapli/base/customermanagement/domain/dto/CustomerDTO.java
+
+commit a859e5e36a18e6ca006dadbf001b3de32567d26d
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:37:50 2022 +0100
+
+    L2S23-85 - Update of class CustomerBuilder.
+
+M	base.core/src/main/java/eapli/base/customermanagement/domain/factory/CustomerBuilder.java
+
+commit ce261ba8032c1fa44c902d59c93f412092c422db
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:37:42 2022 +0100
+
+    L2S23-85 - Update of class Customer.
+
+M	base.core/src/main/java/eapli/base/customermanagement/domain/model/Customer.java
+
+commit 2c09ac0b0086d3b8f75dc119bb19bf2f2d4c3879
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:37:29 2022 +0100
+
+    L2S23-85 - Update of test ClerkOrderTest.
+
+M	base.core/src/test/java/eapli/base/ordermanagement/domain/ClerkOrderTest.java
+
+commit 0ffab56c1acdbb280655596c7a9814f6bbde2111
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:37:19 2022 +0100
+
+    L2S23-85 - Update of test CartTest.
+
+M	base.core/src/test/java/eapli/base/cartmanagement/domain/CartTest.java
+
+commit 9ddf94216087754c6fb3ea7d09589b82603ec911
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 19 18:37:03 2022 +0100
+
+    L2S23-85 - Update of class BaseBootstrapper.
+
+M	base.bootstrappers/src/main/java/eapli/base/infrastructure/bootstrapers/BaseBootstrapper.java
+
+commit 35f55a5647559229e4e9a7a95b73f11a732c5933
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 18:03:45 2022 +0100
+
+    L2S23-85 - Commit of file Questionnaire3.txt.
+
+A	docs/SprintD/US3002/Questionnaire3.txt
+
+commit 9bab74cc1094aef4e4e544af879d5c1ee769927c
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 18:03:34 2022 +0100
+
+    L2S23-85 - Commit of interface StatisticalReportRepository.
+
+A	base.core/src/main/java/eapli/base/statistics/persistence/StatisticalReportRepository.java
+
+commit 8254a4fb3ccbeb2b3074727cdae627dc131f2e53
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 18:03:16 2022 +0100
+
+    L2S23-85 - Commit of interface DataStrategy.
+
+A	base.core/src/main/java/eapli/base/statistics/strategy/DataStrategy.java
+
+commit 147b136ea4edbc62be9b2a85df39c65fbe7afa90
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 18:03:07 2022 +0100
+
+    L2S23-85 - Commit of interface FileStrategy.
+
+A	base.core/src/main/java/eapli/base/statistics/strategy/FileStrategy.java
+
+commit 21e4df4da28273204b732a6af31695e2c435039f
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 18:02:55 2022 +0100
+
+    L2S23-85 - Commit of class TargetAudience.
+
+A	base.core/src/main/java/eapli/base/questionnairemanagement/domain/TargetAudience.java
+
+commit cc087d5feed33cd4884d0dcc136e5ac0b70dcdeb
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 18:02:23 2022 +0100
+
+    L2S23-85 - Commit of class StatisticalReportBuilder.
+
+A	base.core/src/main/java/eapli/base/statistics/factory/StatisticalReportBuilder.java
+
+commit e51932ed3b7c5957ae154c75c8d460f4bd51881d
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 18:02:08 2022 +0100
+
+    L2S23-85 - Commit of class RawDataStrategy.
+
+A	base.core/src/main/java/eapli/base/statistics/strategy/RawDataStrategy.java
+
+commit 9512206d628543d80cc43506e68e14d5902f2d5a
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 18:01:48 2022 +0100
+
+    L2S23-85 - Commit of class StatisticalReport and StatisticalData.
+
+A	base.core/src/main/java/eapli/base/statistics/domain/StatisticalData.java
+A	base.core/src/main/java/eapli/base/statistics/domain/StatisticalReport.java
+
+commit 302f19be40b43ac390e5c6fba31c4131a25b06e5
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 18:00:58 2022 +0100
+
+    L2S23-85 - Commit of class SectionBuilder.
+
+A	base.core/src/main/java/eapli/base/questionnairemanagement/factory/SectionBuilder.java
+
+commit 88afa0f393aeebda9065dffd81adf6d976b6e4e3
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 18:00:50 2022 +0100
+
+    L2S23-85 - Commit of class QuestionnaireBuilder.
+
+A	base.core/src/main/java/eapli/base/questionnairemanagement/factory/QuestionnaireBuilder.java
+
+commit c3e1b3d2acf106b7d404fe19337a0763b931653f
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 18:00:41 2022 +0100
+
+    L2S23-85 - Commit of class QuestionBuilder.
+
+A	base.core/src/main/java/eapli/base/questionnairemanagement/factory/QuestionBuilder.java
+
+commit c14c38395ebeeb55c721f7dd3d82da4d3271e63a
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 18:00:23 2022 +0100
+
+    L2S23-85 - Commit of class PercentageDataStrategy.
+
+A	base.core/src/main/java/eapli/base/statistics/strategy/PercentageDataStrategy.java
+
+commit 765e6094f3830bf07968e82976cda8f1414e3ff0
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 18:00:10 2022 +0100
+
+    L2S23-85 - Commit of class Parameter.
+
+A	base.core/src/main/java/eapli/base/statistics/strategy/Parameter.java
+
+commit a99b95db19b75b6b2eb5f9fa5ed49d6cb7558198
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 18:00:01 2022 +0100
+
+    L2S23-85 - Commit of class ObtainStatisticalReportUI.
+
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/questionnaire/ObtainStatisticalReportUI.java
+
+commit df9faff3f37fd651616a39062622c7ff7e8c6894
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:59:38 2022 +0100
+
+    L2S23-85 - Commit of class ObtainStatisticalReportService.
+
+A	base.core/src/main/java/eapli/base/statistics/application/ObtainStatisticalReportService.java
+
+commit 0d3865323ca2fabaf8dd54fc3e2c55b054a7270e
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:59:28 2022 +0100
+
+    L2S23-85 - Commit of class ObtainStatisticalReportController.
+
+A	base.core/src/main/java/eapli/base/statistics/application/ObtainStatisticalReportController.java
+
+commit 034be61fd8339cee764ef4351fe956e708ada7db
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:59:21 2022 +0100
+
+    L2S23-85 - Commit of class ObtainStatisticalReportAction.
+
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/questionnaire/ObtainStatisticalReportAction.java
+
+commit 3b79a3f1b02e8f364dd693bd52b3164a3acdbc2e
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:59:10 2022 +0100
+
+    L2S23-85 - Commit of class JPAStatisticalRepository.
+
+A	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JPAStatisticalRepository.java
+
+commit 0c89c41b127277b8d05ab9df3475ea58018750f4
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:58:57 2022 +0100
+
+    L2S23-85 - Commit of class FileContext.
+
+A	base.core/src/main/java/eapli/base/statistics/strategy/FileContext.java
+
+commit ee302cb14df50a9ff9769734bc02cc5a60b1dd02
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:58:51 2022 +0100
+
+    L2S23-85 - Commit of class ExcelFileStrategy.
+
+A	base.core/src/main/java/eapli/base/statistics/strategy/ExcelFileStrategy.java
+
+commit d41fa34918a42663fa3c5a9340c498161043e1ae
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:58:40 2022 +0100
+
+    L2S23-85 - Commit of class DataParameter.
+
+A	base.core/src/main/java/eapli/base/statistics/strategy/DataParameter.java
+
+commit fcb6fc091d04fb551f294edc192684bf95dd465e
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:56:44 2022 +0100
+
+    L2S23-85 - Commit of class DataContext.
+
+A	base.core/src/main/java/eapli/base/statistics/strategy/DataContext.java
+
+commit a0b75cabb1cbad166025ac7659643dc3cb9bdbfc
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:56:36 2022 +0100
+
+    L2S23-85 - Commit of class CustomerMapper.
+
+A	base.core/src/main/java/eapli/base/customermanagement/domain/dto/CustomerMapper.java
+
+commit 6fdd1ac30d4c81ef12674dad711320cfe8aa9836
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:56:13 2022 +0100
+
+    L2S23-85 - Update of class Visitor, due to changes related to used DTO classes.
+
+M	base.core/src/main/java/eapli/base/grammarutils/Visitor.java
+
+commit 3a192d915d53e4e97c2fb28c3cf0e1798130c6d2
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:55:12 2022 +0100
+
+    L2S23-85 - Update of class Type. Added method toString().
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/domain/Type.java
+
+commit 78940a083a3d453fce73ac5f2df3fd19a02dbca3
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:54:57 2022 +0100
+
+    L2S23-85 - Update of class Title. Updated method toString().
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/domain/Title.java
+
+commit 72d353af40126afde3887326005b34a19c1a135c
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:54:32 2022 +0100
+
+    L2S23-85 - Commit of classes TargetAudienceDTO and TargetAudienceMapper.
+
+A	base.core/src/main/java/eapli/base/questionnairemanagement/dto/TargetAudienceDTO.java
+A	base.core/src/main/java/eapli/base/questionnairemanagement/dto/TargetAudienceMapper.java
+
+commit ca5c57a3ae4146368d1a2bb82c1f99dd02c288a9
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:54:14 2022 +0100
+
+    L2S23-85 - Commit of class TargetAudienceBuilder.
+
+A	base.core/src/main/java/eapli/base/questionnairemanagement/factory/TargetAudienceBuilder.java
+
+commit 9e28b3487d3555e307a4ac47232cacfaedddc617
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:53:40 2022 +0100
+
+    L2S23-85 - Update and correction of classes SectionDTO and SectionMapper.
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/dto/SectionDTO.java
+M	base.core/src/main/java/eapli/base/questionnairemanagement/dto/SectionMapper.java
+
+commit 77919aa7cecad04a0a93e0111167cf835e07bb3c
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:53:12 2022 +0100
+
+    L2S23-85 - Update class Section. Added method toString().
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/domain/Section.java
+
+commit eb73679e7ae1dfd008fbeaab9d6e007813abefaf
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:52:52 2022 +0100
+
+    L2S23-85 - Update class SalesManagerMenu. Added functionality relative to generation of a Statistical Report of a given Questionnaire.
+
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/SalesManagerMenu.java
+
+commit 9bfba2233fec60d0d9491387b5fdc7dc9fe98514
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:51:58 2022 +0100
+
+    L2S23-85 - Update class RepositoryFactory. Added methods statisticalRepository(). Removed multiple unused methods.
+
+M	base.core/src/main/java/eapli/base/infrastructure/persistence/RepositoryFactory.java
+
+commit a961b60804beb61fd80f1782e75a0d63daa4abc1
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:50:51 2022 +0100
+
+    L2S23-85 - Update class Repeatability. Added method toString().
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/domain/Repeatability.java
+
+commit a6690a3ec94e1dec60ba42350309c2a6c50f27da
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:50:18 2022 +0100
+
+    L2S23-85 - Removed unused Repository classes.
+
+D	base.core/src/main/java/eapli/base/questionnairemanagement/persistence/QuestionRepository.java
+D	base.core/src/main/java/eapli/base/questionnairemanagement/persistence/SectionRepository.java
+
+commit 11aafe2829188b480b52bb7a903109128673194a
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:49:49 2022 +0100
+
+    L2S23-85 - Update of interface QuestionnaireValidationService and removed duplicate file. Added method validateQuestionnaireStringFormat.
+
+D	base.core/src/main/java/eapli/base/questionnairemanagement/QuestionnaireValidationService.java
+M	base.core/src/main/java/eapli/base/questionnairemanagement/application/QuestionnaireValidationService.java
+
+commit 699eb7cf87d2d76f7355bdd12668625ab3b080ab
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:48:59 2022 +0100
+
+    L2S23-85 - Update of interface QuestionnaireRepository. Added method answeredQuestionnaires().
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/persistence/QuestionnaireRepository.java
+
+commit 0f62e0d6bf4f5cb0a902ee38e7f46a920c0dad51
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:48:18 2022 +0100
+
+    L2S23-85 - Update of file QuestionnaireGrammar.g4.
+
+M	base.core/QuestionnaireGrammar.g4
+
+commit cc66a69e64f19067e3a9bcfa381ee2e1123406bf
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:47:54 2022 +0100
+
+    L2S23-85 - Update of class QuestionnaireDTO and QuestionnaireMapper.
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/dto/QuestionnaireDTO.java
+M	base.core/src/main/java/eapli/base/questionnairemanagement/dto/QuestionnaireMapper.java
+
+commit f4256c25b95b10bf18f9074359d54bfd9c487c56
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:47:34 2022 +0100
+
+    L2S23-85 - Update of class Questionnaire. Added method toString().
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/domain/Questionnaire.java
+
+commit a180418f00be80bcfde118132f135611683d04fc
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:47:12 2022 +0100
+
+    L2S23-85 - Update of class QuestionDTO and QuestionMapper.
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/dto/QuestionDTO.java
+M	base.core/src/main/java/eapli/base/questionnairemanagement/dto/QuestionMapper.java
+
+commit ad1ce43f41ddb9120fea48a4aa04a35f2940f0b2
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:46:44 2022 +0100
+
+    L2S23-85 - Update of class Question. Added method toString().
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/domain/Question.java
+
+commit 9dfaa0ad0bfd83c5b63bb8833c5a45bc0fbe09c2
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:46:14 2022 +0100
+
+    L2S23-85 - Update of file pom.xml. Added ApachePOI dependencies required for generation of excel file.
+
+M	base.core/pom.xml
+
+commit b68efbc7f8807a1fbb2b38f0b45f1623a7535e8a
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:45:30 2022 +0100
+
+    L2S23-85 - Update of file persistence.xml. Added classes TargetAudience and StatisticalReport to Persistence Unit.
+
+M	base.persistence.impl/src/main/resources/META-INF/persistence.xml
+
+commit 0291d62f9075b5322af91769495a9626b42687c6
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:44:37 2022 +0100
+
+    L2S23-85 - Update of Class Message. Updated method toString().
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/domain/Obligatoriness.java
+
+commit 592b70c5f286e70c37fc6941a977cdc61fc20b2f
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:43:12 2022 +0100
+
+    L2S23-85 - Update of Class Message. Added method toString().
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/domain/Message.java
+
+commit 3a84d52c24b3d6bbc98370c2ed9ae6f89bfcfa30
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:42:52 2022 +0100
+
+    L2S23-85 - Update of Class JpaRepositoryFactory. Added method statisticalReportRepository().
+
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaRepositoryFactory.java
+
+commit 84a3eaf2fca01fe5c2866aa4467fb7f00fddba47
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:42:17 2022 +0100
+
+    L2S23-85 - Update of Class JpaQuestionnaireRepository. Added method answeredQuestionnaires(). Note: JPQL Function SIZE not functioning properly.
+
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaQuestionnaireRepository.java
+
+commit e7cc492ecbb6c2202fff93cfb4d1786be1129389
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:40:37 2022 +0100
+
+    L2S23-85 - Removed multiple unused repository classes.
+
+D	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaAnswerRepository.java
+D	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaQuestionRepository.java
+D	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaSectionRepository.java
+
+commit db5bea3c12568975d94df38055f972e31efb53bb
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:40:03 2022 +0100
+
+        L2S23-85 - Update Class Instruction. Added of method toString.
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/domain/Interrogation.java
+
+commit 5dcb290e928da03e9a63ecd833fede4360592f74
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:39:42 2022 +0100
+
+        L2S23-85 - Update Class Instruction. Correction of method toString.
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/domain/Instruction.java
+
+commit d6a766b12e591f9aea17246b7a81d83befc51677
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:39:01 2022 +0100
+
+        L2S23-85 - Update Class InMemoryRepositoryFactory.
+
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/inmemory/InMemoryRepositoryFactory.java
+
+commit b602609f1bedb4eebbc6e3018c6a85a669658142
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:38:50 2022 +0100
+
+        L2S23-85 - Update Class Identifier.
+
+M	base.core/src/main/java/eapli/base/common/domain/model/Identifier.java
+
+commit 51008e229182ae75eca731aad4b31328bcc09792
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:38:41 2022 +0100
+
+        L2S23-85 - Update Class Description.
+
+M	base.core/src/main/java/eapli/base/common/domain/model/Description.java
+
+commit 3d3c0f92b22af0b0a4322c193760b0e7c9632cda
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:38:29 2022 +0100
+
+        L2S23-85 - Update Class FifoService.
+
+M	base.core/src/main/java/eapli/base/warehousemanagement/service/FifoService.java
+
+commit 7a692f7bf1cfe336656289a3405481feae0f8e52
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:38:09 2022 +0100
+
+        L2S23-85 - Update Class Customer and CustomerBuilder.
+
+M	base.core/src/main/java/eapli/base/customermanagement/domain/factory/CustomerBuilder.java
+M	base.core/src/main/java/eapli/base/customermanagement/domain/model/Customer.java
+
+commit 8c0dda7cb14806b5128ade7f1d06c340085695ff
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:37:42 2022 +0100
+
+    L2S23-85 - Update Class BaseBootstrapper. Added method registerQuestionnaire.
+
+M	base.bootstrappers/src/main/java/eapli/base/infrastructure/bootstrapers/BaseBootstrapper.java
+
+commit 807fde18ec85e717c0b76363540e1c687bbbc1b5
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:37:11 2022 +0100
+
+    L2S23-85 - Update Class AssignmentService.
+
+M	base.core/src/main/java/eapli/base/warehousemanagement/service/AssignmentService.java
+
+commit 7715ddc2eab9de7be9b3eec30c7aa587f4ad442d
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:36:57 2022 +0100
+
+    L2S23-85 - Update Class Answer.
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/domain/Answer.java
+
+commit d0b235859284272a3e8b00499702d8abcd3f20d1
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:36:44 2022 +0100
+
+    L2S23-85 - Update Class AGVBuilder.
+
+M	base.core/src/main/java/eapli/base/agvmanagement/factory/AGVBuilder.java
+
+commit ca8e7e45e2d83ce19b0afeca6a42777fbad50bb0
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:36:33 2022 +0100
+
+    L2S23-85 - Update Class Address.
+
+M	base.core/src/main/java/eapli/base/common/domain/model/Address.java
+
+commit 393bfa3bff97828e0b70b381b7fca7a9d677a4b9
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:35:21 2022 +0100
+
+    L2S23-85 - Changed package of class IdentifierGenerator.
+
+A	base.core/src/main/java/eapli/base/common/domain/model/IdentifierGenerator.java
+D	base.core/src/main/java/eapli/base/customermanagement/domain/model/IdentifierGenerator.java
+
+commit 47bc6e445cde53045748b983ee0945baa15b8428
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:34:56 2022 +0100
+
+    L2S23-85 - Removed classes AnswerRepository.
+
+D	base.core/src/main/java/eapli/base/questionnairemanagement/persistence/AnswerRepository.java
+
+commit afab827e4ad9e10ff9c0e0c27b63143aa011d164
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:34:45 2022 +0100
+
+    L2S23-85 - Removed classes AnswerDTO and AnswerMapper.
+
+D	base.core/src/main/java/eapli/base/questionnairemanagement/dto/AnswerDTO.java
+D	base.core/src/main/java/eapli/base/questionnairemanagement/dto/AnswerMapper.java
+
+commit c59e2f2eed2db7681f457ea9f7c02af98ab20907
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:34:05 2022 +0100
+
+    L2S23-85 - Update of Sequence Diagram of US3002.
+
+M	docs/SprintD/US3002/US3002-SD.svg
+
+commit 736b51e4eaf9453dbd9102a73b2a3b1501bd9194
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:33:38 2022 +0100
+
+    L2S23-85 - Update of Sequence Diagram of US3002.
+
+M	docs/SprintD/US3002/US3002-SD.pu
+
+commit 19a38fa7f8dc84226fecc4f192b7121ae3fec1cc
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 18 17:33:10 2022 +0100
+
+    L2S23-85 - Update of Rationale and Test Planning of US3002.
+
+M	docs/SprintD/US3002/Read Me - US3002.md
+
+commit 9f85582ba0f9f61b037b965d1d1e67c7d98d0b85
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Tue Jun 14 23:13:36 2022 +0100
+
+    L2S23-85 - Commit of interface AnswerRepository.java.
+
+A	base.core/src/main/java/eapli/base/questionnairemanagement/persistence/AnswerRepository.java
+
+commit e9cf45804aec9e5534a6c6bee871f6cf2f8f8ace
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Tue Jun 14 23:13:26 2022 +0100
+
+    L2S23-85 - Commit of interface SectionRepository.java.
+
+A	base.core/src/main/java/eapli/base/questionnairemanagement/persistence/SectionRepository.java
+
+commit 7969cd46faa4825e79ffee1b33347036307b5af4
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Tue Jun 14 23:13:19 2022 +0100
+
+    L2S23-85 - Commit of interface QuestionRepository.java.
+
+A	base.core/src/main/java/eapli/base/questionnairemanagement/persistence/QuestionRepository.java
+
+commit 6b246c9932f62e5d481040101b7ae2428631a917
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Tue Jun 14 23:13:06 2022 +0100
+
+    L2S23-85 - Commit of class JpaSectionRepository.java.
+
+A	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaSectionRepository.java
+
+commit f46073fa1c421b7822f1b493b9dd53252ed21dcb
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Tue Jun 14 23:12:53 2022 +0100
+
+    L2S23-85 - Commit of class JpaQuestionRepository.java.
+
+A	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaQuestionRepository.java
+
+commit df953331e076d26d0f23ff20e449ce15a2d4cae0
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Tue Jun 14 23:12:33 2022 +0100
+
+    L2S23-85 - Commit of class JpaAnswerRepository.java.
+
+A	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaAnswerRepository.java
+
+commit 210ea45caf09a2c6f240c9b64340d00abb3c782d
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Tue Jun 14 23:12:23 2022 +0100
+
+    L2S23-85 - Commit of class AnswerMapper.java.
+
+A	base.core/src/main/java/eapli/base/questionnairemanagement/dto/AnswerMapper.java
+
+commit d47febf5395c3a81a9a65c313fb476f3c1e4554e
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Tue Jun 14 23:12:12 2022 +0100
+
+    L2S23-85 - Commit of class AnswerDTO.java.
+
+A	base.core/src/main/java/eapli/base/questionnairemanagement/dto/AnswerDTO.java
+
+commit b52003eda44a62022e8a86c97c6733c407a92276
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Tue Jun 14 23:11:31 2022 +0100
+
+    L2S23-85 - Update of class Visitor.java.
+
+M	base.core/src/main/java/eapli/base/grammarutils/Visitor.java
+
+commit 418153dc619440f7bb8f7c0b857f35243faf6b18
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Tue Jun 14 23:11:22 2022 +0100
+
+    L2S23-85 - Update of class Section.java.
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/domain/Section.java
+
+commit 29e262a91cb6d3aa1c41be43187fae3770fc92b6
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Tue Jun 14 23:11:12 2022 +0100
+
+    L2S23-85 - Update of class QuestionnaireValidationService.java.
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/application/QuestionnaireValidationService.java
+
+commit a99585fa0753b8c196766f9954978235b6ff9b24
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Tue Jun 14 23:11:01 2022 +0100
+
+    L2S23-85 - Commit of class Type.java.
+
+A	base.core/src/main/java/eapli/base/questionnairemanagement/domain/Type.java
+
+commit c787ab14e256cc7a5c49e509d9ebde4c6c014c6d
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Tue Jun 14 23:10:40 2022 +0100
+
+    L2S23-85 - Update interface RepositoryFactory.java.
+
+M	base.core/src/main/java/eapli/base/infrastructure/persistence/RepositoryFactory.java
+
+commit e0bfde5d4ee562c7a610ed2eb4cf64401f362df1
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Tue Jun 14 23:10:26 2022 +0100
+
+    L2S23-85 - Update interface QuestionnaireRepository.java.
+
+R081	base.core/src/main/java/eapli/base/questionnairemanagement/QuestionnaireRepository/QuestionnaireRepository.java	base.core/src/main/java/eapli/base/questionnairemanagement/persistence/QuestionnaireRepository.java
+
+commit 7f334515660a0f6ded0573a0e177e56275c6a1fe
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Tue Jun 14 23:10:13 2022 +0100
+
+    L2S23-85 - Update file multiple ANTLR Generated files.
+
+M	base.core/src/main/java/eapli/base/grammarutils/QuestionnaireGrammarBaseListener.java
+M	base.core/src/main/java/eapli/base/grammarutils/QuestionnaireGrammarBaseVisitor.java
+M	base.core/src/main/java/eapli/base/grammarutils/QuestionnaireGrammarLexer.java
+M	base.core/src/main/java/eapli/base/grammarutils/QuestionnaireGrammarListener.java
+M	base.core/src/main/java/eapli/base/grammarutils/QuestionnaireGrammarParser.java
+M	base.core/src/main/java/eapli/base/grammarutils/QuestionnaireGrammarVisitor.java
+
+commit 680c0674703c8f49284ff801e51bcf2233063c28
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Tue Jun 14 23:09:55 2022 +0100
+
+    L2S23-85 - Update file multiple ANTLR Generated files.
+
+M	base.core/src/main/java/eapli/base/grammarutils/QuestionnaireGrammar.interp
+M	base.core/src/main/java/eapli/base/grammarutils/QuestionnaireGrammar.tokens
+M	base.core/src/main/java/eapli/base/grammarutils/QuestionnaireGrammarLexer.interp
+M	base.core/src/main/java/eapli/base/grammarutils/QuestionnaireGrammarLexer.tokens
+
+commit aff9409dc64ffc590ec696f6c6e707287687c6ac
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Tue Jun 14 23:09:17 2022 +0100
+
+    L2S23-85 - Update file QuestionnaireGrammar.g4.
+
+M	base.core/QuestionnaireGrammar.g4
+
+commit 3c2eb8af5d0a8e3b938acd1dc3dd05c06fe6620d
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Tue Jun 14 23:09:06 2022 +0100
+
+    L2S23-85 - Update file Questionnaire 2.txt.
+
+M	docs/SprintC/US3001/Questionnaire 2.txt
+
+commit a28be49698c99c45be988b7907f9d7b015db131b
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Tue Jun 14 23:08:52 2022 +0100
+
+    L2S23-85 - Update class QuestionMapper.java.
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/dto/QuestionMapper.java
+
+commit b859d724d36e2d43d885e2205c3684200eb06778
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Tue Jun 14 23:08:44 2022 +0100
+
+    L2S23-85 - Update class QuestionDTO.java.
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/dto/QuestionDTO.java
+
+commit 6a5f64f93d9420172be75cf5fb4cb40a52cdae79
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Tue Jun 14 23:08:28 2022 +0100
+
+    L2S23-85 - Removed class QuestionContent.java.
+
+D	base.core/src/main/java/eapli/base/questionnairemanagement/domain/QuestionContent.java
+
+commit f3b48c5cf5617f742b4e9581884704804864f1fc
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Tue Jun 14 23:08:12 2022 +0100
+
+    L2S23-85 - Update class Question.java.
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/domain/Question.java
+
+commit b851138f2352176368ec3069fca1eb33d4d161bc
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Tue Jun 14 23:07:58 2022 +0100
+
+    L2S23-85 - Update file persistence.xml.
+
+M	base.persistence.impl/src/main/resources/META-INF/persistence.xml
+
+commit 2763c12e1b95fb42fa86f595775c1870c8128a0e
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Tue Jun 14 23:07:48 2022 +0100
+
+    L2S23-85 - Update class JpaRepositoryFactory.java.
+
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaRepositoryFactory.java
+
+commit 81cb5dfd239d6dfc6cbd3127ef6781ed7623126d
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Tue Jun 14 23:07:37 2022 +0100
+
+    L2S23-85 - Update class JpaQuestionnaireRepository.java.
+
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaQuestionnaireRepository.java
+
+commit 8e63a32a60c040509d9a6934297c12fe035d2789
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Tue Jun 14 23:07:26 2022 +0100
+
+    L2S23-85 - Update class InMemoryRepositoryFactory.java.
+
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/inmemory/InMemoryRepositoryFactory.java
+
+commit 2e97e5cb56ece4ac6310936e9377854a63b9a22a
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Tue Jun 14 23:07:12 2022 +0100
+
+    L2S23-85 - Update class Answer.java.
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/domain/Answer.java
+
+commit 4330defd35a98b95909e88e9b7f60cfa8c1d9b97
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:27:07 2022 +0100
+
+    L2S23-85 - Commit of class "SelectFileAction".
+
+A	base.core/src/main/java/eapli/base/common/util/SelectFileAction.java
+
+commit b4a03a34e1e1c511ddde7b046d0e6d6870c3f62d
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:26:55 2022 +0100
+
+    L2S23-85 - Commit of class "Number".
+
+A	base.core/src/main/java/eapli/base/questionnairemanagement/domain/Number.java
+
+commit 978737b17d6fa4ba65a47a3ab194125bdd640224
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:26:17 2022 +0100
+
+    L2S23-85 - Removed unused Class.
+
+D	base.core/src/main/java/eapli/base/questionnairemanagement/application/ValidatingQuestionnaireController.java
+
+commit 4d2aeaf04f9d110aa949b0cffe33a1b4ae2c6064
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:26:00 2022 +0100
+
+    L2S23-85 - Corrections to Class "Visitor".
+
+M	base.core/src/main/java/eapli/base/grammarutils/Visitor.java
+
+commit 6a34fdc818a86a01db23c8b3a61e09ad95dc43da
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:25:41 2022 +0100
+
+    L2S23-85 - Corrections to Interface "SectionMapper".
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/dto/SectionMapper.java
+
+commit 99f5f73ceda2298212a69a7cf53efae1f648eae6
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:25:34 2022 +0100
+
+    L2S23-85 - Corrections to Interface "SectionDTO".
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/dto/SectionDTO.java
+
+commit 8c17c1a67479e5597140598e5d4ba0748912d86f
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:25:27 2022 +0100
+
+    L2S23-85 - Corrections to Interface "Section".
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/domain/Section.java
+
+commit 1399e7b1cedf2d3d4732498e3e340ecc07e9cbe9
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:25:17 2022 +0100
+
+    L2S23-85 - Corrections to Interface "RepositoryFactory".
+
+M	base.core/src/main/java/eapli/base/infrastructure/persistence/RepositoryFactory.java
+
+commit 86681e98ff32ab90f4afd9635da9d9beeb2286cd
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:24:56 2022 +0100
+
+    L2S23-85 - Corrections to Class "Repeatability".
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/domain/Repeatability.java
+
+commit dfa30b4009fe17933c4b1ce5c9f8c7baa9393790
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:24:40 2022 +0100
+
+    L2S23-85 - Corrections to Class "QuestionnaireValidationUI".
+
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/questionnaire/QuestionnaireValidationUI.java
+
+commit 1f17b2357485629e5c609b2911484a177326efc0
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:24:30 2022 +0100
+
+    L2S23-85 - Corrections to Class "QuestionnaireValidationService".
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/application/QuestionnaireValidationService.java
+
+commit 9228b3ca3f4898ce436670ef7aa7d055b302fac7
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:24:19 2022 +0100
+
+    L2S23-85 - Corrections to Class "QuestionnaireValidationController".
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/application/QuestionnaireValidationController.java
+
+commit 2abfb51f7e204384c4d1515aa2134a896b53bdd1
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:24:03 2022 +0100
+
+    L2S23-85 - Corrections to Class "QuestionnaireMapper".
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/dto/QuestionnaireMapper.java
+
+commit 9feddf8255a1fe4a85164def5b20f2a4d6f1ea2d
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:23:56 2022 +0100
+
+    L2S23-85 - Corrections to Class "QuestionnaireDTO".
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/dto/QuestionnaireDTO.java
+
+commit 6973525a68ad007db70a2d9308e44e4d2f6a8847
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:23:36 2022 +0100
+
+    L2S23-85 - Corrections to grammatical error in file "Questionnaire2.txt".
+
+M	docs/SprintC/US3001/Questionnaire 2.txt
+
+commit 485e11d2f03a60dd76c53d9cc1dd523e189d09cf
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:23:13 2022 +0100
+
+    L2S23-85 - Corrections to Class "Questionnaire".
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/domain/Questionnaire.java
+
+commit f84da54f791e90c2b536c238a4a1dbbf7d2c115a
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:23:02 2022 +0100
+
+    L2S23-85 - Corrections to Class "QuestionMapper".
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/dto/QuestionMapper.java
+
+commit 246cc3622855ee1857a40001eddcc3135805b07b
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:22:53 2022 +0100
+
+    L2S23-85 - Corrections to Class "QuestionDTO".
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/dto/QuestionDTO.java
+
+commit 2c7763a022297fa7040aaa4f423c4835772f1f81
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:22:44 2022 +0100
+
+    L2S23-85 - Corrections to Class "QuestionContent".
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/domain/QuestionContent.java
+
+commit 9193d3dd7f7aff31bd8084cdd6b075bc2312a0a8
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:22:33 2022 +0100
+
+    L2S23-85 - Corrections to Class "Question".
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/domain/Question.java
+
+commit 31fc73ce52bfe04ea66899db7caf634767314611
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:22:09 2022 +0100
+
+    L2S23-85 - Added new dependency required for splitting Strings and corrections to the version of ANTLR dependency.
+
+M	base.core/pom.xml
+
+commit e350d5bc0e8726a32277057599a4f2152315da81
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:20:35 2022 +0100
+
+    L2S23-85 - Added entities "Questionnaire", "Section" and "Question" to the Persistence Unit.
+
+M	base.persistence.impl/src/main/resources/META-INF/persistence.xml
+
+commit 1a5978d25222047186021c96634be18bce091373
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:19:46 2022 +0100
+
+    L2S23-85 - Update to class "Obligatoriness". Changed access modifier to Nested Enumerate Class "ObligatorinessType"
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/domain/Obligatoriness.java
+
+commit 96fe04534f0efae8f41b4ee994bda2c86534e380
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:19:03 2022 +0100
+
+    L2S23-85 - Update and corrections to class "Message".
+
+M	base.core/src/main/java/eapli/base/questionnairemanagement/domain/Message.java
+
+commit 344a996e8bdbcf05f5bf84ce300b3b700b9fa483
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:18:41 2022 +0100
+
+    L2S23-85 - Update class "JpaRepositoryFactory".
+
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaRepositoryFactory.java
+
+commit e17e6e9b46ca166542e0256e4146c0660fd14257
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:18:18 2022 +0100
+
+    L2S23-85 - Update class "JpaCustomerRepository".
+
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaCustomerRepository.java
+
+commit c870776d5cfc94cfcca7568a2629158dcdb7de43
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:17:58 2022 +0100
+
+    L2S23-85 - Update class "InMemoryRepositoryFactory".
+
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/inmemory/InMemoryRepositoryFactory.java
+
+commit 60ee3b1c04e33c4ba7b828cca7ae2e4d18ca6fe5
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:17:19 2022 +0100
+
+    L2S23-85 - Updated regex in class "Identifier".
+
+M	base.core/src/main/java/eapli/base/common/domain/model/Identifier.java
+
+commit fd4be251a1deff9539fff558cf7f5e9a1ccf6a12
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:16:51 2022 +0100
+
+    L2S23-85 - Changed access modifier in Nested Enumerate Class "DescriptionType".
+
+M	base.core/src/main/java/eapli/base/common/domain/model/Description.java
+
+commit 756ac8400b497b77bfd0c04c3f5849ce2725cf95
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:15:57 2022 +0100
+
+    L2S23-85 - Correction to class "AGVBuilder".
+
+M	base.core/src/main/java/eapli/base/agvmanagement/factory/AGVBuilder.java
+
+commit 3efc40d93a5e0c3c8dd21846b622fbb4a9ee68ae
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sun Jun 12 23:15:26 2022 +0100
+
+    L2S23-85 - Correction to class "AGV". Added new Constructor.
+
+M	base.core/src/main/java/eapli/base/agvmanagement/domain/AGV.java
+
+commit 1ee12884fe5538d840869cb102d16036266117ef
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 11 22:37:50 2022 +0100
+
+    L2S23-85 - Completed Sequence Diagram of US3002 in .svg format.
+
+A	docs/SprintD/US3002/US3002-SD.svg
+
+commit 1757bd14c345045e74a776c994802f6951b733ed
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 11 22:37:21 2022 +0100
+
+    L2S23-85 - Completed Sequence Diagram of US3002 and renamed file to "US3002-SD.pu".
+
+R081	docs/SprintD/US3002/US3002 - SD.pu	docs/SprintD/US3002/US3002-SD.pu
+
+commit 767f18b9d6ca0d1323ba9fda908fb8d16e1d2c9f
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Sat Jun 11 22:36:34 2022 +0100
+
+    L2S23-85 - Added TestPlanning to the Design of US3002.
+
+M	docs/SprintD/US3002/Read Me - US3002.md
+
+commit e6186647f52069704b37ceb3b84e34f7af88c1ff
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Wed Jun 8 23:29:13 2022 +0100
+
+    L2S23-85 - Update of Sequence Diagram of US3002 and general corrections to file "Read Me-US3002".
+
+M	docs/SprintD/US3002/Read Me - US3002.md
+M	docs/SprintD/US3002/US3002 - SD.pu
+
+commit 8251434c62c515a6878268de13e40523453af941
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Tue Jun 7 23:26:04 2022 +0100
+
+    L2S23-85 - Initial commit of Sequence Diagram of US3002.
+
+A	docs/SprintD/US3002/US3002 - SD.pu
+
+commit 2a7b71c6b5be292789d9a3fd90710385f867de8a
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Tue Jun 7 23:25:24 2022 +0100
+
+    L2S23-85 - Commit of Rationale and minor corrections to Analysis.
+
+M	docs/SprintD/US3002/Read Me - US3002.md
+
+commit 10628a42eba3a8c5b252e4fa28ac4e4eee375f59
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Thu Jun 2 23:12:17 2022 +0100
+
+    L2S23-85 - Update of file "ListaFuncionalidadesEstudante".
+
+M	docs/1190624/ListaFuncionalidadesEstudante.md
+
+commit 48a699560870618f4e9a5c889f2feda30288070a
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Thu Jun 2 23:09:56 2022 +0100
+
+    L2S23-85 - Commit of Analysis of US-3002.
+
+A	docs/SprintD/US3002/Read Me - US3002.md
+
+commit 536567d53a010dfa309d5e37ed7afae7ebe8bc9a
+Author: Gonçalo Monteiro <1190624@isep.ipp.pt>
+Date:   Thu Jun 2 23:07:58 2022 +0100
+
+    L2S23-85 - Removed duplicate files related to the Domain Model.
+
+D	docs/Order_System.png
+D	docs/Survey_System.png
+D	docs/User_System.png
+D	docs/Warehouse_System.png

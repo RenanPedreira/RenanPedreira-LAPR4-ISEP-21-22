@@ -1,0 +1,172 @@
+commit f1f140717c09bd4e9d6aa88c271847bf069f0c3a
+Author: Miguel Alecrim <1200621@isep.ipp.pt>
+Date:   Sun Jun 19 23:58:54 2022 +0100
+
+    apresentação
+
+A	"docs/SprintD/US9002/apresenta\303\247\303\243o.pptm"
+A	docs/SprintD/US9002/self-assessment
+
+commit 2d143182e0678b61dee77794602ce0de184e0868
+Author: Miguel Alecrim <1200621@isep.ipp.pt>
+Date:   Sun Jun 19 23:19:11 2022 +0100
+
+    L2S23-84 unitests
+
+A	base.core/src/test/java/eapli/base/statistics/application/ObtainStatisticalReportServiceTest.java
+A	base.core/src/test/java/eapli/base/statistics/strategy/RawDataStrategyTest.java
+
+commit dfae681b715859ae3b249a31b6e79312ca18b982
+Author: Miguel Alecrim <1200621@isep.ipp.pt>
+Date:   Thu Jun 16 16:10:06 2022 +0100
+
+    L2S23-108 OrderDeliveredAction
+
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/sales_clerk_employee_funcionalities/OrderDeliveredAction.java
+
+commit 94d4636d0a5690d71d616f1edba3bf1b16690417
+Author: Miguel Alecrim <1200621@isep.ipp.pt>
+Date:   Wed Jun 15 14:36:01 2022 +0100
+
+    L2S23-108 SalesClerkMenu corrections
+
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/SalesClerkMenu.java
+
+commit f08ab4392257e87663c15fccbbe57768423c21b4
+Author: Miguel Alecrim <1200621@isep.ipp.pt>
+Date:   Wed Jun 15 02:13:53 2022 +0100
+
+    L2S23-108 SD upgrade
+
+M	docs/SprintD/US1006/SD.puml
+
+commit ac637cb1ae71e85347a5057b2626b278a95d9695
+Author: Miguel Alecrim <1200621@isep.ipp.pt>
+Date:   Wed Jun 15 02:05:25 2022 +0100
+
+    L2S23-108 US1006 upgrade
+
+M	base.core/src/main/java/eapli/base/ordermanagement/application/OrderDeliveredController.java
+
+commit 281e11bfe9f3c4f2d384f379ae30695422793263
+Author: Miguel Alecrim <1200621@isep.ipp.pt>
+Date:   Wed Jun 15 01:50:05 2022 +0100
+
+    L2S23-108 US1006 OrderDeliveredUI class
+
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/sales_clerk_employee_funcionalities/OrderDeliveredUI.java
+
+commit 081e3b9d6efc4c3093251e80016f029e799e0446
+Author: Miguel Alecrim <1200621@isep.ipp.pt>
+Date:   Wed Jun 15 01:49:38 2022 +0100
+
+    L2S23-108 US1006 OrderDeliveredAction class
+
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/sales_clerk_employee_funcionalities/OrderDeliveredAction.java
+
+commit 071a43e2cbf9ac3aa017b3b26c12aa2cc0985bdb
+Author: Miguel Alecrim <1200621@isep.ipp.pt>
+Date:   Mon Jun 13 17:24:14 2022 +0100
+
+    error correction
+
+M	base.core/src/main/java/eapli/base/agvmanagement/application/TestAgvServerController.java
+
+commit c8bb008a16f1021c3f39b75ef40d683c76b35359
+Author: Miguel Alecrim <1200621@isep.ipp.pt>
+Date:   Mon Jun 13 17:19:19 2022 +0100
+
+    error correction
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/protocol/BaseErrorRequest.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/protocol/CommtestRequest.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/protocol/DisconnRequest.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/protocol/TwinUpdateStatusRequest.java
+
+commit 32470b17a36155a7b4239c4bf0d35b01452bd386
+Author: Miguel Alecrim <1200621@isep.ipp.pt>
+Date:   Mon Jun 13 16:22:29 2022 +0100
+
+    L2S23-83 US9002 txt
+
+A	"docs/SprintD/US9002/Livro De Reclama\303\247\303\265es.txt"
+
+commit 20aed3ea1552e149487e362eb9b0a880ffa7e927
+Author: Miguel Alecrim <1200621@isep.ipp.pt>
+Date:   Sat Jun 11 16:52:49 2022 +0100
+
+    L2S23-108 US1006 Order class upgrade
+
+M	base.core/src/main/java/eapli/base/ordermanagement/domain/Ordre.java
+
+commit 846b99d64477336da9438797a0504356e02000ef
+Author: Miguel Alecrim <1200621@isep.ipp.pt>
+Date:   Sat Jun 11 16:52:19 2022 +0100
+
+    L2S23-108 US1006 upgrade
+
+M	docs/SprintD/US1006/SD.puml
+
+commit 54c24efdd144dff7f4ac1814096994cdb99ef1a8
+Author: Miguel Alecrim <1200621@isep.ipp.pt>
+Date:   Sat Jun 11 16:52:07 2022 +0100
+
+    L2S23-108 US1006 OrderRepository upgrade
+
+M	base.core/src/main/java/eapli/base/ordermanagement/persistence/OrderRepository.java
+
+commit 3666095e489e05aa9fc0aaa5981ce0bc2268dd30
+Author: Miguel Alecrim <1200621@isep.ipp.pt>
+Date:   Sat Jun 11 16:51:51 2022 +0100
+
+    L2S23-108 US1006 JpaOrderRepository upgrade
+
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaOrderRepository.java
+
+commit e326d19f012658f6479a8f805fe3920f5020b308
+Author: Miguel Alecrim <1200621@isep.ipp.pt>
+Date:   Sat Jun 11 16:51:28 2022 +0100
+
+    L2S23-108 US1006 controller
+
+A	base.core/src/main/java/eapli/base/ordermanagement/application/OrderDeliveredService.java
+
+commit aa29a9973d3fd4e4d8283fd710dc06dedb2b9405
+Author: Miguel Alecrim <1200621@isep.ipp.pt>
+Date:   Sat Jun 11 16:51:14 2022 +0100
+
+    L2S23-108 US1006 controller
+
+A	base.core/src/main/java/eapli/base/ordermanagement/application/OrderDeliveredController.java
+
+commit 124cf46d6de7e4ee46417be47374d0b05e9564d5
+Author: Miguel Alecrim <1200621@isep.ipp.pt>
+Date:   Fri Jun 10 18:42:47 2022 +0100
+
+    L2S23-108 US1006 final SD
+
+M	docs/SprintD/US1006/SD.puml
+
+commit 3d07e75c042e5f50d75b168581cbc646c18f385c
+Author: Miguel Alecrim <1200621@isep.ipp.pt>
+Date:   Thu Jun 9 01:05:14 2022 +0100
+
+    L2S23-108 Initial SD
+
+A	docs/SprintD/US1006/SD.puml
+
+commit 087f216fbe34d3106927f0771a65664db2ffca87
+Author: Miguel Alecrim <1200621@isep.ipp.pt>
+Date:   Thu Jun 9 01:05:03 2022 +0100
+
+    L2S23-108 US1009 initial analysis
+
+A	docs/SprintD/US1006/ProcessoEngenhariaFuncionalidade.md
+
+commit 826ed137eb7f93d85ac301eb1eb45e9ccb02e805
+Author: Miguel Alecrim <1200621@isep.ipp.pt>
+Date:   Wed Jun 1 14:29:29 2022 +0100
+
+    L2S23-59 Analysis md
+
+M	docs/SprintC/US3001/ProcessoEngenhariaFuncionalidade.md

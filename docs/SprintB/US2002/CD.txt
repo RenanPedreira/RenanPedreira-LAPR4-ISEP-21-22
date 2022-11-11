@@ -1,0 +1,102 @@
+@startuml
+class ConfigAGVUI<<Presentation>>{
+
+}
+
+
+class ConfigAGVController<<Application>>{
+  -ConfigAGVService service 
+  +retrieveAllAvailableDocks()
+  +configureAGV(model, description, taskStatus, batteryAutonomy, dockIdentifier)
+  +persistAGV(agvDto)
+  
+}
+
+class ConfigAGVService<<Service>>{
+  -PersistenceContext persistence
+  -AGVBuilder builder
+  +configureAGV(model, description, taskStatus, batteryAutonomy, dockIdentifier)
+  +create()
+  +persistAGV(agvDto)
+  +retrieveAllAvailableDocks()
+}
+
+class AGVRepository<<Persistence>>{
+   +save(agv)
+   
+}
+
+
+class AgvDockRepository<<Persistence>>{
+   +findAll()
+   
+}
+
+class AGV<<Domain>>{
+   +create(model, description, taskStatus, batteryAutonomy, dockIdentifier)
+
+}
+
+
+class AgvDock<<Domain>>{
+   +create()
+}
+
+class AGVDTO<<DTO>>{
+   +toDTO()
+}
+
+class DockDTO<<DTO>>{
+   toDTO()
+}
+class AGVBuilder{
+  +create()
+  +build()
+  +sets(all)
+ 
+}
+
+class RepositoryFactory{
+  -AGVRepository repoA
+  -AgvDockRepository repoAD
+  +create()
+
+}
+
+class PersistenceContext{
+   +create()
+   +repositories()
+
+}
+
+ConfigAGVUI ..> ConfigAGVController
+
+ConfigAGVController ..> ConfigAGVService
+
+ConfigAGVController ..> ListAgvDockService
+
+ListAgvDockService ..> PersistenceContext
+
+ConfigAGVService ..> PersistenceContext
+
+
+
+
+PersistenceContext ..> RepositoryFactory
+
+RepositoryFactory ..> AGVRepository
+RepositoryFactory ..> AgvDockRepository
+
+AgvDockRepository ..> AgvDock
+
+AGVRepository ..> AGV
+
+
+ConfigAGVService ..> AGVBuilder
+
+AGVBuilder ..> AGV
+
+AGV ..> AGVDTO
+
+AgvDock ..> DockDTO
+@enduml

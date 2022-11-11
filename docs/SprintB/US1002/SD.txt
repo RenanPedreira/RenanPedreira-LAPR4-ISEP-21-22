@@ -1,0 +1,169 @@
+actor "Sales Clerk" as sc
+participant ":ViewCatalogUI" as ui
+participant ":ViewCatalogController" as ctr
+participant ":ProductFilterService" as serv
+participant ":PersistenceContext" as pc
+participant ":RepositoryFactory" as rf
+participant ":ProductRepository" as repo
+ 
+participant "productList1" as l1
+participant "productList2" as l2
+
+participant ":ProductMapper" as map
+
+participant ":ProductDTO" as dto
+participant ":listProductDTO" as dtol
+
+
+
+activate sc
+sc->ui: search the products catalog
+
+activate ui
+ui->ui: doShow()
+
+ui->ctr: create()
+activate ctr
+
+ctr->serv: create()
+activate serv
+
+ui-->sc: asks user which filters should be applied on the search
+
+serv->*l1: create()
+serv->*l2: create()
+
+serv->pc: repositories()
+activate pc
+pc->rf: create()
+activate rf
+deactivateafter rf
+
+pc-->serv: factory
+
+deactivateafter pc
+
+serv->rf: porducts()
+activate rf
+
+rf->repo: create()
+activate repo
+deactivateafter repo
+rf-->serv: productRepo
+
+deactivateafter rf
+
+serv->repo: productList1 = getAllProducts()
+activate repo
+deactivateafter repo
+
+serv->repo: productList2 = getAllProducts()
+activate repo
+deactivateafter repo
+
+loop add filters
+
+sc->ui: selects a filter
+
+alt category
+ui-->sc: asks for a category
+sc->ui: inputs category
+ui->ctr: filterByCategory(category)
+ctr->serv: filterByCategory(category)
+serv->repo: productList2 = getProductsFromCategory(category)
+activate repo
+deactivateafter repo
+serv->serv: commonProducts()
+end
+
+alt description
+ui-->sc: asks for a description
+sc->ui: inputs description
+ui->ctr: filterByDescription(description)
+ctr->serv: getProductsFromDescription(description)
+serv->repo: productList2 = getProductsFromDescription(description)
+activate repo
+deactivateafter repo
+serv->serv: commonProducts()
+end
+
+alt brand
+ui-->sc: asks for a brand
+sc->ui: inputs brand
+ui->ctr: filterByBrand(brand)
+ctr->serv: productList2 = getProductsFromBrand(brand)
+serv->repo: productList2 = getProductsFromBrand(brand)
+activate repo
+deactivateafter repo
+serv->serv: commonProducts()
+end
+
+alt reset filters
+ui-->sc: asks for confirmation of filter reset
+sc->ui: confirms reset
+ui->ctr: resetFilters()
+ctr->serv: resetFilters()
+serv->repo: productList1 = getAllProducts()
+activate repo
+serv->repo: productList2 = getAllProducts()
+
+deactivateafter repo
+end
+
+end
+
+ui-->sc: asks user which sort method should be applied on the search
+sc->ui: select a sort method
+
+
+
+ui->ctr: filterResult(sort)
+ctr->serv: filterResult(sort)
+
+serv->serv: sortProductList(sort)
+
+serv->map: toDTO(productList1)
+activate map
+
+map->*dtol: create()
+
+loop for each product 
+map->dto: productDTO = create(product)
+activate dto
+deactivateafter dto
+map->dtol:add(productDTO)
+activate dtol
+deactivateafter dtol
+end
+
+map-->serv: listProductDTO
+deactivateafter map
+
+serv-->ctr: listProductDTO
+
+ctr-->ui: listProductDTO
+
+loop for each ProductDTO in listProductDTO
+ui->dto: showBasicInformation()
+activate dto
+deactivateafter dto
+
+end
+
+ui-->sc: shows list of filtered products and asks if user wants to view details 
+sc->ui: decides if will see product info
+
+alt view products
+loop view details of one ore more products
+ui-->sc: asks user to select a product by list index
+sc->ui: inputs the product's index
+ui->ui: selectsIndex(index)
+ui->dto: showAllInformation()
+activate dto
+deactivateafter dto
+ui-->sc: shows product's full information
+end
+end 
+
+
+ui-->sc: informs of operation success

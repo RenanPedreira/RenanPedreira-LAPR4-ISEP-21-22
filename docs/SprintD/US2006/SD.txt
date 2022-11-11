@@ -1,0 +1,151 @@
+@startuml
+autonumber
+
+actor "Warehouse Employee" as ADM
+participant ":DashboardUI" as UI
+participant ":DashboardController" as CTRL
+participant ":AGVListService" as AS
+participant ":PersistenceContext" as PC
+participant ":RepositoryFactory" as RF
+participant ":AGVRepository" as AGR
+participant ":AGVMapper" as M
+participant ":Dashboard" as DA
+participant ":HTTPmessage" as ME
+participant ":DashboardRequest" as DR
+participant "listagvdto:List<AGVDTO>" as LL
+participant ":SSLSocket" as SS
+participant "output:DataOutputStream" as O
+participant "input:DataInputStream" as I
+
+activate ADM
+
+
+
+ 
+ADM -> UI : asks for dashboard with info and position of each agv in the list
+
+activate UI
+
+UI -> CTRL : showDashboard()
+
+activate CTRL 
+
+CTRL -> DA : create()
+
+CTRL -> DA : start()
+
+deactivate CTRL
+
+activate DA
+DA -> LL: create
+
+DA -> SS : create()
+
+DA -> DA : importSSL()
+
+loop while true
+
+DA -> SS : accept()
+
+activate SS
+
+SS --> DA : sock
+deactivate SS
+
+
+DA -> CTRL: listagvdto=getList()
+
+activate CTRL
+
+
+CTRL -> AS: create()
+
+
+CTRL -> AS :listAvailableAGVSDTO()
+
+activate AS
+
+AS -> PC : repositories()
+
+activate PC
+
+PC -> RF: create()
+
+activate RF
+
+deactivate PC 
+
+RF -> AGR : create()
+
+deactivate RF
+
+AS -> AGR : getAGVSByStatus(ASSIGNED)
+activate AGR
+AGR --> AS : listAGV
+deactivate AGR
+
+AS -> M : toDto(listAgv)
+
+activate M
+ 
+M--> AS : listAGVDTO
+
+deactivate M
+
+AS --> CTRL :listAGVDTO
+
+deactivate AS
+
+CTRL --> DA : listAGVDTO
+
+deactivate CTRL
+
+
+DA -> DR : create(sock,web)
+
+activate DR 
+
+DA -> DR : start()
+
+
+
+deactivate DA
+
+
+
+
+DR -> ME: create()
+
+DR -> O : create()
+
+DR -> I :create()
+
+DR -> DA : getStatusInHTML()
+
+activate DA
+
+DA --> DR : content
+
+deactivate DA
+
+DR -> ME : setContentFromString(content)
+activate ME
+
+DR -> ME : setResponseStatus("200 OK")
+
+DR -> ME : send(output)
+
+end loop
+
+deactivate ME
+
+
+
+deactivate DR
+
+deactivate CTRL
+
+deactivate UI
+
+deactivate ADM
+@enduml

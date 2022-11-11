@@ -1,0 +1,47 @@
+@startuml
+
+'https://plantuml.com/sequence-diagram
+
+autonumber
+actor "Sales Clerk" as SC
+
+activate SC
+
+SC -> System : asks to create a new product category
+activate System
+System --> SC : asks to type the alphanumeric code
+deactivate System
+SC -> System : type the alphanumeric code
+activate System
+System --> SC : asks to type the description
+deactivate System
+SC -> System : type the description
+activate System
+alt
+System --> SC : asks if category have a super category
+deactivate System
+SC -> System : type the option
+activate System
+System --> SC : shows the list of categories
+deactivate System
+SC -> System : type the option
+end alt
+activate System
+System --> SC : shows data and asks for confirmation
+deactivate System
+SC -> System : confirms the data
+activate System
+System --> SC : informs operation success
+deactivate System
+
+
+
+deactivate SC
+
+@enduml
+
+
+
+
+
+@enduml

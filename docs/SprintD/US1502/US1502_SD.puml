@@ -1,0 +1,112 @@
+@startuml
+autonumber
+actor "Customer" as CUST
+
+participant "ViewStatusOfOpenOrdersUI" as UI
+participant ":ViewStatusOfOpenOrdersController" as CTRL
+participant ":AuthzRegistry" as AUTH
+participant ":CsvOrderProtocolProxy" as PROXY
+participant ":ClientSocket" as SOCKET
+participant ":OrderServer" as SERVER
+participant ":GetClientOrdersRequest" as REQUEST
+participant ":ListOrdersStatusService" as SERVICE
+participant ":PersistenceContext" as PST
+participant ":RepositoryFactory" as FAC
+participant ":OrderRepository" as REPO
+
+activate CUST
+CUST -> UI : starts to view/check the status of the open orders
+activate UI
+
+UI -> CTRL: create()
+activate CTRL
+
+CTRL -> AUTH: session()
+activate AUTH
+
+AUTH --> CTRL: customer
+deactivate CTRL
+deactivate AUTH
+
+UI -> CTRL: connectToServer()
+deactivate AUTH
+activate CTRL
+
+CTRL -> PROXY: connectToServer()
+activate PROXY
+
+PROXY -> SOCKET**: create()
+PROXY -> PROXY: address = getAddress()
+PROXY -> PROXY: port = getPort()
+
+PROXY -> SOCKET: connect(address, port)
+activate SOCKET
+deactivate SOCKET
+deactivate PROXY
+deactivate CTRL
+
+UI -> CTRL: getClientOrders()
+activate CTRL
+
+CTRL -> PROXY: getClientOrders(username)
+activate PROXY
+
+PROXY -> PROXY: request = buildGetClientOrders(customerUserName)
+
+PROXY -> SOCKET: sendAndRecv(request)
+activate SOCKET
+
+SOCKET -> SERVER: request
+activate SERVER
+
+SERVER -> REQUEST: request
+activate REQUEST
+
+REQUEST -> SERVICE: create()
+activate SERVICE
+
+SERVICE -> PST: repositories()
+deactivate SERVICE
+activate PST
+
+PST -> FAC: create()
+deactivate PST
+activate FAC
+
+FAC -> REPO: create()
+deactivate FAC
+activate REPO
+
+REQUEST -> SERVICE: getClientOrders(username)
+deactivate REPO
+activate SERVICE
+
+SERVICE -> REPO: getClientOrders(username)
+activate REPO
+
+REPO --> SERVICE: orders
+deactivate REPO
+
+SERVICE --> REQUEST: orders
+deactivate SERVICE
+
+REQUEST -> REQUEST: buildResponse(orders)
+
+REQUEST --> SERVER: response
+deactivate REQUEST
+
+SERVER --> SOCKET: response
+deactivate SERVER
+
+SOCKET --> PROXY: response
+deactivate SOCKET
+
+PROXY --> CTRL: response
+deactivate PROXY
+
+UI --> CUST: shows the list of open orders
+deactivate CTRL
+
+deactivate UI
+
+@enduml

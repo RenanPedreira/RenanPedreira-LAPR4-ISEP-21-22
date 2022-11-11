@@ -1,0 +1,175 @@
+COSM22-01
+
+				Cosmetic product Questionnaire
+
+Dear customer, due to your purchase history you've been selected to answer a 3-minute survey
+about cosmetic products in order to help us improve the quality and standards of service we provide.
+All the answers provided are anonymous and will only be used for product quality and customer 
+satisfaction assessment.
+
+
+				1 - Basic Personal Information
+
+The section at hand aims to collect basic personal information of the customer solely for 
+statistical analysis.
+Obligatoriness: Mandatory;
+
+{1} Which gender do you identify with the most?
+Instructions: Please select a single option which is applicable to your current situation/status/preference among the list presented, adding additional context if required;
+Obligatoriness: Mandatory;
+
+Type: Single-Choice with Input;
+
+Gender List:
+    1: Male;
+    2: Female;
+    3: Prefer not to answer;
+    4: Other (Please specify);
+
+Answer:
+   
+Female
+
+
+{2}  What's your age group?
+Instructions: Please select a single option which is applicable to your current situation/status/preference among the list presented;
+Obligatoriness: Mandatory;
+Type: Single-Choice;
+
+Age Group List:
+    1: 18 - 25;
+    2: 26 - 50;
+    3: 51 - 69;
+    4: 70 - older;
+    5: Prefer not to answer;
+
+Answer:
+
+26 - 50;
+
+{3} What country do you currently live in?
+Instructions: Please select a single option which is applicable to your current situation/status/preference among the list presented;
+Obligatoriness: Mandatory;
+Type: Single-Choice;
+
+
+Country List:
+    1: Portugal;
+    2: Spain;
+    3: France;
+    4: Germany;
+    5: Finland;
+    6: United Kingdom;
+    7: Ukraine;
+    8: United States of America;
+
+Answer:
+
+Spain
+
+				Section 2  - Cosmetic related questions
+
+The section at hand aims to understand the customer's coveted characteristics in a smartphone,
+in order to help us understand current trends and improve the quality of our catalog;
+Obligatoriness: Mandatory;
+
+{1} Do the products brand play a role in your decision-making before purchase?
+Instructions: Please select a single option which is applicable to your current
+situation/status/preference among the list presented;
+Obligatoriness: Mandatory;
+Type: Single- Choice;
+
+Option List:
+	1: Yes;
+	2: No;
+
+Answer:
+Yes
+
+
+{2} Which brands do you consider relevant in your decision-making before purchase?
+Instructions: Please select the options which are applicable to your current situation/status/
+preference among the list presented, adding additional context if required;
+Obligatoriness: Condition Dependent( If answered "Yes" in Question #1);
+Type: Multiple-Choice with Input;
+
+
+Brand List:
+	1: Nars Cosmetics
+	2: Lancôme
+	3: Dior Beauty
+	4: Laura Mercier
+	5: Charlotte Tilbury
+	6: Estée Lauder
+	7: Other (Please specify);
+
+Answer:
+
+
+
+{3} What are the main characteristics sought after when purchasing a new cosmetic product;
+Instructions: Please sort the options most relevant to your current situation
+/status/preference;
+Obligatoriness: Mandatory;
+Type: Sorting Option;
+
+Option List:
+	1: Proven efficacy/benefits
+	2: Natural ingredient formulation
+	3: Ingredients
+	4: Brand
+	5: New/innovative product format
+
+	
+Answer:
+
+
+
+				3- Customer Satisfaction Assessment
+
+The section at hand aims to understand the customer's satisfaction with the service provided and overall satisfaction with the application SPOMS.
+Obligatoriness: Optional;
+
+{1} How frequent do you utilize the application SPOMS for your purchasing needs?
+Instructions: Please select a single option which is applicable to your current
+situation/status/preference among the list presented;
+Obligatoriness: Optional;
+Type: Single-Choice;
+
+Option List:
+	1: Rarely;
+	2: Sometimes;
+	3: Frequently;
+	4: Always;
+
+Answer: 
+
+
+{3} What's your opinion regarding the selection of cosmetic products available in the application SPOMS?
+Instructions: Please select a single option which is applicable to your current situation/status/preference among the list presented;
+Obligatoriness: Optional;
+Type: Single-Choice;
+
+Option List:
+ 	1: Bad;
+	2: Decent;
+	3: Good;
+	4: Great;
+
+Answer:
+
+
+{4} Please specify in your opinion what changes could be implemented in order to turn your experience more pleasant?
+Instructions: Type your answer relative to the question at hand;
+Obligatoriness: Condition Dependent(If answered either "Bad" or "Decent" in Question #3);
+Type: Free-Text;
+
+Answer:
+
+
+Thank you for completing the survey.
+Your help and collaboration is instrumental towards our goal of providing our customers the
+most enjoyable and fruitful experience.
+We continue to strive in defining the golden standard in the market.
+
+

@@ -1,0 +1,75 @@
+
+
+
+
+.onebox{
+    background-color: #8f8a9a;
+    color: #dad2d7;
+    border: snow;
+    border-radius: 4px;
+}
+
+body{
+    margin: 0;
+    background: honeydew;
+
+}
+
+h1{
+    font-family: "Baskerville Old Face";
+    font-size: 5em;
+    color: #77aa77;
+
+}
+.onetable {
+    border-collapse: collapse;
+    font-size: 2em;
+    font-family: Arial;
+    min-width: 60%;
+    box-shadow: 0 0 20px rgba(253, 3, 3, 0.15);
+    cursor: pointer;
+}
+
+.onetable thead tr {
+    background-color: wheat;
+    color: cornflowerblue;
+    text-align: left;
+}
+
+.onetable th,
+.onetable td {
+    padding: 20px 20px;
+}
+
+.onetable tbody tr.active-row {
+    font-weight: 900;
+    color: black;
+    background: white;
+    border-bottom: 5px solid wheat;
+}
+
+.plant{
+
+    background-color: wheat;
+    width: 45%;
+    height: 45%;
+    text-align: center;
+
+}
+
+.plant td{
+    border: solid black 1px;
+    color: black;
+    font-size: 2em;
+
+}
+
+.plant th{
+    color: red;
+    border: solid red 1px;
+    font-size: 1.2em;
+}
+
+.hr{
+
+}

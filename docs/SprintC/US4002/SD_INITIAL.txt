@@ -1,0 +1,45 @@
+@startuml
+autonumber
+
+
+participant ":BackOfficeApp" as UI
+participant ":AGVDaemon" as CTRL
+participant ":AGVManager" as MAN
+participant ":HandleAGV" as HA
+participant ":FifoAlgorithm" as FIFO
+
+
+
+CTRL -> MAN : new
+
+loop true
+
+CTRL -> MAN : start
+
+activate MAN
+
+MAN -> MAN : accept
+
+UI --> MAN
+
+MAN -> HA : start
+
+deactivate MAN
+
+activate HA
+
+end loop
+
+HA -> FIFO : create()
+
+HA -> FIFO : fifoAlgorithm()
+
+activate FIFO
+
+deactivate FIFO
+
+HA --> UI
+
+deactivate HA
+
+@enduml

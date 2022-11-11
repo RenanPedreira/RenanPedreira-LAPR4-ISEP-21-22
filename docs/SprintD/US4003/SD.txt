@@ -1,0 +1,58 @@
+
+participant "<<Client>>\nBackoffice" as c
+
+participant "AgvManagerProxy" as p
+
+participant "ClientSocket" as cs
+
+participant "AgvDaemon" as d
+
+participant "<<Server>>\nAgvManager" as s
+
+participant "<<Thread>>\nHandleClient " as t
+
+
+participant "AgvManagerParser" as par
+
+participant "ProtocolRequest" as req
+
+d->s: start
+
+activate s
+s->s:importAgvManagerSSL() 
+s->s: listen()
+
+loop true
+
+activate c
+c->p: connectAgvManagerServer()
+
+activate p
+
+
+
+p->*cs: create()
+p->cs: connect()
+activate cs
+cs->cs:importBackofficeSSL()
+
+cs-->s:
+
+s->s: accept 
+
+
+
+s->t: start
+activate t
+
+deactivateafter cs
+end
+t->par: parse
+activate par
+deactivateafter par
+t->req: execute()
+activate req
+req->req: buildResponse()
+req-->p:response
+deactivateafter t
+deactivateafter p

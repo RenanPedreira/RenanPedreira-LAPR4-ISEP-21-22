@@ -1,0 +1,122 @@
+@startuml
+
+class CreateOrderUI<<Presentation>>{
+  doShow()
+  selectsIndex()
+}
+
+class CreateOrderForClientController<<Application>>{
+	filterByCategory(category)
+  filterByDescription(description)
+  filterByBrand(brand)
+  resetFilters()
+  filterResult()
+  createOrderForClient(sourceChannel, comment, paymentMethod, clientEmail, billingAddress, deliveringAddress)
+	createOrderItem(product, quantity)
+	getAllOrderItensAdded()
+	confirm order()
+}
+
+class ProductService<<Service>>{
+	filterByCategory(category)
+  filterByDescription(description)
+  filterByBrand(brand)
+  resetFilters()
+  commonProducts()
+  filterResult()
+}
+
+class CreateOrderService<<Service>>{
+  createOrderForClient(sourceChannel, comment, paymentMethod, clientEmail, billingAddress, deliveringAddress)
+	createOrderItem(product, quantity)
+	getAllOrderItensAdded()
+	addOrderItem()
+	confirm order()
+}
+
+class RepositoryFactory{
+	ProductRepository()
+}
+
+class PersistenceContext{
+	repositories()
+}
+
+class ProductDTO<<DTO>>{
+	showBasicInformation()
+	showAllInformation()
+}
+
+class ProductMapper<<DTO>>{
+	toDTO(product)
+}
+
+
+class ClerkOrderDTO<<DTO>>{
+	showInformation()
+}
+
+class ClerkOrderMapper<<DTO>>{
+	toDTO(product)
+}
+
+class OrderItemDTO<<DTO>>{
+	showInformation()
+}
+
+class OrdeItemMapper<<DTO>>{
+	toDTO()
+}
+
+class ProductRepository<<Persistence>>{
+  getProductByID(id)
+  getAllProducts()
+  getProductsFromCategory(category)
+  getProductsFromDescription(description)
+  getProductsFromBrand(brand)
+}
+
+class OrderRepository<<Persistence>>{
+	addOrder(order)
+}
+
+class Product<<Domain>>{}
+
+class Order<<Domain>>{}
+
+class OrderItem<<Domain>>{}
+
+
+CreateOrderUI ..> CreateOrderForClientController
+
+CreateOrderForClientController ..> ProductService
+CreateOrderForClientController ..> CreateOrderService
+
+ProductService ..> ProductMapper
+ProductService ..> ProductRepository
+ProductService ..> RepositoryFactory
+ProductService ..> PersistenceContext
+
+CreateOrderService ..> ClerkOrderMapper
+CreateOrderService ..> OrdeItemMapper
+CreateOrderService ..> RepositoryFactory
+CreateOrderService ..> PersistenceContext
+CreateOrderService ..> OrderRepository
+
+RepositoryFactory ..> ProductRepository
+PersistenceContext ..> RepositoryFactory
+
+RepositoryFactory ..> OrderRepository
+
+OrderRepository ..> Order
+ProductMapper ..> ProductDTO
+ProductRepository ..> Product 
+
+ClerkOrderMapper ..> ClerkOrderDTO
+OrdeItemMapper ..> OrderItemDTO
+
+
+
+Order->OrderItem
+
+@enduml

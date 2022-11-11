@@ -1,0 +1,13 @@
+eapli\base\protocol\CsvAGVProtocolMessageParser.class
+eapli\base\daemon\agv\presentation\CsvAGVProtocolServer$AgvHandler.class
+eapli\base\protocol\FifoRequest.class
+eapli\base\protocol\AGVProtocolRequest$1.class
+eapli\base\protocol\AGVProtocolRequest$2.class
+eapli\base\protocol\FifoProtocolRequest.class
+eapli\base\protocol\ErrorInRequest.class
+eapli\base\protocol\BaseErrorRequest.class
+eapli\base\protocol\AGVProtocolRequest.class
+eapli\base\protocol\UnknownRequest.class
+eapli\base\daemon\agv\presentation\CsvAGVProtocolServer.class
+eapli\base\daemon\agv\AgvDaemon.class
+eapli\base\protocol\BadRequest.class

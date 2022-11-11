@@ -1,0 +1,161 @@
+@startuml
+
+class ListLocationFromWarehouseService<<Service>>{
+   -PersistenceContext persistence
+   -RowMapper map
+   +listRow()
+   +getRealRow(rowDto)
+
+}
+
+class RowRepository{
+    +getAllRow()
+}
+
+class SpecifyProductUI<<Presentation>>{
+
+}
+
+class CategoryDTO<<DTO>>{
+  
+}
+
+class RowDTO<<DTO>>{
+  
+}
+class Row<<Domain>>{
+
+}
+
+
+class RowMapper<<DTO>>{
+  +toDTO(rowList)
+
+}
+
+
+class CategoryMapper<<DTO>>{
+  +toDTO(categoryList)
+
+}
+
+class SpecifyProductController<<Application>>{
+  -ListCategoryService categoryService
+  -ProductService productService 
+  -ListLocationFromWarehouseService locationService
+  +specifyProduct(photo, internalCode,shortDescription,extendedDescription,brand,reference,productionCode,technicalDescription,category,price,name)
+  +getProductCategory()
+  +showLocation()
+  +getCategoryByDTO(categoryDto)
+  +getLocation(rowDTO)
+  
+}
+
+class ProductionProductService<<Service>>{
+  -PersistenceContext persistence
+  -ProductFactory factory
+  +buildProduct(photo, internalCode,shortDescription,extendedDescription,brand,reference,productionCode,technicalDescription,category,price,name)
+  +create()
+}
+
+class CategoryRepository<<Persistence>>{
+   +activeProductCategories()
+   +create()
+}
+
+class ListCategoryService<<Service>>{
+   -persistenceContext persistence
+   -CategoryMapper
+   +productCategories()
+   +create()
+   
+  
+}
+
+class ProductRepository<<Persistence>>{
+   +create()
+   +buildPorduct(photo, internalCode,shortDescription,extendedDescription,brand,reference,prodctionCode,technicalDescription,category)
+   +save(product)
+}
+
+class Product<<Domain>>{
+   +create(photo, internalCode,shortDescription,extendedDescription,brand,reference,productionCode,technicalDescription,category,price,name)
+
+}
+
+
+
+
+
+class Category<<Domain>>{
+  -category
+  -superCategory
+}
+
+class ProductFactory<<Domain>>{
+  +create()
+  +buildProduct()
+  +set()
+ 
+}
+
+class RepositoryFactory{
+  -ProductRepository repoP
+  -CategoryRepository repoC
+  -RowRepository repoL
+  +create()
+
+}
+
+class PersistenceContext{
+   +create()
+   +repositories()
+
+}
+
+SpecifyProductUI ..> SpecifyProductController
+
+SpecifyProductController ..> ProductionProductService
+
+SpecifyProductController ..> ListCategoryService
+
+SpecifyProductController ..> ListLocationFromWarehouseService
+
+ListCategoryService ..> PersistenceContext
+
+ProductionProductService ..> PersistenceContext
+
+ListCategoryService ..> CategoryMapper
+
+CategoryMapper ..> CategoryDTO
+
+CategoryDTO ..> Category
+
+RowMapper ..> RowDTO
+
+RowDTO ..> Row
+
+ListLocationFromWarehouseService ..> PersistenceContext
+
+ListLocationFromWarehouseService ..> RowMapper
+
+
+
+
+PersistenceContext ..> RepositoryFactory
+
+RepositoryFactory ..> CategoryRepository
+RepositoryFactory ..> ProductRepository
+RepositoryFactory ..> RowRepository
+
+RowRepository ..> Row
+
+CategoryRepository ..> Category
+
+ProductRepository ..> Product
+
+
+ProductionProductService ..> ProductFactory
+
+ProductFactory ..> Product
+@enduml

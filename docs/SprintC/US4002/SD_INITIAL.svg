@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="398px" preserveAspectRatio="none" style="width:648px;height:398px;background:#FFFFFF;" version="1.1" viewBox="0 0 648 398" width="648px" zoomAndPan="magnify"><defs/><g><rect fill="#FFFFFF" height="100.3984" style="stroke:#181818;stroke-width:1.0;" width="10" x="328.5" y="120.6953"/><rect fill="#FFFFFF" height="124.3984" style="stroke:#181818;stroke-width:1.0;" width="10" x="443.5" y="221.0938"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="578.5" y="286.3594"/><rect height="146.6641" style="stroke:#000000;stroke-width:1.5;fill:none;" width="498" x="10" y="82.4297"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="84" x2="84" y1="36.2969" y2="363.4922"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="213" x2="213" y1="36.2969" y2="363.4922"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="333" x2="333" y1="36.2969" y2="363.4922"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="448" x2="448" y1="36.2969" y2="363.4922"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="583.5" x2="583.5" y1="36.2969" y2="363.4922"/><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="128" x="20" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114" x="27" y="24.9951">:BackOfficeApp</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="128" x="20" y="362.4922"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114" x="27" y="382.4873">:BackOfficeApp</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="110" x="158" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="165" y="24.9951">:AGVDaemon</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="110" x="158" y="362.4922"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="165" y="382.4873">:AGVDaemon</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="111" x="278" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="285" y="24.9951">:AGVManager</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="111" x="278" y="362.4922"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="285" y="382.4873">:AGVManager</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="99" x="399" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="406" y="24.9951">:HandleAGV</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="99" x="399" y="362.4922"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="406" y="382.4873">:HandleAGV</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="118" x="524.5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="104" x="531.5" y="24.9951">:FifoAlgorithm</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="118" x="524.5" y="362.4922"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="104" x="531.5" y="382.4873">:FifoAlgorithm</text><rect fill="#FFFFFF" height="100.3984" style="stroke:#181818;stroke-width:1.0;" width="10" x="328.5" y="120.6953"/><rect fill="#FFFFFF" height="124.3984" style="stroke:#181818;stroke-width:1.0;" width="10" x="443.5" y="221.0938"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="578.5" y="286.3594"/><polygon fill="#181818" points="321.5,63.4297,331.5,67.4297,321.5,71.4297,325.5,67.4297" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="213" x2="327.5" y1="67.4297" y2="67.4297"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="220" y="62.3638">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="27" x="233" y="62.3638">new</text><path d="M10,82.4297 L88,82.4297 L88,89.5625 L78,99.5625 L10,99.5625 L10,82.4297 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/><rect fill="none" height="146.6641" style="stroke:#000000;stroke-width:1.5;" width="498" x="10" y="82.4297"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="33" x="25" y="95.4966">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="39" x="103" y="94.6401">[true]</text><polygon fill="#181818" points="316.5,116.6953,326.5,120.6953,316.5,124.6953,320.5,120.6953" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="213" x2="322.5" y1="120.6953" y2="120.6953"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="220" y="115.6294">2</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="233" y="115.6294">start</text><line style="stroke:#181818;stroke-width:1.0;" x1="338.5" x2="380.5" y1="149.8281" y2="149.8281"/><line style="stroke:#181818;stroke-width:1.0;" x1="380.5" x2="380.5" y1="149.8281" y2="162.8281"/><line style="stroke:#181818;stroke-width:1.0;" x1="339.5" x2="380.5" y1="162.8281" y2="162.8281"/><polygon fill="#181818" points="349.5,158.8281,339.5,162.8281,349.5,166.8281,345.5,162.8281" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="8" x="345.5" y="144.7622">3</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="43" x="357.5" y="144.7622">accept</text><polygon fill="#181818" points="316.5,187.9609,326.5,191.9609,316.5,195.9609,320.5,191.9609" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="84" x2="322.5" y1="191.9609" y2="191.9609"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="91" y="186.895">4</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="104" y="186.895"> </text><polygon fill="#181818" points="431.5,217.0938,441.5,221.0938,431.5,225.0938,435.5,221.0938" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="333.5" x2="437.5" y1="221.0938" y2="221.0938"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="340.5" y="216.0278">5</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="353.5" y="216.0278">start</text><polygon fill="#181818" points="571.5,253.2266,581.5,257.2266,571.5,261.2266,575.5,257.2266" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="453.5" x2="577.5" y1="257.2266" y2="257.2266"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="460.5" y="252.1606">6</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="473.5" y="252.1606">create()</text><polygon fill="#181818" points="566.5,282.3594,576.5,286.3594,566.5,290.3594,570.5,286.3594" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="453.5" x2="572.5" y1="286.3594" y2="286.3594"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="460.5" y="281.2935">7</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="93" x="473.5" y="281.2935">fifoAlgorithm()</text><polygon fill="#181818" points="95,341.4922,85,345.4922,95,349.4922,91,345.4922" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="89" x2="447.5" y1="345.4922" y2="345.4922"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="101" y="340.4263">8</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="114" y="340.4263"> </text><!--MD5=[72513365c57b5e5c018e4f48eafae24a]
+@startuml
+autonumber
+
+
+participant ":BackOfficeApp" as UI
+participant ":AGVDaemon" as CTRL
+participant ":AGVManager" as MAN
+participant ":HandleAGV" as HA
+participant ":FifoAlgorithm" as FIFO
+
+
+
+CTRL -> MAN : new
+
+loop true
+
+CTRL -> MAN : start
+
+activate MAN
+
+MAN -> MAN : accept
+
+UI - -> MAN
+
+MAN -> HA : start
+
+deactivate MAN
+
+activate HA
+
+end loop
+
+HA -> FIFO : create()
+
+HA -> FIFO : fifoAlgorithm()
+
+activate FIFO
+
+deactivate FIFO
+
+HA - -> UI
+
+deactivate HA
+@enduml
+
+PlantUML version 1.2022.5(Sat Apr 30 10:55:52 UTC 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

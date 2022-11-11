@@ -1,0 +1,154 @@
+@startuml
+autonumber
+
+actor "Warehouse Employee" as ADM
+participant ":DashboardUI" as UI
+participant ":DashboardController" as CTRL
+participant ":AGVListService" as AS
+participant ":PersistenceContext" as PC
+participant ":RepositoryFactory" as RF
+participant ":AGVRepository" as AGR
+participant ":Dashboard" as DA
+participant ":HTTPmessage" as ME
+participant ":DashboardRequest" as DR
+participant ":AGVMapper" as M
+participant ":ServerSocket" as SS
+participant "output:DataOutputStream" as O
+participant "input:DataInputStream" as I
+
+activate ADM
+ADM -> UI: asks to show dashboard 
+activate UI
+UI -> CTRL: getList()
+
+activate CTRL
+
+
+CTRL -> AS: create()
+
+
+CTRL -> AS :listAvailableAGVSDTO()
+
+activate AS
+
+AS -> PC : repositories()
+
+activate PC
+
+PC -> RF: create()
+
+activate RF
+
+deactivate PC 
+
+RF -> AGR : create()
+
+deactivate RF
+
+AS -> AGR : getAGVSByStatus(ASSIGNED)
+activate AGR
+AGR --> AS : listAGV
+deactivate AGR
+
+AS -> M : toDto(listAgv)
+
+activate M
+ 
+M--> AS : listAGVDTO
+
+deactivate M
+
+AS --> CTRL :listAGVDTO
+
+deactivate AS
+
+CTRL --> UI : listAGVDTO
+
+deactivate CTRL
+
+UI --> ADM : shows the list of agv dto pick one 
+
+deactivate UI
+
+ADM -> UI:chooses one agv dto
+
+
+activate UI
+
+UI -> CTRL : getAGV(agvdto)
+
+activate CTRL 
+
+CTRL -> AS :getAGV(agvdto)
+
+activate AS
+AS --> CTRL : agvdto
+deactivate AS
+CTRL --> UI :agvdto
+deactivate CTRL
+
+UI --> ADM : shows the chosen agvdto
+deactivate UI
+ 
+ADM -> UI : asks for dashboard with agv info
+
+activate UI
+
+UI -> CTRL : showDashboard(agvdto)
+
+activate CTRL 
+
+CTRL -> DA : create()
+
+CTRL -> DA : start()
+
+activate DA
+
+DA -> SS : create()
+
+DA -> SS : accept()
+
+activate SS
+
+SS --> DA : sock
+deactivate SS
+DA -> ME : create()
+
+DA -> DR : create(sock,web)
+
+activate DR 
+
+DA -> DR : start()
+
+deactivate DA
+
+DR -> O : create()
+
+DR -> I :create()
+
+DR -> DA : getStatusInHTML()
+
+activate DA
+
+DA --> DR : content
+
+deactivate DA
+
+DR -> ME : setContentFromString(content)
+activate ME
+
+DR -> ME : setResponseStatus("200 OK")
+
+DR -> ME : send(output)
+
+ deactivate ME
+
+deactivate DR
+
+deactivate CTRL
+
+deactivate UI
+
+deactivate ADM
+
+@enduml

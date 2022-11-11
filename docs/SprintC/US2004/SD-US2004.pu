@@ -1,0 +1,121 @@
+@startuml
+actor "Warehouse\nEmployee"
+participant "<U+226A>Presentation<U+226B>\n: OrderDispatchmentUI"
+participant "<U+226A>Application<U+226B>\n: OrderDispatchmentController"
+participant "<U+226A>Service<U+226B>\n: OrderDispatchmentService"
+participant "<U+226A>Persistence<U+226B>\n: PersistenceContext"
+participant "<U+226A>Factory<U+226B>\nfactory : RepositoryFactory"
+database "<U+226A>Repository<U+226B>\norderRepository : OrderRepository"
+participant "<U+226A>Domain<U+226B>\norderList : List<Order>"
+participant "<U+226A>DTO<U+226B>\norderDTOList : List<OrderDTO>"
+participant "<U+226A>DTO<U+226B>\n : OrderMapper"
+participant "<U+226A>DTO<U+226B>\norderDTO : OrderDTO"
+participant "<U+226A>DTO<U+226B>\nselectedOrderDTOList : List<OrderDTO>"
+participant "<U+226A>Domain<U+226B>\norder : Order"
+
+"Warehouse\nEmployee" -> "<U+226A>Presentation<U+226B>\n: OrderDispatchmentUI": The Warehouse Employee initializes\nthe process of updating the Status;
+activate "<U+226A>Presentation<U+226B>\n: OrderDispatchmentUI"
+
+"<U+226A>Presentation<U+226B>\n: OrderDispatchmentUI" -> "<U+226A>Application<U+226B>\n: OrderDispatchmentController": create
+activate "<U+226A>Application<U+226B>\n: OrderDispatchmentController"
+
+"<U+226A>Application<U+226B>\n: OrderDispatchmentController" -> "<U+226A>Service<U+226B>\n: OrderDispatchmentService": create
+activate "<U+226A>Service<U+226B>\n: OrderDispatchmentService"
+"<U+226A>Service<U+226B>\n: OrderDispatchmentService" -> "<U+226A>Persistence<U+226B>\n: PersistenceContext": repositories()
+activate "<U+226A>Persistence<U+226B>\n: PersistenceContext"
+
+"<U+226A>Persistence<U+226B>\n: PersistenceContext" -> "<U+226A>Factory<U+226B>\nfactory : RepositoryFactory": create
+"<U+226A>Persistence<U+226B>\n: PersistenceContext" --> "<U+226A>Service<U+226B>\n: OrderDispatchmentService": factory
+deactivate "<U+226A>Persistence<U+226B>\n: PersistenceContext"
+
+"<U+226A>Service<U+226B>\n: OrderDispatchmentService" -> "<U+226A>Factory<U+226B>\nfactory : RepositoryFactory": orderRepository()
+activate "<U+226A>Factory<U+226B>\nfactory : RepositoryFactory"
+
+"<U+226A>Factory<U+226B>\nfactory : RepositoryFactory" -> "<U+226A>Repository<U+226B>\norderRepository : OrderRepository": create
+
+"<U+226A>Factory<U+226B>\nfactory : RepositoryFactory" --> "<U+226A>Service<U+226B>\n: OrderDispatchmentService": orderRepository
+deactivate "<U+226A>Factory<U+226B>\nfactory : RepositoryFactory"
+deactivate "<U+226A>Service<U+226B>\n: OrderDispatchmentService"
+deactivate "<U+226A>Application<U+226B>\n: OrderDispatchmentController"
+
+"<U+226A>Presentation<U+226B>\n: OrderDispatchmentUI" -> "<U+226A>Application<U+226B>\n: OrderDispatchmentController": listAllPreparedOrders()
+activate "<U+226A>Application<U+226B>\n: OrderDispatchmentController"
+
+"<U+226A>Application<U+226B>\n: OrderDispatchmentController" -> "<U+226A>Service<U+226B>\n: OrderDispatchmentService": listAllPreparedOrders()
+activate "<U+226A>Service<U+226B>\n: OrderDispatchmentService"
+
+"<U+226A>Service<U+226B>\n: OrderDispatchmentService" -> "<U+226A>Repository<U+226B>\norderRepository : OrderRepository": getAllPreparedOrders()
+activate "<U+226A>Repository<U+226B>\norderRepository : OrderRepository"
+
+"<U+226A>Repository<U+226B>\norderRepository : OrderRepository" -> "<U+226A>Domain<U+226B>\norderList : List<Order>": create
+
+"<U+226A>Repository<U+226B>\norderRepository : OrderRepository" --> "<U+226A>Service<U+226B>\n: OrderDispatchmentService": orderList
+deactivate "<U+226A>Repository<U+226B>\norderRepository : OrderRepository"
+
+"<U+226A>Service<U+226B>\n: OrderDispatchmentService" -> "<U+226A>DTO<U+226B>\norderDTOList : List<OrderDTO>": create
+
+loop foreach
+    "<U+226A>Service<U+226B>\n: OrderDispatchmentService" -> "<U+226A>Domain<U+226B>\norderList : List<Order>": getNext()
+    activate "<U+226A>Domain<U+226B>\norderList : List<Order>"
+
+    "<U+226A>Domain<U+226B>\norderList : List<Order>" --> "<U+226A>Service<U+226B>\n: OrderDispatchmentService": order
+    deactivate "<U+226A>Domain<U+226B>\norderList : List<Order>"
+
+    "<U+226A>Service<U+226B>\n: OrderDispatchmentService" -> "<U+226A>DTO<U+226B>\n : OrderMapper" : toDTO(order)
+    activate "<U+226A>DTO<U+226B>\n : OrderMapper"
+
+    "<U+226A>DTO<U+226B>\n : OrderMapper" -> "<U+226A>DTO<U+226B>\norderDTO : OrderDTO": create
+
+    "<U+226A>DTO<U+226B>\n : OrderMapper" --> "<U+226A>Service<U+226B>\n: OrderDispatchmentService": orderDTO
+    deactivate "<U+226A>DTO<U+226B>\n : OrderMapper"
+
+    "<U+226A>Service<U+226B>\n: OrderDispatchmentService" -> "<U+226A>DTO<U+226B>\norderDTOList : List<OrderDTO>": add(orderDTO)
+    activate "<U+226A>DTO<U+226B>\norderDTOList : List<OrderDTO>"
+    deactivate "<U+226A>DTO<U+226B>\norderDTOList : List<OrderDTO>"
+end
+
+"<U+226A>Service<U+226B>\n: OrderDispatchmentService" --> "<U+226A>Application<U+226B>\n: OrderDispatchmentController": orderDTOList
+deactivate "<U+226A>Service<U+226B>\n: OrderDispatchmentService"
+
+"<U+226A>Application<U+226B>\n: OrderDispatchmentController" --> "<U+226A>Presentation<U+226B>\n: OrderDispatchmentUI": orderDTOList
+deactivate "<U+226A>Application<U+226B>\n: OrderDispatchmentController"
+
+"<U+226A>Presentation<U+226B>\n: OrderDispatchmentUI" --> "Warehouse\nEmployee" : The System presents a list of Orders to the \nWarehouse Employee whose Status are "Preparation"\nand asks the Warehouse Employee to choose Orders\n whose Status will be updated to "Dispatchment";
+deactivate "<U+226A>Presentation<U+226B>\n: OrderDispatchmentUI"
+
+"Warehouse\nEmployee" -> "<U+226A>Presentation<U+226B>\n: OrderDispatchmentUI": The Warehouse Employee selects the Orders whose\nStatus are to be updated;
+activate "<U+226A>Presentation<U+226B>\n: OrderDispatchmentUI"
+
+"<U+226A>Presentation<U+226B>\n: OrderDispatchmentUI" -> "<U+226A>Application<U+226B>\n: OrderDispatchmentController": updateStatus(selectedOrderDTOList)
+activate "<U+226A>Application<U+226B>\n: OrderDispatchmentController"
+
+"<U+226A>Application<U+226B>\n: OrderDispatchmentController" -> "<U+226A>Service<U+226B>\n: OrderDispatchmentService": updateStatusAndPersist(selectedOrderDTOList)
+activate "<U+226A>Service<U+226B>\n: OrderDispatchmentService"
+
+loop foreach
+    "<U+226A>Service<U+226B>\n: OrderDispatchmentService" -> "<U+226A>DTO<U+226B>\nselectedOrderDTOList : List<OrderDTO>": getNext()
+    activate "<U+226A>DTO<U+226B>\nselectedOrderDTOList : List<OrderDTO>"
+    "<U+226A>DTO<U+226B>\nselectedOrderDTOList : List<OrderDTO>" --> "<U+226A>Service<U+226B>\n: OrderDispatchmentService": orderDTO
+    deactivate "<U+226A>DTO<U+226B>\nselectedOrderDTOList : List<OrderDTO>"
+
+    "<U+226A>Service<U+226B>\n: OrderDispatchmentService" -> "<U+226A>DTO<U+226B>\n : OrderMapper": toOrder(orderDTO)
+    activate "<U+226A>DTO<U+226B>\n : OrderMapper"
+    "<U+226A>DTO<U+226B>\n : OrderMapper" --> "<U+226A>Service<U+226B>\n: OrderDispatchmentService": order
+    deactivate "<U+226A>DTO<U+226B>\n : OrderMapper"
+
+    "<U+226A>Service<U+226B>\n: OrderDispatchmentService" -> "<U+226A>Domain<U+226B>\norder : Order": changeStatusToDispatchment()
+    activate "<U+226A>Domain<U+226B>\norder : Order"
+    deactivate "<U+226A>Domain<U+226B>\norder : Order"
+
+    "<U+226A>Service<U+226B>\n: OrderDispatchmentService" -> "<U+226A>Repository<U+226B>\norderRepository : OrderRepository": update(order)
+    activate "<U+226A>Repository<U+226B>\norderRepository : OrderRepository"
+    deactivate "<U+226A>Repository<U+226B>\norderRepository : OrderRepository"
+end
+
+deactivate "<U+226A>Service<U+226B>\n: OrderDispatchmentService"
+deactivate "<U+226A>Application<U+226B>\n: OrderDispatchmentController"
+
+"<U+226A>Presentation<U+226B>\n: OrderDispatchmentUI" --> "Warehouse\nEmployee" : The System updates the Status of the selected Orders\nand informs the Warehouse Employee of the operation success;
+deactivate "<U+226A>Presentation<U+226B>\n: OrderDispatchmentUI"
+
+@enduml

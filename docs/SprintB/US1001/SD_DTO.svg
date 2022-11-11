@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="500px" preserveAspectRatio="none" style="width:1060px;height:500px;background:#FFFFFF;" version="1.1" viewBox="0 0 1060 500" width="1060px" zoomAndPan="magnify"><defs/><g><rect fill="#FFFFFF" height="379.3906" style="stroke:#181818;stroke-width:1.0;" width="10" x="162" y="67.4297"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="396.5" y="380.6875"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="751.5" y="221.125"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="751.5" y="280.2578"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="925.5" y="161.9922"/><rect height="294.9609" style="stroke:#000000;stroke-width:1.5;fill:none;" width="967" x="87" y="123.7266"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="167" x2="167" y1="36.2969" y2="464.8203"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="401" x2="401" y1="106.0781" y2="464.8203"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="624" x2="624" y1="348.9063" y2="464.8203"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="756" x2="756" y1="36.2969" y2="464.8203"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="930" x2="930" y1="36.2969" y2="464.8203"/><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="140" x="97" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="126" x="104" y="24.9951">:CategoryMapper</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="140" x="97" y="463.8203"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="126" x="104" y="483.8154">:CategoryMapper</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="283" x="260" y="463.8203"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="269" x="267" y="483.8154">dtoCategoryList: List&lt;categoryDTO&gt;</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="143" x="553" y="463.8203"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="129" x="560" y="483.8154">dto: categoryDTO</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="101" x="706" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83" x="713" y="24.9951">c: Category</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="101" x="706" y="463.8203"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83" x="713" y="483.8154">c: Category</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="227" x="817" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="213" x="824" y="24.9951">categoryList: List&lt;Category&gt;</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="227" x="817" y="463.8203"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="213" x="824" y="483.8154">categoryList: List&lt;Category&gt;</text><rect fill="#FFFFFF" height="379.3906" style="stroke:#181818;stroke-width:1.0;" width="10" x="162" y="67.4297"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="396.5" y="380.6875"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="751.5" y="221.125"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="751.5" y="280.2578"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="925.5" y="161.9922"/><polygon fill="#181818" points="150,63.4297,160,67.4297,150,71.4297,154,67.4297" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="0" x2="156" y1="67.4297" y2="67.4297"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="7" y="62.3638">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="130" x="20" y="62.3638">toDTO(categoryList)</text><polygon fill="#181818" points="248,92.5625,258,96.5625,248,100.5625,252,96.5625" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="172" x2="254" y1="96.5625" y2="96.5625"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="179" y="91.4966">2</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="192" y="91.4966">create()</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="283" x="260" y="75.4297"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="269" x="267" y="95.4248">dtoCategoryList: List&lt;categoryDTO&gt;</text><path d="M87,123.7266 L165,123.7266 L165,130.8594 L155,140.8594 L87,140.8594 L87,123.7266 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/><rect fill="none" height="294.9609" style="stroke:#000000;stroke-width:1.5;" width="967" x="87" y="123.7266"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="33" x="102" y="136.7935">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="238" x="180" y="135.937">[for each Category in categoryList]</text><polygon fill="#181818" points="913.5,157.9922,923.5,161.9922,913.5,165.9922,917.5,161.9922" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="172" x2="919.5" y1="161.9922" y2="161.9922"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="8" x="179" y="156.9263">3</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="118" x="191" y="156.9263">c = getCategory(i)</text><polygon fill="#181818" points="739.5,217.125,749.5,221.125,739.5,225.125,743.5,221.125" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="172" x2="745.5" y1="221.125" y2="221.125"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="179" y="216.0591">4</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="165" x="192" y="216.0591">category = getCategory()</text><polygon fill="#181818" points="739.5,276.2578,749.5,280.2578,739.5,284.2578,743.5,280.2578" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="172" x2="745.5" y1="280.2578" y2="280.2578"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="179" y="275.1919">5</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="240" x="192" y="275.1919">superCategory = getSuperCategory()</text><polygon fill="#181818" points="541,335.3906,551,339.3906,541,343.3906,545,339.3906" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="172" x2="547" y1="339.3906" y2="339.3906"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="179" y="334.3247">6</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="207" x="192" y="334.3247">create(category,superCategory)</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="143" x="553" y="318.2578"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="129" x="560" y="338.2529">dto: categoryDTO</text><polygon fill="#181818" points="384.5,376.6875,394.5,380.6875,384.5,384.6875,388.5,380.6875" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="172" x2="390.5" y1="380.6875" y2="380.6875"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="179" y="375.6216">7</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55" x="192" y="375.6216">add(dto)</text><polygon fill="#181818" points="11,442.8203,1,446.8203,11,450.8203,7,446.8203" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="5" x2="166" y1="446.8203" y2="446.8203"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="17" y="441.7544">8</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="102" x="30" y="441.7544">dtoCategoryList</text><!--MD5=[706d3aede34db66f0fc2c70eff6ce1f1]
+@startuml
+autonumber
+'hide footbox
+
+
+participant ":CategoryMapper" as M
+participant "dtoCategoryList: List<categoryDTO>" as D
+participant "dto: categoryDTO" as D1
+participant "c: Category " as T
+participant "categoryList: List<Category>" as L
+-> M : toDTO(categoryList)
+activate M
+M - -> D**:create()
+loop for each Category in categoryList 
+
+        M -> L : c = getCategory(i)
+        activate L
+        deactivate L
+        M -> T : category = getCategory()
+        activate T
+        deactivate T
+        M -> T: superCategory = getSuperCategory()
+        activate T
+        deactivate T
+        M -> D1** : create(category,superCategory)
+        
+        M -> D : add(dto)
+        activate D
+        deactivate D
+    end
+<- M : dtoCategoryList
+deactivate M
+@enduml
+
+@startuml
+autonumber
+
+
+participant ":CategoryMapper" as M
+participant "dtoCategoryList: List<categoryDTO>" as D
+participant "dto: categoryDTO" as D1
+participant "c: Category " as T
+participant "categoryList: List<Category>" as L
+-> M : toDTO(categoryList)
+activate M
+M - -> D**:create()
+loop for each Category in categoryList 
+
+        M -> L : c = getCategory(i)
+        activate L
+        deactivate L
+        M -> T : category = getCategory()
+        activate T
+        deactivate T
+        M -> T: superCategory = getSuperCategory()
+        activate T
+        deactivate T
+        M -> D1** : create(category,superCategory)
+        
+        M -> D : add(dto)
+        activate D
+        deactivate D
+    end
+<- M : dtoCategoryList
+deactivate M
+@enduml
+
+PlantUML version 1.2022.4beta2(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

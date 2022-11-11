@@ -1,0 +1,72 @@
+@startuml
+
+class ViewCatalogUI<<Presentation>>{
+  doShow()
+  selectsIndex()
+}
+
+class ViewCatalogController<<Application>>{
+  filterByCategory(category)
+  filterByDescription(description)
+  filterByBrand(brand)
+  resetFilters()
+  filterResult(sort)
+}
+
+class ProductService<<Service>>{
+	filterByCategory(category)
+  filterByDescription(description)
+  filterByBrand(brand)
+  resetFilters()
+  commonProducts()
+  filterResult(sort)
+  sortProductList(sort)
+}
+
+class RepositoryFactory{
+	products()
+}
+
+class PersistenceContext{
+	repositories()
+}
+
+class ProductDTO<<DTO>>{
+	showBasicInformation()
+	showAllInformation()
+}
+
+class ProductMapper<<DTO>>{
+	toDTO(product)
+}
+
+class ProductRepository<<Persistence>>{
+  getProductByID(id)
+  getAllProducts()
+  getProductsFromCategory(category)
+  getProductsFromDescription(description)
+  getProductsFromBrand(brand)
+}
+
+class Product<<Domain>>{
+}
+
+
+
+ViewCatalogUI ..> ViewCatalogController
+ViewCatalogController ..> ProductService
+
+ProductService ..> ProductMapper
+ProductService ..> ProductRepository
+ProductService ..> RepositoryFactory
+ProductService ..> PersistenceContext
+
+RepositoryFactory ..> ProductRepository
+PersistenceContext ..> RepositoryFactory
+
+ProductMapper ..> ProductDTO
+
+ProductRepository ..> Product 
+
+
+@enduml

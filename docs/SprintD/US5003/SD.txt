@@ -1,0 +1,47 @@
+
+participant "<<Client>>\nAgvManager" as c
+
+participant "DigitalTwinProxy" as p
+
+participant "ClientSocket" as cs
+
+participant "AgvTwinDaemon" as d
+
+participant "<<Server>>\nAgvManager" as s
+
+participant "<<Thread>>\nHandleClient " as t
+
+
+d->s: start
+
+activate s
+s->s:importServerSSL() 
+s->s: listen()
+
+loop true
+
+activate c
+c->p: connectDigitalTwinServer()
+
+activate p
+
+
+
+p->*cs: create()
+p->cs: connect()
+activate cs
+cs->cs:importClientSSL()
+
+cs->s: performs Handshake protocol
+
+s->s: accept 
+
+
+
+s->t: start
+activate t
+
+deactivateafter cs
+deactivateafter t
+deactivateafter p
+end

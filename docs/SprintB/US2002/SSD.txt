@@ -1,0 +1,24 @@
+@startuml
+autonumber
+actor "Warehouse Employee" as WE
+
+activate WE
+WE -> ":System" : Config aivailable AGV
+activate ":System"
+":System" --> WE : requests the AGV data(id, shortDescription, model, maxWeight, location, status, task)
+deactivate ":System"
+
+WE -> ":System" : types the request data(id, shortDescription, model, maxWeight, location, status, task) 
+activate ":System"
+
+
+":System" --> WE : shows the data and requests confirmation
+deactivate ":System"
+
+WE -> ":System" : confirms the data
+activate ":System"
+":System" --> WE : informs operation success
+deactivate ":System"
+
+deactivate WE
+@enduml

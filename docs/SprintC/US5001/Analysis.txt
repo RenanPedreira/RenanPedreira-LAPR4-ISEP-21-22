@@ -1,0 +1,65 @@
+User Story 5001: Developing the input communication of the GV digital twin to accept requests
+from the "AGVManager"
+=============================================================================================
+
+# 1. User Story description #
+* As Project Manager, I want that the team start developing the input communication module of the AGV digital twin to accept requests from the "AGVManager"
+
+# 2. Actor #
+* Project Manager.
+
+# 3. Acceptance Criteria #
+
+It must be used the provided application protocol (SPOMS2022).
+It is suggested the adoptiong of concurrent mechanisms (e.g. threads) and state sharing between these mechanisms.
+In this sprint, for demonstration purposes, it is acceptable to mock processing some of the incoming requests to foster some output communication.
+
+
+# 4. Client clarifications #
+
+Q: 
+
+
+Dear Client, 
+I have a question about the input and output communication between the AGV DIgital Twin and the AGV Manager.
+
+Q: What type of communication do you want, i.e., what are the communications that you want to have between these two. Like AGV Manager says "Take a product" and AGV Digital Twin says "Taken"? Is it something like that? Or am i confused?
+
+Best Regards,
+G01, 2DD
+
+A:
+
+
+Q:
+
+Dear Client
+
+Regarding the USs 1901,4001, 5001, and 5002, what would you consider its complete state, that is, what would be the criterion to define whether or not this US is functional?
+
+Best Regards
+
+A:
+
+For all of those US, the communication between the two involved components must be implemented in accordance with the SPOMS2022. The requests processing can be somehow mocked. For instance, if processing a request implies saving some data to the database, the component can instead write such data to a log (mocking). Latter, on next sprint, the teams implement the interaction to the database.
+
+However, it is not advisable mocking everything, namely the components (internal) state. Notice that by mocking you are letting extra effort to the next sprint.   
+
+Finally, all US must be demonstrable.
+
+
+
+# 5.Relevant business aspects 
+* 
+
+
+
+
+
+
+
+
+
+
+
+

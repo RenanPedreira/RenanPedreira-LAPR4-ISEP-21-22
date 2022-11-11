@@ -1,0 +1,49 @@
+@startuml
+'
+autonumber
+
+participant "<<Client>>\nClient" as CLIENT
+participant "OrderProxy" as PROXY
+participant "ClientSocket" as SOCKET
+participant "OrderDaemon" as DAEMON
+participant "<<Server>>\nOrderServer" as SERVER
+participant "<<Thread>>\nOrderHandler " as THREAD
+
+
+DAEMON -> SERVER: start
+
+activate SERVER
+SERVER -> SERVER: importServerSSL()
+SERVER -> SERVER: listen()
+
+loop true
+
+activate CLIENT
+CLIENT -> PROXY: connectOrderServer()
+
+activate PROXY
+
+
+PROXY -> SOCKET**: create()
+PROXY -> SOCKET: connect()
+activate SOCKET
+SOCKET -> SOCKET: importClientSSL()
+
+note over SOCKET
+performs Handshake protocol
+end note
+
+SERVER -> SERVER: accept()
+
+
+SERVER -> THREAD: start()
+activate THREAD
+
+deactivate SOCKET
+deactivate THREAD
+deactivate PROXY
+deactivate CLIENT
+deactivate SERVER
+
+end
+@enduml

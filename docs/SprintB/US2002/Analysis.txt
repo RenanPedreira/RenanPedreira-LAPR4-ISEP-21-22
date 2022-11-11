@@ -1,0 +1,65 @@
+User Story 2002: Configure the AGV
+================================================
+
+# 1.User story description #
+* As Warehouse Employee, I want to configure the AGVs available on the warehouse.
+
+
+# 2.Actor #
+* Warehouse Empoyee
+
+
+# 3.Acceptance Criteria #
+* No acceptance criterias were given on the user story's description.
+
+
+# 4.Client clarifications #
+
+Question 1: What do you understand about configuring the AGV's available on the warehouse. What changes the warehouse employee can do in his specifics and actions/taks?
+
+A1: Within this context, "configuring the AGVs available on the warehouse" means that the Warehouse Employee needs to specify which are the AGV operating in the warehouse and, therefore, define some basic information regarding each AGV.
+
+Please, read carefully the specifications' document to find ou which information is need. An highlight is provided below.
+
+"The AGVs operating on the warehouse, its characteristics (e.g.: identifier, short description, model, and maximum weight it can carry) and its base location (i.e., the AGV dock). In addition, it is necessary to know the AGV status regarding its autonomy (e.g.: 2 hours left) and current task (e.g.: free, charging, occupied serving a given order)." (cf. Specifications' document)
+
+Question 2: A single AGV dock, no matter how large, can only be the base for one AGV robot?
+
+A2. Yes.
+
+Question 3: Could you specify the business rules associated with the identifier, short description, and model of the AGVS.
+
+A3: You should apply general validation rules such as:
+
+- identifier: not empty alphanumeric code with at 8 chars maximum;
+
+- short description: not empty having 30 chars maximum;
+
+- model: not empty having 50 chars maximum;
+
+For other necessary attributes, you should follow common-sense.
+
+
+Question 4:Are the current tasks provided(free, charging, occupied serving a given order) fixed, or more could be added?
+
+A4: I would not called it task but, instead, AGV status.
+
+Besides those status I can foresee another status: in maintenance. 
+
+If you find out more AGV status useful, you might adopt them and further explain/argue about their pertinence. 
+
+
+# 5.Relevant business aspects
+* AGV endurance should be in minutes 
+* 1 AVG for 1 Dock
+
+
+
+
+
+
+
+
+
+
+

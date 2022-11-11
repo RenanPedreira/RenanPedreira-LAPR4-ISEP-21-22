@@ -1,0 +1,3 @@
+- Má organização/gestão da ordem dos conceitos lecionados. 
+- Fraca consolidação dos conceitos lecionados.
+- Má gestão e planeamento do Tempo,ex: testes a meio do 3 sprint

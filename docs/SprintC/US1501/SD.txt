@@ -1,0 +1,389 @@
+actor "Customer" as c
+participant ":CustomerCatalogSearchUI" as ui
+participant ":CustomerCatalogSearchController" as ctr
+
+
+participant AuthzRegistry
+
+participant ":ProductFilterService" as serv
+
+
+
+ 
+
+
+participant "productList1" as l1
+
+participant "productList2" as l2
+
+
+participant ":ProductMapper" as map
+
+participant ":ProductDTO" as dto
+participant ":listProductDTO" as dtol
+
+participant ":CsvOrderProtocolProxy" as proxy
+
+
+participant ClientSocket
+participant OrderServer
+participant AddCartItemRequest
+participant CartItemRequest
+participant ":AddProductToCartService" as serv2
+
+
+participant ":PersistenceContext" as pc
+
+participant ":RepositoryFactory" as rf
+
+participant ":ProductRepository" as repo
+
+
+participant ":CartRepository" as repo2
+
+participant ":Cart" as cart
+
+activate c
+c->ui: view/search the product catalog
+activate ui
+ui->ui: doShow()
+
+ui->ctr: create()
+activate ctr
+
+
+
+
+ctr->AuthzRegistry: session()
+activate AuthzRegistry
+AuthzRegistry-->ctr: customer
+deactivateafter AuthzRegistry
+
+ctr->serv: create()
+activate serv
+
+
+serv->*l1: create()
+serv->*l2: create()
+
+serv->pc: repositories()
+activate pc
+pc->rf: create()
+activate rf
+deactivateafter rf
+
+pc-->serv: factory
+
+deactivateafter pc
+
+serv->rf: porducts()
+activate rf
+
+rf->repo: create()
+activate repo
+deactivateafter repo
+rf-->serv: productRepo
+
+deactivateafter rf
+
+serv->repo: productList1 = getAllProducts()
+activate repo
+deactivateafter repo
+
+serv->repo: productList2 = getAllProducts()
+activate repo
+deactivateafter repo
+
+ui-->c: asks user which filters should be applied on the search
+
+loop user adds products from multiple filters
+loop add filters
+
+c->ui: selects a filter
+
+alt category
+ui-->c: asks for a category
+c->ui: inputs category
+ui->ctr: filterByCategory(category)
+ctr->serv: filterByCategory(category)
+serv->repo: productList2 = getProductsFromCategory(category)
+activate repo
+deactivateafter repo
+serv->serv: commonProducts()
+end
+
+alt description
+ui-->c: asks for a description
+c->ui: inputs description
+ui->ctr: filterByDescription(description)
+ctr->serv: getProductsFromDescription(description)
+serv->repo: productList2 = getProductsFromDescription(description)
+activate repo
+deactivateafter repo
+serv->serv: commonProducts()
+end
+
+alt brand
+ui-->c: asks for a brand
+c->ui: inputs brand
+ui->ctr: filterByBrand(brand)
+ctr->serv: productList2 = getProductsFromBrand(brand)
+serv->repo: productList2 = getProductsFromBrand(brand)
+activate repo
+deactivateafter repo
+serv->serv: commonProducts()
+end
+
+alt reset filters
+ui-->c: asks for confirmation of filter reset
+c->ui: confirms reset
+ui->ctr: resetFilters()
+ctr->serv: resetFilters()
+serv->repo: productList1 = getAllProducts()
+activate repo
+serv->repo: productList2 = getAllProducts()
+
+deactivateafter repo
+end
+
+end
+
+ui-->c: asks user which sort method should be applied on the search
+c->ui: select a sort method
+
+
+
+ui->ctr: filterResult(sort)
+ctr->serv: filterResult(sort)
+
+serv->serv: sortProductList(sort)
+
+serv->map: toDTO(productList1)
+activate map
+
+map->*dtol: create()
+
+loop for each product 
+map->dto: productDTO = create(product)
+activate dto
+deactivateafter dto
+map->dtol:add(productDTO)
+activate dtol
+deactivateafter dtol
+end
+
+map-->serv: listProductDTO
+deactivateafter map
+
+serv-->ctr: listProductDTO
+deactivateafter serv
+
+ctr-->ui: listProductDTO
+
+loop for each ProductDTO in listProductDTO
+ui->dto: showBasicInformation()
+activate dto
+deactivateafter dto
+
+end
+
+ui-->c: shows list of filtered products and asks if user wants to add a product to the shopping cart
+
+c->ui: decides if will add a product to the shopping cart
+
+alt add products
+loop add one ore more products to cart
+ui-->c: asks user to select a product by list index
+c->ui: inputs the product's index
+ui->ui: selectsIndex(index)
+ui-->c: asks user for product quantity
+c->ui:inputs quantity
+ui->ctr: requestCartItemAddition(productDTO, quantity)
+
+
+
+ctr->proxy:addCartItem(customerEmail, productID, quantity)
+activate proxy
+proxy->*ClientSocket: create()
+proxy->proxy: address = getAddress()
+proxy->proxy: port = getPort()
+
+proxy->ClientSocket: connect(address, port)
+activate ClientSocket
+deactivateafter ClientSocket
+
+proxy->proxy: request = buildRequest(customerEmail, productID, quantity)
+
+proxy->ClientSocket: sendAndRecv(request)
+activate ClientSocket
+ClientSocket->OrderServer: request
+activate OrderServer
+
+OrderServer->AddCartItemRequest: request
+activate AddCartItemRequest
+
+AddCartItemRequest->serv2: create()
+activate serv2
+
+
+serv2->pc: repositories()
+activate pc
+pc->rf: create()
+activate rf
+deactivateafter rf
+pc-->serv2: factory
+
+
+
+deactivateafter pc
+
+serv2->rf: cart()
+activate rf
+
+rf->repo2: create()
+activate repo2
+deactivateafter repo2
+rf-->serv2: cartRepo
+deactivateafter rf
+
+
+
+
+serv2->rf: product()
+activate rf
+
+rf->repo: create()
+activate repo
+deactivateafter repo
+rf-->serv2: productRepo
+deactivateafter rf
+deactivateafter serv2
+
+
+AddCartItemRequest->serv2: addProductToCart(customerEmail, productID, quantity)
+activate serv2
+
+serv2->repo: getProductByID(productID)
+activate repo
+repo-->serv2: product
+deactivateafter repo
+serv2->repo2: getCartByCustomer(customerEmail)
+activate repo2
+
+repo2->*cart: get
+repo2-->serv2: cart
+deactivateafter repo2
+
+serv2->cart: addProductToCart(product, quantity)
+activate cart
+deactivateafter cart
+deactivateafter serv2
+
+AddCartItemRequest->AddCartItemRequest: buildResponse()
+
+AddCartItemRequest-->OrderServer: reponse
+deactivateafter AddCartItemRequest
+
+OrderServer-->ClientSocket: reponse
+deactivateafter OrderServer
+
+ClientSocket-->proxy: response
+deactivateafter ClientSocket
+
+proxy-->ctr: server response
+ctr-->ui: server response
+ui-->c: informs of operation success
+
+deactivateafter proxy
+
+
+
+end
+end 
+end
+
+ui->ctr: cartCurrentProducts
+ctr->proxy: cartItems()
+activate proxy
+proxy->*ClientSocket: create()
+proxy->proxy: address = getAddress()
+proxy->proxy: port = getPort()
+
+proxy->ClientSocket: connect(address, port)
+activate ClientSocket
+deactivateafter ClientSocket
+
+proxy->proxy: request = buildRequest(customerEmail)
+
+proxy->ClientSocket: sendAndRecv(request)
+activate ClientSocket
+
+ClientSocket->OrderServer: request
+activate OrderServer
+
+OrderServer->CartItemRequest: request
+activate CartItemRequest
+
+CartItemRequest->serv2: create()
+activate serv2
+
+
+serv2->pc: repositories()
+activate pc
+pc->rf: create()
+activate rf
+deactivateafter rf
+pc-->serv2: factory
+
+
+
+deactivateafter pc
+
+serv2->rf: cart()
+activate rf
+
+rf->repo2: create()
+activate repo2
+deactivateafter repo2
+rf-->serv2: cartRepo
+deactivateafter rf
+deactivateafter serv2
+
+
+CartItemRequest->serv2: cartCurrentProducts(customerEmail)
+activate serv2
+
+activate repo
+deactivateafter repo
+serv2->repo2: getCartByCustomer(customerEmail)
+activate repo2
+
+repo2->*cart: get
+repo2-->serv2: cart
+deactivateafter repo2
+
+serv2->cart: items()
+activate cart
+deactivateafter cart
+
+serv2-->CartItemRequest: items
+
+deactivateafter serv2
+
+CartItemRequest->CartItemRequest: buildResponse(items)
+
+CartItemRequest-->OrderServer:reponse
+deactivateafter CartItemRequest
+
+OrderServer-->ClientSocket: reponse
+
+ClientSocket-->proxy:reponse
+deactivateafter ClientSocket
+
+proxy-->ctr: response
+ctr-->ui:response
+
+ui-->c: shows list with all products and their quantities on the cart
+
+deactivateafter proxy
+

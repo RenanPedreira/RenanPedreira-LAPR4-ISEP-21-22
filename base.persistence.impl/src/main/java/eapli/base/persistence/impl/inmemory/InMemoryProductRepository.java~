@@ -1,0 +1,40 @@
+package eapli.base.persistence.impl.inmemory;
+
+import eapli.base.persistence.impl.jpa.JpaProductRepository;
+import eapli.base.productmanagement.domain.Product.InternalCode;
+import eapli.base.productmanagement.domain.Product.Product;
+import eapli.base.productmanagement.persistence.ProductRepository;
+import eapli.framework.infrastructure.repositories.impl.inmemory.InMemoryDomainRepository;
+
+
+import java.util.List;
+
+public class InMemoryProductRepository
+        extends InMemoryDomainRepository<Product, InternalCode>
+        implements ProductRepository {
+
+    JpaProductRepository repo = new JpaProductRepository("pu");
+    static {
+        InMemoryInitializer.init();
+    }
+
+    @Override
+    public List<Product> getAllProducts() {
+        return repo.getAllProducts();
+    }
+
+    @Override
+    public List<Product> getProductsFromCategory(String category) {
+        return repo.getProductsFromCategory(category);
+    }
+
+    @Override
+    public List<Product> getProductsFromDescription(String description) {
+        return repo.getProductsFromDescription(description);
+    }
+
+    @Override
+    public List<Product> getProductsFromBrand(String brand) {
+        return repo.getProductsFromBrand(brand);
+    }
+}

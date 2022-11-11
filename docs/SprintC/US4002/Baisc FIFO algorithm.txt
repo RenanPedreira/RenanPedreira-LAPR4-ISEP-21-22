@@ -1,0 +1,15 @@
+import java.util.LinkedList;
+
+class Algorithm {
+    public static void main(String args[]) {
+        int array[] = {1,2,3,4,5};
+        LinkedList<Integer> fifo = new LinkedList<Integer>();
+
+        for (int i = 0; i < array.length; i++)
+            fifo.add (array[i]);
+
+        while (! fifo.isEmpty())
+            fifo.removeFirst();
+        
+    }
+}

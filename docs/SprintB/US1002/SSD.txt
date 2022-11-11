@@ -1,0 +1,49 @@
+actor "SalesClerk" as sc
+participant "System" as s
+
+activate sc
+activate s
+sc->s: 1: search the products catalog
+s-->sc: 2: asks user which filters should be applied on the search
+
+loop
+sc->s: 3: selects a filter
+
+alt category
+s-->sc: asks for a category
+sc->s: inputs category
+end
+
+alt description
+s-->sc: asks for a description
+sc->s: inputs description
+end
+
+alt brand
+s-->sc: asks for a brand
+sc->s: inputs brand
+end
+
+alt reset filters
+s-->sc: asks for confirmation of filter reset
+sc->s: confirms reset
+end
+
+end
+
+s-->sc: asks user which sort method should be applied on the search
+sc->s:select a sort method
+
+s-->sc: shows list of filtered products and asks if user wants to view details
+sc->s: decides if will see product info
+
+alt view products
+loop view details of one ore more products
+s-->sc: asks user to select a product by list index
+sc->s: inputs the product's index
+
+s-->sc: shows product's full information
+end
+end
+
+s-->sc: informs of operation success

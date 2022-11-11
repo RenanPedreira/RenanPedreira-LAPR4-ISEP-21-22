@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>AVG DASHBOARD</title>
+    <script src="ajax.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="statusCheck();positionCheck()">
+    <center>
+        <h1>AGV Status & Position</h1>
+    </center>
+
+    <hr>
+        <center>
+            <div class="onebox">
+
+                  </div>
+
+                <table class="onetable">
+
+                     <thead>
+                         <tr>
+                        <big>
+                            <th> No </th>
+                             <th>ID </th>
+                             <th>Status</th>
+                             <th>X Position</th>
+                             <th>Y Position</th>
+                        </big>
+                         </tr>
+                    </thead>
+                    <tbody id = "status">
+                    </tbody>
+                 </table>
+            </div>
+        </center>
+    <hr>
+
+    <center>
+
+        <div>
+                <table class="plant" id="position">
+
+                </table>
+        </div>
+
+    </center>
+
+</body>
+
+</html>

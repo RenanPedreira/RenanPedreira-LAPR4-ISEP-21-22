@@ -1,0 +1,1257 @@
+commit f5396baa2465c4111e7eb9600a1ed2703c122bd1
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 23:30:08 2022 +0100
+
+    #L2S23-95 Updated design [IMPLEMENTATION]
+
+M	docs/SprintD/US4003/SD.svg
+M	docs/SprintD/US4003/SD.txt
+A	run-twin-simulator.bat
+
+commit 665a0d202955e77d4dffc0a993e5fdd42506d1a9
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 22:56:31 2022 +0100
+
+    #L2S23-104 Updated battery manager [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/batteryManagement/BatteryManager.java
+
+commit 3c36e9d329fbb7b9875320147b42c11fadf88904
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 22:56:03 2022 +0100
+
+    #L2S23-104 Twin proxy [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/communications/DigitalTwinProxy.java
+
+commit b5b0ec441c9d0f3da65d02e724b059881e08ffb4
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 22:55:41 2022 +0100
+
+    #L2S23-104 Updated bootstrap [IMPLEMENTATION]
+
+M	base.bootstrappers/src/main/java/eapli/base/infrastructure/bootstrapers/BaseBootstrapper.java
+
+commit 397412c00cf3cc256eced6d34cabfaeb8a8242e5
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 22:55:02 2022 +0100
+
+    #L2S23-104 Updated digital twin simulation [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/DigitalTwinSimulator.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/application/DigitalTwinUnit.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/controlUnit/DigitalTwinControlUnit.java
+
+commit 324d884967b23f7d206a4a8d9dce3dd25ce0d566
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 22:54:31 2022 +0100
+
+    #L2S23-104 Updated positioning [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/positioning/PositionThread.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/routePlanner/RoutePlanner.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/simulationEngine/SimulationEngineThread.java
+
+commit 7c90ca9bf95674e8fbb3e5c38c18e95602b8eb55
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 22:54:07 2022 +0100
+
+    #L2S23-104 Commented some tests [IMPLEMENTATION]
+
+M	base.core/src/test/java/eapli/base/warehousemanagement/domain/Assignment/AssignmentTest.java
+M	base.core/src/test/java/eapli/base/warehousemanagement/factory/AssignmentFactoryTest.java
+
+commit b15ca743c9776f74dd42414dd67238b2ab3a6a75
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 22:53:42 2022 +0100
+
+    #L2S23-104 Updated AgvsCurrentLocationRequest [IMPLEMENTATION]
+
+M	base.daemon.agv/src/main/java/eapli/base/protocol/AgvsCurrentLocationRequest.java
+
+commit b307a203b51875ddc82c5186ec2d72001382703f
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 18:41:51 2022 +0100
+
+    #L2S23-104 Updated DigitalTwinControlUnit [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/controlUnit/DigitalTwinControlUnit.java
+
+commit c49e325c0a45fabf8b377b7eb7b8a2f159aeaa33
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 18:41:17 2022 +0100
+
+    #L2S23-104 Updated DigitalTwinSimulator [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/DigitalTwinSimulator.java
+
+commit 6654c952f36a560e407b56a842ab699cc165a093
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 18:40:49 2022 +0100
+
+    #L2S23-104 Updated PositionThread [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/positioning/PositionThread.java
+
+commit f66363282bb68e97871eeb37a55eb25750b5c331
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 18:40:28 2022 +0100
+
+    #L2S23-104 Updated DigitalTwinUnit [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/application/DigitalTwinUnit.java
+
+commit 4adbe1ee52ef8ff543f0d228d0bf267920427227
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 18:40:01 2022 +0100
+
+    #L2S23-104 Updated RoutePlanner [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/routePlanner/RoutePlanner.java
+
+commit c162988219afcdbd0dcfa5672c5d966949aeffe5
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 18:39:38 2022 +0100
+
+    #L2S23-104 Updated Sensor [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/sensor/Sensor.java
+
+commit 029c537e86ae86792d4a790bc8938a02c4a2b615
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 18:38:14 2022 +0100
+
+    #L2S23-104 Updated SharedMemory [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/shared/SharedMemory.java
+
+commit 21fcdd65394ba6f6f4b7c4b892190dc2c7834c94
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 18:37:53 2022 +0100
+
+    #L2S23-104 Updated SimulationEngine [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/simulationEngine/SimulationEngineThread.java
+
+commit 3d7f6dddab84efceae3a26484911beabf5678a2a
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 18:37:11 2022 +0100
+
+    #L2S23-104 Updated TwinServerProxy [IMPLEMENTATION]
+
+M	base.core/src/main/java/eapli/base/twinServerAPI/TwinServerProxy.java
+
+commit e157111fbcbe1674c475574aed6441c92c85a011
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 14:59:43 2022 +0100
+
+    #L2S23-104 Updated BaseBootstrapper [IMPLEMENTATION]
+
+M	base.bootstrappers/src/main/java/eapli/base/infrastructure/bootstrapers/BaseBootstrapper.java
+
+commit f12163ef9416f7404ea6ec2db5bd42eac866e3a8
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 14:38:55 2022 +0100
+
+    #L2S23-104 Updated CsvAgvManagerBackofficeProtocolProxyManager [IMPLEMENTATION]
+
+M	base.core/src/main/java/eapli/base/agvManagerAPI/CsvAgvManagerBackofficeProtocolProxy.java
+
+commit ded9567432bbf38ac35cc9dfab97bfaa6cc40b23
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 14:38:30 2022 +0100
+
+    #L2S23-104 Updated CsvAGVProtocolMessageParserProtocolP [IMPLEMENTATION]
+
+M	base.daemon.agv/src/main/java/eapli/base/protocol/CsvAGVProtocolMessageParser.java
+
+commit 9c5590a0f58579e9f47ac7f5187c2509a8e57bb2
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 14:37:51 2022 +0100
+
+    #L2S23-104 Updated DigitalTwinUnit [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/application/DigitalTwinUnit.java
+
+commit cd66b8774106a5316bfb807134f96a1f63d5195d
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 14:37:32 2022 +0100
+
+    #L2S23-104 Updated DigitalTwinProxy [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/communications/DigitalTwinProxy.java
+
+commit 5c67190b0e86bd06fd2299680d9a180bd628c5e6
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 14:37:13 2022 +0100
+
+    #L2S23-104 Updated Identifier [IMPLEMENTATION]
+
+M	base.core/src/main/java/eapli/base/common/domain/model/Identifier.java
+
+commit 2ddd95b28d19d604b491fa010de92c894f45fc29
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 14:36:54 2022 +0100
+
+    #L2S23-104 Updated DigitalTwinSimulator [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/DigitalTwinSimulator.java
+
+commit 809be68ddaea8631068a0482b7a64c0cd3e4fb9b
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 14:36:33 2022 +0100
+
+    #L2S23-104 Updated JpaAssignmentRepository [IMPLEMENTATION]
+
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaAssignmentRepository.java
+
+commit 041e86548f525376a77dc8f9d6b156cdef379616
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 14:36:05 2022 +0100
+
+    #L2S23-104 Updated RoutePlanner [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/routePlanner/RoutePlanner.java
+
+commit 1bbad17900408a1c8034b320af91cc7544f87a64
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 14:35:45 2022 +0100
+
+    #L2S23-104 Updated SharedMemory [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/shared/SharedMemory.java
+
+commit 356cabf0006bb80b4cd0043a55184c0d7e00d685
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 14:35:21 2022 +0100
+
+    #L2S23-104 Updated SimulationEngineThread [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/simulationEngine/SimulationEngineThread.java
+
+commit 123ba44c0621b7f51308712d218336c0312f3394
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 14:34:54 2022 +0100
+
+    #L2S23-104 Updated BaseBootstrapper [IMPLEMENTATION]
+
+M	base.bootstrappers/src/main/java/eapli/base/infrastructure/bootstrapers/BaseBootstrapper.java
+
+commit 04aded3a6c7f69f26e6ff25404ed75c76da00f0b
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 14:34:05 2022 +0100
+
+    #L2S23-104 Updated AGVProtocolRequest [IMPLEMENTATION]
+
+M	base.daemon.agv/src/main/java/eapli/base/protocol/AGVProtocolRequest.java
+
+commit 458be9b7b89031dc490a5da5c26be81a00e0a5e5
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 06:31:42 2022 +0100
+
+    #L2S23-104 Updated SimulationEngineThread [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/simulationEngine/SimulationEngineThread.java
+
+commit 5beab750e0e66a9d0d0eb6314fa77856b2eb0e95
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 06:31:19 2022 +0100
+
+    #L2S23-104 Updated SharedMemory [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/shared/SharedMemory.java
+
+commit 7cba6389d1b6864d9ea063df3f904dfe3baaf30c
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 06:30:22 2022 +0100
+
+    #L2S23-104 Updated RoutePlanner [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/routePlanner/RoutePlanner.java
+
+commit e925072c4374db28b9c161c3dd583bbcecf08628
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 06:29:40 2022 +0100
+
+    #L2S23-104 Updated DigitalTwinSimulator [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/DigitalTwinSimulator.java
+
+commit 4f67149af6f963cd436e98257723ab237a782cf4
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 06:29:09 2022 +0100
+
+    #L2S23-104 Updated BatteryManager [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/batteryManagement/BatteryManager.java
+
+commit 72c450099407868fe0f4e11bf989b44ed45dd19e
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 04:08:58 2022 +0100
+
+    #L2S23-104 Updated SimulationEngineThread [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/simulationEngine/SimulationEngineThread.java
+
+commit e8e8884e4aefc6eac4cf3eb97b45b5ad3fce386f
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 04:08:25 2022 +0100
+
+    #L2S23-104 Updated SharedMemory [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/shared/SharedMemory.java
+
+commit f7bd0088dd68096622e1670f5bcd894cbdacc618
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 04:07:57 2022 +0100
+
+    #L2S23-104 Updated PositionThread [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/positioning/PositionThread.java
+
+commit 2a6269f06e85235cb080a40f5fb5492f826db37e
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 04:07:25 2022 +0100
+
+    #L2S23-104 Updated JpaAssignmentRepository [IMPLEMENTATION]
+
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaAssignmentRepository.java
+
+commit 7c47b92d10ccb110947a4b64a2f4dd9ff1241198
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 04:06:54 2022 +0100
+
+    #L2S23-104 Updated DigitalTwinProxy [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/communications/DigitalTwinProxy.java
+
+commit bc72dbb0dc4036e90d417eef5e0bc441197bb93a
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 02:49:16 2022 +0100
+
+    #L2S23-104 Updated DigitalTwinSimulator [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/DigitalTwinSimulator.java
+
+commit 1d48a8660fe2f56c4ba14ee8b4dd1c653aa6a4dc
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 02:48:51 2022 +0100
+
+    #L2S23-104 Updated DigitalTwinProxy [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/communications/DigitalTwinProxy.java
+
+commit 42accaf6b8e48913a8e59f8eb9f7919a3aff18b1
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 02:48:25 2022 +0100
+
+    #L2S23-104 Updated CsvAGVProtocolServer [IMPLEMENTATION]
+
+M	base.daemon.agv/src/main/java/eapli/base/daemon/agv/presentation/CsvAGVProtocolServer.java
+
+commit c7d5b9d0901c5513a91b4b0a950a06c5b759b858
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 02:47:54 2022 +0100
+
+    #L2S23-104 Updated BatteryManager [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/batteryManagement/BatteryManager.java
+
+commit a612dd660521ea31bbc1f16a7b543b7da0baa128
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 02:47:25 2022 +0100
+
+    #L2S23-104 Updated Bootstrapper [IMPLEMENTATION]
+
+M	base.bootstrappers/src/main/java/eapli/base/infrastructure/bootstrapers/BaseBootstrapper.java
+
+commit 9f3202a0f596d0ab6d1fa0eaa2b35ce9af2407ee
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 02:46:58 2022 +0100
+
+    #L2S23-104 Updated DigitalTwinUnit [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/application/DigitalTwinUnit.java
+
+commit 71b07f68fa979317593fb446a815bcec491f596f
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 02:46:30 2022 +0100
+
+    #L2S23-104 Updated Position [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/positioning/PositionThread.java
+
+commit 5f919b475cc4fc28f0370463f2ecc4c7d40c7c08
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 02:46:03 2022 +0100
+
+    #L2S23-104 Updated RoutePlanner [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/routePlanner/RoutePlanner.java
+
+commit b1a16de18f25315d0a47fba4af4da140a4a81bbc
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 02:45:43 2022 +0100
+
+    #L2S23-104 Updated WarehousePlantRequest [IMPLEMENTATION]
+
+M	base.daemon.agv/src/main/java/eapli/base/protocol/WarehousePlantRequest.java
+
+commit 9c41c274f8b4920fde7e020773c2496a12fa8ee4
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 02:45:20 2022 +0100
+
+    #L2S23-104 Updated SimulationEngine [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/simulationEngine/SimulationEngineThread.java
+
+commit 6090a34448d8340db890c0835580b5efb0d8916a
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 02:44:55 2022 +0100
+
+    #L2S23-104 Updated Sensor [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/sensor/Sensor.java
+
+commit 11a8fbf1e1d2b21c8b773a145af4aca69981e625
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 02:44:33 2022 +0100
+
+    #L2S23-104 Updated AGVRepository [IMPLEMENTATION]
+
+M	base.core/src/main/java/eapli/base/agvmanagement/persistence/AGVRepository.java
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaAGVRepository.java
+
+commit 5d1bf1a5be998ecec9c43f155c3ab66d5d006fe2
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sun Jun 19 02:44:01 2022 +0100
+
+    #L2S23-104 Updated AGVProtocolRequest [IMPLEMENTATION]
+
+M	base.daemon.agv/src/main/java/eapli/base/protocol/AGVProtocolRequest.java
+
+commit 405d11a919765ed32edb54ea2e2625d13e03d413
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sat Jun 18 22:03:54 2022 +0100
+
+    #L2S23-104 Updated dashboard [IMPLEMENTATION]
+
+M	base.bootstrappers/src/main/java/eapli/base/infrastructure/bootstrapers/BaseBootstrapper.java
+M	base.core/src/main/java/eapli/base/agvmanagement/factory/AGVBuilder.java
+M	base.core/src/main/java/eapli/base/dashboard/Dashboard.java
+M	base.core/src/main/java/eapli/base/warehousemanagement/service/GetWarehousePlantService.java
+
+commit f8120b8a795d096d0128d74ad89cf534e8b06446
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sat Jun 18 21:43:24 2022 +0100
+
+    #L2S23-104 Updated Position [IMPLEMENTATION]
+
+M	base.core/src/main/java/eapli/base/agvmanagement/domain/Position.java
+
+commit ba974009eb9f988e7a2d66c427148b63af8d8f4f
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sat Jun 18 21:43:05 2022 +0100
+
+    #L2S23-104 Updated Location [IMPLEMENTATION]
+
+M	base.core/src/main/java/eapli/base/productmanagement/domain/Producto/Location.java
+
+commit a0c4a7e68cabd5b060e709d59b19ce4155bfd27d
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sat Jun 18 21:42:45 2022 +0100
+
+    #L2S23-104 Updated Bootstrap [IMPLEMENTATION]
+
+M	base.bootstrappers/src/main/java/eapli/base/infrastructure/bootstrapers/BaseBootstrapper.java
+
+commit c923d830245e2da0aee18c1bad91e24fe4dc987f
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sat Jun 18 21:35:08 2022 +0100
+
+    #L2S23-104 Updated AGV [IMPLEMENTATION]
+
+M	base.core/src/main/java/eapli/base/agvmanagement/domain/AGV.java
+
+commit a2c9343b6412ac12c8b891f794b2f93555f3ad75
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sat Jun 18 21:34:48 2022 +0100
+
+    #L2S23-104 Updated Position [IMPLEMENTATION]
+
+M	base.core/src/main/java/eapli/base/agvmanagement/domain/Position.java
+
+commit 649df0f8e60229a468fd569ee893de7a6a5ca214
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sat Jun 18 21:33:17 2022 +0100
+
+    #L2S23-104 Updated jpa repo [IMPLEMENTATION]
+
+M	base.core/src/main/java/eapli/base/warehousemanagement/repository/WarehouseRepository.java
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaWarehouseRepository.java
+
+commit 742b475a67c9c8147a16e4557129dd359d6d082b
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sat Jun 18 21:33:00 2022 +0100
+
+    #L2S23-104 Updated twin proxy [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/communications/DigitalTwinProxy.java
+
+commit 5e19292985dc086563a6751a5f7f6614b57e7672
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sat Jun 18 21:32:26 2022 +0100
+
+    #L2S23-104 Updated bootstrap [IMPLEMENTATION]
+
+M	base.bootstrappers/src/main/java/eapli/base/infrastructure/bootstrapers/BaseBootstrapper.java
+
+commit d66c57e0489387c35805ab2919c5350f9a1acbb3
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sat Jun 18 19:09:06 2022 +0100
+
+    #L2S23-104 Updated RoutePlanner [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/routePlanner/RoutePlanner.java
+
+commit e0f91d42d9c8bea4f1b38b3af5aa56b63dcf94df
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sat Jun 18 19:08:47 2022 +0100
+
+    #L2S23-104 Updated SimulationEngineThread [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/simulationEngine/SimulationEngineThread.java
+
+commit 189ba005977f3e06365c085b47ec4d4539ffc4d7
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sat Jun 18 19:08:05 2022 +0100
+
+    #L2S23-104 Updated PositionThread [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/positioning/PositionThread.java
+
+commit 0f405b7d65a6a604dc0d4155ff28048ce7344520
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sat Jun 18 19:07:45 2022 +0100
+
+    #L2S23-104 Updated DigitalTwinUnit [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/application/DigitalTwinUnit.java
+
+commit 7c8192e2acd948e62ae77dff570c3628789c39b1
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sat Jun 18 19:07:19 2022 +0100
+
+    #L2S23-104 Updated CurrentStatusRequest [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/protocol/CurrentStatusRequest.java
+
+commit 0bdada179b2396992d89b6195f223f796a23d58e
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sat Jun 18 19:06:46 2022 +0100
+
+    #L2S23-104 Updated CurrentPositionRequest [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/protocol/CurrentPositionRequest.java
+
+commit 5913c83059e2ec6cbff0bb4c574d23c74617f317
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sat Jun 18 19:05:42 2022 +0100
+
+    #L2S23-104 Updated SharedMemory to have synchronization [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/shared/SharedMemory.java
+
+commit 64623a4fb93c146450b1d4694db29ef56f3bd45f
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sat Jun 18 01:50:15 2022 +0100
+
+    #L2S23-104 Updated other agvs location request[IMPLEMENTATION]
+
+M	base.daemon.agv/src/main/java/eapli/base/protocol/AgvsCurrentLocationRequest.java
+
+commit 56a0c570684843e5f59be47d64e3b0fb45f41198
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Fri Jun 17 23:31:40 2022 +0100
+
+    #L2S23-104 Updated agv manager parser [IMPLEMENTATION]
+
+M	base.daemon.agv/src/main/java/eapli/base/protocol/CsvAGVProtocolMessageParser.java
+M	base.daemon.agv/src/main/java/eapli/base/protocol/PickupOrderRequest.java
+
+commit cf3c118913b975b043421fe6ede4cd32aeca7a74
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Fri Jun 17 23:21:31 2022 +0100
+
+    #L2S23-104 Updated twin simulator [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/DigitalTwinSimulator.java
+
+commit 3b5eb44c43c6fc2d669a49e66720c88b91693180
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Fri Jun 17 23:20:55 2022 +0100
+
+    #L2S23-104 Updated route planner request [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/routePlanner/RoutePlanner.java
+
+commit 2311c0ba6c3d2eb544da6d4ae8269e4ffcda4e1e
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Fri Jun 17 23:20:12 2022 +0100
+
+    #L2S23-104 Updated product's location [IMPLEMENTATION]
+
+M	base.core/src/main/java/eapli/base/productmanagement/domain/Producto/Location.java
+M	base.core/src/main/java/eapli/base/productmanagement/domain/Producto/Product.java
+
+commit e98ee32e56af4de799e323847a4e9451f3f49e0e
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Fri Jun 17 23:18:46 2022 +0100
+
+    #L2S23-104 Updated the request for pickup order [IMPLEMENTATION]
+
+M	base.daemon.agv/src/main/java/eapli/base/protocol/PickupOrderRequest.java
+
+commit d84971accb1dfd0218d0ea857eb12b1fb9800574
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Fri Jun 17 23:18:08 2022 +0100
+
+    #L2S23-104 Updated the request for current position [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/protocol/CurrentPositionRequest.java
+
+commit 8d6fb5c2b6d5243a13b6372b9fac4f5f2034b07a
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Fri Jun 17 23:17:48 2022 +0100
+
+    #L2S23-104 Updated the request for current status [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/protocol/CurrentStatusRequest.java
+
+commit 04f37370aa261a205aaf4df50dec2897c9752ea4
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Fri Jun 17 23:17:17 2022 +0100
+
+    #L2S23-104 Created a query to get the assignments of an agv [IMPLEMENTATION]
+
+M	base.core/src/main/java/eapli/base/warehousemanagement/repository/AssignmentRepository.java
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaAssignmentRepository.java
+
+commit cc0e1c590cc7fe08b73e97e712f29050a253c630
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Fri Jun 17 03:49:59 2022 +0100
+
+    #L2S23-104 Proxy starts the connection and ends it when no longer needed [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/simulationEngine/SimulationEngineThread.java
+
+commit bcd28f83416cbc7b1a39092f56ea3530847ced88
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Fri Jun 17 03:49:09 2022 +0100
+
+    #L2S23-104 Updated the digital twin unit [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/application/DigitalTwinUnit.java
+
+commit 8256299b0c2b0f24db0ec3f4efd9e3a362df2b5c
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Fri Jun 17 03:48:08 2022 +0100
+
+    #L2S23-104 Updated position on common data [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/routePlanner/RoutePlanner.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/shared/SharedMemory.java
+
+commit 85cbbef36edb7a82435621e7faf81f9c1830072b
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Fri Jun 17 03:47:23 2022 +0100
+
+    #L2S23-104 Altered the Proxy class name [IMPLEMENTATION]
+
+R094	base.core/src/main/java/eapli/base/twinServerAPI/CsvTwinServerProtocolProxy.java	base.core/src/main/java/eapli/base/twinServerAPI/TwinServerProxy.java
+M	base.daemon.agv/src/main/java/eapli/base/protocol/CommtestTwinRequest.java
+M	base.daemon.agv/src/main/java/eapli/base/protocol/DisconnTwinRequest.java
+
+commit 45e16857766803f424399ccf4810804ea6696582
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Fri Jun 17 03:46:12 2022 +0100
+
+    #L2S23-104 Changed how the position is get and updated[IMPLEMENTATION]
+
+M	base.core/src/main/java/eapli/base/agvmanagement/domain/AGV.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/protocol/CurrentPositionRequest.java
+
+commit 902e66f3e5c1740962e5db37b13574a1ff7e778c
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Fri Jun 17 03:42:55 2022 +0100
+
+    #L2S23-104 Created the class responsible for starting the twins [IMPLEMENTATION]
+
+A	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/DigitalTwinSimulator.java
+
+commit d68f3885d1bbb07f9d84984fb0b748b208aa36be
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Thu Jun 16 00:06:20 2022 +0100
+
+    #L2S23-125: Updated the control unit to send shared data to the parser [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/controlUnit/DigitalTwinControlUnit.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/controlUnit/DigitalTwinParser.java
+
+commit 9126bcd6b2063d1bdd9dec5a03f6685cb4177e22
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Thu Jun 16 00:05:50 2022 +0100
+
+    #L2S23-125: Updated all agvs request [IMPLEMENTATION]
+
+M	base.daemon.agv/src/main/java/eapli/base/protocol/AgvsCurrentLocationRequest.java
+
+commit 56c251e9108e9f8435d2416da489ab44adfd36bb
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Wed Jun 15 01:55:26 2022 +0100
+
+    #L2S23-125: Updated the control unit [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/controlUnit/DigitalTwinControlUnit.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/controlUnit/DigitalTwinParser.java
+
+commit 585c1e78307dd03eb2e3e9521961f8dc323eaa79
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Wed Jun 15 01:53:18 2022 +0100
+
+    #L2S23-104: Updated some classes to support the shared memory [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/communications/DigitalTwinServer.java
+
+commit 9782cc42de121b27a853d54add2f63313da85c8c
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Wed Jun 15 01:51:59 2022 +0100
+
+    #L2S23-104: Updated some classes to support the shared memory [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/AgvTwinDaemon.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/protocol/AgvTwinProtocolRequest.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/protocol/CurrentPositionRequest.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/protocol/CurrentStatusRequest.java
+
+commit b81eed03412d76e46745683eb0c83b3ee7d3306c
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Wed Jun 15 01:48:57 2022 +0100
+
+    #L2S23-104: Updated position class [IMPLEMENTATION]
+
+M	base.core/src/main/java/eapli/base/agvmanagement/domain/Position.java
+
+commit 40a47e40816c85991a5ec2203d514ad96def2c63
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Wed Jun 15 01:47:32 2022 +0100
+
+    #L2S23-104: Created the class that starts the threads [IMPLEMENTATION]
+
+A	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/application/DigitalTwinUnit.java
+
+commit 37977c24ffd86c4f67c228efb1026a3ee348de9f
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Wed Jun 15 01:46:38 2022 +0100
+
+    #L2S23-104: Sent some classes to Modules package [IMPLEMENTATION]
+
+R098	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/application/threads/PositionThread.java	base.daemon.agvTwin/src/main/java/eapli/base/modules/positioning/PositionThread.java
+R095	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/application/threads/SimulationEngineThread.java	base.daemon.agvTwin/src/main/java/eapli/base/modules/simulationEngine/SimulationEngineThread.java
+
+commit 01fbd41aa7dee7e58d4446efada775285b2e318f
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Wed Jun 15 01:45:50 2022 +0100
+
+    #L2S23-104: Altered the Shared Memory class [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/shared/SharedMemory.java
+
+commit 5e58fa43e2868f8641af126d5c224160ae161206
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Mon Jun 13 15:31:54 2022 +0100
+
+    #L2S23-125: Created Current status request, made by the agv manager to the twin server [IMPLEMENTATION]
+
+A	base.daemon.agvTwin/src/main/java/eapli/base/protocol/CurrentStatusRequest.java
+
+commit d15ca2ddb627bf07fb5769feb6cd4e5ef8d22850
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Mon Jun 13 15:31:33 2022 +0100
+
+    #L2S23-125: Created Current position request, made by the agv manager to the twin server [IMPLEMENTATION]
+
+A	base.daemon.agvTwin/src/main/java/eapli/base/protocol/CurrentPositionRequest.java
+
+commit 69e68df319509483433435d45bd18e308422c590
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Mon Jun 13 15:30:52 2022 +0100
+
+    #L2S23-125: Created Control Unit module [IMPLEMENTATION]
+
+A	base.daemon.agvTwin/src/main/java/eapli/base/modules/controlUnit/DigitalTwinControlUnit.java
+
+commit 4e2d70a0e52827ef7860813ec62d52b661a5bc02
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Mon Jun 13 15:28:53 2022 +0100
+
+    #L2S23-124: Created pick-up order request, mad eby the communications module of the twin [IMPLEMENTATION]
+
+A	base.daemon.agv/src/main/java/eapli/base/protocol/PickupOrderRequest.java
+
+commit a20e4feb73e0ac6dcdbd60046d5f25d0c4580583
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Mon Jun 13 15:28:18 2022 +0100
+
+    #L2S23-124: Created All other agvs' location request, mad eby the communications module of the twin [IMPLEMENTATION]
+
+A	base.daemon.agv/src/main/java/eapli/base/protocol/AgvsCurrentLocationRequest.java
+A	base.daemon.agv/src/main/java/eapli/base/protocol/WarehousePlantRequest.java
+
+commit 261c3dfbb5a807b42cd60877df1082b12e0c6b79
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Mon Jun 13 15:26:52 2022 +0100
+
+    #L2S23-125: Added new requests to TwinServerProxy to support requests made by the agv manager to the twin server [IMPLEMENTATION]
+
+M	base.core/src/main/java/eapli/base/twinServerAPI/CsvTwinServerProtocolProxy.java
+
+commit 7fb4db94b51bafa27e09f11b12e52d29580b0713
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Mon Jun 13 15:25:37 2022 +0100
+
+    #L2S23-124: Added new requests to AGV Manager parser to support requests made by the Communications module [IMPLEMENTATION]
+
+M	base.daemon.agv/src/main/java/eapli/base/protocol/CsvAGVProtocolMessageParser.java
+
+commit 849112e9d9c7de23baf1e86c905bf54663b4ba71
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Mon Jun 13 15:24:48 2022 +0100
+
+    #L2S23-125: Updated commtest and discomm on the twin [IMPLEMENTATION]
+
+M	base.daemon.agv/src/main/java/eapli/base/protocol/CommtestTwinRequest.java
+M	base.daemon.agv/src/main/java/eapli/base/protocol/DisconnTwinRequest.java
+
+commit 01c183cafdac0e381fb000e21bb19fdc911b6e6c
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Mon Jun 13 15:24:01 2022 +0100
+
+    #L2S23-125: Updated the superclass of TwinRequests to accept the agv the twin is simulating [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/protocol/AgvTwinProtocolRequest.java
+
+commit 75a8a23b2a152b49fc7089ed096a713ded262e29
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Mon Jun 13 15:23:00 2022 +0100
+
+    #L2S23-125: Added more request options to twin parser [IMPLEMENTATION]
+
+R059	base.daemon.agvTwin/src/main/java/eapli/base/protocol/CsvTwinProtocolMessageParser.java	base.daemon.agvTwin/src/main/java/eapli/base/modules/controlUnit/DigitalTwinParser.java
+
+commit 96d349039c8b3436214bbfd8c0f32df3c489bdfb
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Mon Jun 13 15:22:22 2022 +0100
+
+    #L2S23-124: Added the Twin Server and TwinClientProxy to communications module [IMPLEMENTATION]
+
+D	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/presentation/CsvAgvTwinProtocolServer.java
+R074	base.core/src/main/java/eapli/base/agvManagerAPI/CsvAgvManagerTwinProtocolProxy.java	base.daemon.agvTwin/src/main/java/eapli/base/modules/communications/DigitalTwinProxy.java
+A	base.daemon.agvTwin/src/main/java/eapli/base/modules/communications/DigitalTwinServer.java
+
+commit de6d244c57ec7733747f58f75ed0ea6c2d3cd42d
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Mon Jun 13 15:20:00 2022 +0100
+
+    #L2S23-124: Updated some imports [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/AgvTwinClient.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/AgvTwinDaemon.java
+
+commit 52aa5f57b46b879f51bb37d724c877e36b59f531
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Mon Jun 13 15:18:04 2022 +0100
+
+    #L2S23-124: Sent the DigitalTwinProxy to the communications module [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/application/UpdateStatusController.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/presentation/UpdateStatusAction.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/presentation/UpdateStatusUI.java
+
+commit 887fc83b2e3bcb088451a2a2aa1e544b071ce460
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Mon Jun 13 15:15:30 2022 +0100
+
+    #L2S23-124: Created a query for one of the requests made by the digital twin [IMPLEMENTATION]
+
+M	base.core/src/main/java/eapli/base/agvmanagement/persistence/AGVRepository.java
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaAGVRepository.java
+
+commit fc6871cf2443cfa8c074825d43c2ca2c3fc56798
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sat Jun 11 17:55:26 2022 +0100
+
+    #L2S23-92: Created tests for the agv manager SSL [IMPLEMENTATION]
+
+A	base.core/src/test/java/eapli/base/agvManagerAPI/AgvManagerBackofficeProxy.java
+
+commit 32c41bdbc0ce67a29d56f9c1c55d7aca243c6fe7
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sat Jun 11 17:53:34 2022 +0100
+
+    #L2S23-92: Created a fake keystore to test user class [IMPLEMENTATION]
+
+A	SSL/fakeclient.jks
+A	SSL/fakeclient.pem
+
+commit 652ba6e9fa92ab942fcd9dd5b13d784b769367c3
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Sat Jun 11 17:49:56 2022 +0100
+
+    #L2S23-92: Updated backoffice permissions [IMPLEMENTATION]
+
+M	SSL/backoffice.jks
+
+commit e9573007428b13dc13b73696aeb3effc593b9205
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Thu Jun 9 22:47:10 2022 +0100
+
+    #L2S23-103: Digital Twin Client Keystore and Truststore [IMPLEMENTATION]
+
+A	SSL/twinclient.jks
+
+commit 1351b85fb48ab78cdcca99b5b023fed4aa31e196
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Thu Jun 9 22:46:45 2022 +0100
+
+    #L2S23-103: Digital Twin Client certificate [IMPLEMENTATION]
+
+A	SSL/twinclient.pem
+
+commit 57c7df313e8d080f5f906d925c8c2ff405f08174
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Thu Jun 9 22:46:03 2022 +0100
+
+    #L2S23-102: System Diagram [DESISGN]
+
+A	docs/SprintD/US5004/SD.svg
+A	docs/SprintD/US5004/SD.txt
+
+commit 825296d4407a0e9fc77dca829db4b574dd6ba69f
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Thu Jun 9 22:41:47 2022 +0100
+
+    #L2S23-101: User Story analysis [ANALYSIS]
+
+A	docs/SprintD/US5004/ProcessoEngenhariaFuncionalidade.md
+
+commit 13fafa339d6c0c81da65999cd891e10cd351f9a5
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Thu Jun 9 22:36:19 2022 +0100
+
+    #L2S23-98: Digital Twin Server Certificate [IMPLEMENTATION]
+
+A	SSL/twinserver.pem
+
+commit 945ed62850b44bfa29b166f199cf269c04e19941
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Thu Jun 9 22:35:47 2022 +0100
+
+    #L2S23-98: Digital Twin Client Keystore and Truststore [IMPLEMENTATION]
+
+A	SSL/twinserver.jks
+
+commit 30d20ba478ed5c3bc411b572c5eecfe8738e2551
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Thu Jun 9 22:34:48 2022 +0100
+
+    #L2S23-98: System Diagram [DESIGN]
+
+A	docs/SprintD/US5003/SD.svg
+A	docs/SprintD/US5003/SD.txt
+
+commit ac41e4722a4a7d464309f4a086a5fde36e7cecca
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Thu Jun 9 22:29:23 2022 +0100
+
+    #L2S23-97: User Strory analysis [ANALYSIS]
+
+A	docs/SprintD/US5003/ProcessoEngenhariaFuncionalidade.md
+
+commit e506c74fa97df799305ffcf0d2353e53c3bb54d2
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Thu Jun 9 14:22:02 2022 +0100
+
+    #L2S23-94: Backoffice's Keystore and Truststore  [IMPLEMENTATION]
+
+A	SSL/backoffice.jks
+A	SSL/backoffice.pem
+
+commit 653e8fbdc668da9ce1402e55a681a404843bda88
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Thu Jun 9 14:21:23 2022 +0100
+
+    #L2S23-94: Added some requests to teh server [IMPLEMENTATION]
+
+M	base.daemon.agv/src/main/java/eapli/base/protocol/CsvAGVProtocolMessageParser.java
+
+commit 1e82d2fdfeacb51f499f8ab05720737a982454de
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Thu Jun 9 14:20:49 2022 +0100
+
+    #L2S23-94: Fixed previous digital twin classes affected by agvbackoffice proxy's alteration [IMPLEMENTATION]
+
+M	base.core/src/main/java/eapli/base/twinServerAPI/CsvTwinServerProtocolProxy.java
+D	base.daemon.agv/src/main/java/eapli/base/protocol/UpdateStatusRequest.java
+D	base.daemon.agv/src/main/java/eapli/base/protocol/UpdateStatusTwinRequest.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/application/UpdateStatusController.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/presentation/CsvAgvTwinProtocolServer.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/presentation/UpdateStatusAction.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/presentation/UpdateStatusUI.java
+
+commit 86a9da6f6c729073b5423703b4db07d3fe56f27a
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Thu Jun 9 14:18:44 2022 +0100
+
+    #L2S23-94: Updated AGV manager to run SSL [IMPLEMENTATION]
+
+M	base.daemon.agv/src/main/java/eapli/base/daemon/agv/AgvDaemon.java
+M	base.daemon.agv/src/main/java/eapli/base/daemon/agv/presentation/CsvAGVProtocolServer.java
+
+commit 1e8c070118992baa83d3ea1f85c51099bd43cf04
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Thu Jun 9 14:16:57 2022 +0100
+
+    #L2S23-94: Updated classes that used the Backoffice proxy to communicate with the AGV Manager [IMPLEMENTATION]
+
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/BaseBackoffice.java
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/MainMenu.java
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/WarehouseEmployeeMenu.java
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/TestAgvServerConnectionAction.java
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/TestAgvServerConnectionUI.java
+M	base.core/src/main/java/eapli/base/agvmanagement/application/TestAgvServerController.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/AgvTwinClient.java
+
+commit af057861e855528690ae118dfd4489febc2323fb
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Thu Jun 9 14:13:28 2022 +0100
+
+    #L2S23-94: Updated the proxy for the Backoffice to send requests to the AGV Manager [IMPLEMENTATION]
+
+A	base.core/src/main/java/eapli/base/agvManagerAPI/CsvAgvManagerBackofficeProtocolProxy.java
+
+commit f801e7cbf21854b6dd5539aa125ce9b0c989f3ea
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Thu Jun 9 14:12:37 2022 +0100
+
+    #L2S23-94: Created a proxy for the Twin Client to send requests to the AGV Manager [IMPLEMENTATION]
+
+R056	base.core/src/main/java/eapli/base/agvManagerAPI/CsvAgvManagerProtocolProxy.java	base.core/src/main/java/eapli/base/agvManagerAPI/CsvAgvManagerTwinProtocolProxy.java
+
+commit a5cb8d17961a05114735e9a0e15f57b26b15d125
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Thu Jun 9 14:11:09 2022 +0100
+
+    #L2S23-94: AGV Manager's Keystore and Truststore[IMPLEMENTATION]
+
+A	SSL/agvmanager.jks
+A	SSL/agvmanager.pem
+
+commit 8ba70baf57d9aaf1e56702252f140aa96d0d531a
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Wed Jun 8 21:14:43 2022 +0100
+
+    #L2S23-94: System Diagram update[DESIGN]
+
+M	docs/SprintD/US4003/SD.svg
+M	docs/SprintD/US4003/SD.txt
+
+commit 4b2489950105da07b9ae97715b8d38f105aa6a56
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Wed Jun 8 21:13:52 2022 +0100
+
+    #L2S23-93: Analysis update[Analysis]
+
+M	docs/SprintD/US4003/ProcessoEngenhariaFuncionalidade.md
+
+commit 7eaf3918906fd69d5d8707ba19446ab076d62060
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Wed Jun 8 12:13:45 2022 +0100
+
+    #L2S23-94: User story System Diagram[IMPLEMENTATION]
+
+A	docs/SprintD/US4003/SD.svg
+A	docs/SprintD/US4003/SD.txt
+
+commit 94ccfda9aba62679e28307a9317d1037bb0dddff
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Wed Jun 8 11:11:20 2022 +0100
+
+    #L2S23-92: User story analysis[IMPLEMENTATION]
+
+A	docs/SprintD/US4003/ProcessoEngenhariaFuncionalidade.md
+
+commit acb8412e54ddafdf7acc316093806c282ef8b28b
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Fri Jun 3 15:22:45 2022 +0100
+
+    #Digital Twin Update: Small change on a method that did not habdle exceptions[IMPLEMENTATION]
+
+M	base.core/src/main/java/eapli/base/agvmanagement/application/TestAgvServerController.java
+
+commit 7d40230964db6bcbbdcf8e5c8edd17685f7fac68
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Fri Jun 3 15:17:35 2022 +0100
+
+    #AGV Manager Update: Updated communication between agv manager and twin server/client[IMPLEMENTATION]
+
+A	base.daemon.agvTwin/src/main/java/eapli/base/protocol/CommtestRequest.java
+A	base.daemon.agvTwin/src/main/java/eapli/base/protocol/DisconnRequest.java
+
+commit 1973253e62a10f27a774c79bac0568a4ec4ee161
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Fri Jun 3 15:16:43 2022 +0100
+
+    #Digital Twin Update: Created more requests and updated the twin client's UI[IMPLEMENTATION]
+
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/MainMenu.java
+A	base.core/src/main/java/eapli/base/twinServerAPI/CsvTwinServerProtocolProxy.java
+A	base.daemon.agv/src/main/java/eapli/base/protocol/CommtestTwinRequest.java
+A	base.daemon.agv/src/main/java/eapli/base/protocol/DisconnTwinRequest.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/AgvTwinClient.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/presentation/CsvAgvTwinProtocolServer.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/presentation/UpdateStatusUI.java
+R080	base.daemon.agvTwin/src/main/java/eapli/base/protocol/CsvAgvTwinProtocolMessageParser.java	base.daemon.agvTwin/src/main/java/eapli/base/protocol/CsvTwinProtocolMessageParser.java
+
+commit 0bac2ee062cc514d69c83fc8c32a6e5966dee2f1
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Fri Jun 3 14:09:14 2022 +0100
+
+    #Project Update: Renamed the agv server api package name(all files that imported classes from that package were altered on their import statement)[IMPLEMENTATION]
+
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/BaseBackoffice.java
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/CustomerMenu.java
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/MainMenu.java
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/WarehouseEmployeeMenu.java
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/cart/CustomerCatalogSearchAction.java
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/cart/CustomerCatalogSearchUI.java
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/customer/TestOrderServerConnectionAction.java
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/TestAgvServerConnectionAction.java
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/TestAgvServerConnectionUI.java
+R085	base.core/src/main/java/eapli/base/AgvManagerAPI/CsvAgvManagerProtocolProxy.java	base.core/src/main/java/eapli/base/agvManagerAPI/CsvAgvManagerProtocolProxy.java
+M	base.core/src/main/java/eapli/base/agvmanagement/application/TestAgvServerController.java
+M	base.core/src/main/java/eapli/base/orderServerAPI/CsvOrderProtocolProxy.java
+M	base.daemon.agv/src/main/java/eapli/base/protocol/CsvAGVProtocolMessageParser.java
+M	base.daemon.agv/src/main/java/eapli/base/protocol/UpdateStatusRequest.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/presentation/UpdateStatusAction.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/presentation/UpdateStatusUI.java
+
+commit 940ae64cb0ac4cd0876c9d0ccacc93a6efce7658
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Fri Jun 3 13:53:36 2022 +0100
+
+    #Digital Twin Client Update: Added some requests tests [IMPLEMENTATION]
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/AgvTwinClient.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/presentation/MainMenuTwin.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/presentation/UpdateStatusAction.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/presentation/UpdateStatusUI.java
+
+commit 7c96e42c139d20df4bdab09dbd533697e36084fe
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Fri Jun 3 03:37:12 2022 +0100
+
+    #Order Server: Added some requests [IMPLEMENTATION]
+
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/CustomerMenu.java
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/customer/TestOrderServerConnectionAction.java
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/customer/TestOrderServerConnectionUI.java
+M	base.core/src/main/java/eapli/base/orderServerAPI/CsvOrderProtocolProxy.java
+A	base.core/src/main/java/eapli/base/ordermanagement/application/TestOrderServerController.java
+A	base.daemonOrder/src/main/java/eapli/base/protocol/CommtestRequest.java
+M	base.daemonOrder/src/main/java/eapli/base/protocol/CsvOrderProtocolMessageParser.java
+A	base.daemonOrder/src/main/java/eapli/base/protocol/DisconnRequest.java
+
+commit af61c25399c3ca436a8810e2902375194708fe35
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Fri Jun 3 02:57:13 2022 +0100
+
+    #AGV Project: Small changes on the auto connection to servers [IMPLEMENTATION]
+
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/BaseBackoffice.java
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/MainMenu.java
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/WarehouseEmployeeMenu.java
+A	base.daemon.agv/src/main/java/eapli/base/protocol/DisconnRequest.java
+
+commit 706356d47eed0b4167956e45803177cd1f163ba0
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Fri Jun 3 02:54:58 2022 +0100
+
+    #AGV Manager update: Added more requests [IMPLEMENTATION]
+
+D	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/SearchAgvAction.java
+D	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/SearchAgvUI.java
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/TestAgvServerConnectionAction.java
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/TestAgvServerConnectionUI.java
+M	base.core/src/main/java/eapli/base/AgvManagerAPI/CsvAgvManagerProtocolProxy.java
+D	base.core/src/main/java/eapli/base/agvmanagement/application/SearchAgvController.java
+A	base.core/src/main/java/eapli/base/agvmanagement/application/TestAgvServerController.java
+A	base.daemon.agv/src/main/java/eapli/base/protocol/CommtestRequest.java
+M	base.daemon.agv/src/main/java/eapli/base/protocol/CsvAGVProtocolMessageParser.java
+
+commit 3ba211de25264f3aeb73267e32d3f6b8aba27964
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Fri Jun 3 00:21:47 2022 +0100
+
+    #Project update: Deleted an old module's POM [IMPLEMENTATION]
+
+D	base.app.kiosk/pom.xml
+
+commit 8f7b59e03053c3193511c15b41d408a1fadd1420
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Fri Jun 3 00:17:30 2022 +0100
+
+    #Project update: Deleted an old module [IMPLEMENTATION]
+
+M	.idea/compiler.xml
+D	base.app.agvTwin/src/main/java/eapli/base/app/kiosk/BaseKioskApp.java
+D	base.app.agvTwin/src/main/java/eapli/base/app/kiosk/presentation/AGVDtoPrinter.java
+D	base.app.agvTwin/src/main/java/eapli/base/app/kiosk/presentation/BaseKioskBaseUI.java
+D	base.app.agvTwin/src/main/java/eapli/base/app/kiosk/presentation/UpdateStatusKioskUI.java
+D	base.app.agvTwin/src/main/java/eapli/base/updatingStatus/application/KioskUpdateStatusController.java
+D	base.app.agvTwin/src/main/java/eapli/base/updatingStatus/csvprotocol/AgvDTO.java
+D	base.app.agvTwin/src/main/java/eapli/base/updatingStatus/csvprotocol/CsvUpdatingProtocolProxy.java
+D	base.app.agvTwin/src/main/java/eapli/base/updatingStatus/csvprotocol/FailedRequestException.java
+A	base.daemon.agvTwin/target/maven-archiver/pom.properties
+A	base.daemon.agvTwin/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+A	base.daemonOrder/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+A	base.daemonOrder/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+
+commit c279ae974cee47a5b6a739d79d558b736c02c79d
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Fri Jun 3 00:07:12 2022 +0100
+
+    #Project update: Order proxy has a socket attribute to ensure only one connection is shared in the whole session [IMPLEMENTATION]
+
+M	base.core/src/main/java/eapli/base/AgvManagerAPI/CsvAgvManagerProtocolProxy.java
+M	base.core/src/main/java/eapli/base/orderServerAPI/CsvOrderProtocolProxy.java
+
+commit 1f57e8da89d219aa270197b6d7ada9eb8214a584
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Fri Jun 3 00:05:49 2022 +0100
+
+    #US 1501 update: The connection is the one established on the application's start [IMPLEMENTATION]
+
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/CustomerMenu.java
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/cart/CustomerCatalogSearchAction.java
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/cart/CustomerCatalogSearchUI.java
+M	base.core/src/main/java/eapli/base/cartmanagement/application/CustomerCatalogSearchController.java
+
+commit 9ff5bb93891f1427e9bbc1c4c7eed29b8336ca4e
+Author: Renan Pedreira <1200623@isep.ipp.pt>
+Date:   Fri Jun 3 00:02:22 2022 +0100
+
+    #Project update: Servers connections are now done once the user has logged in [IMPLEMENTATION]
+
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/BaseBackoffice.java
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/MainMenu.java

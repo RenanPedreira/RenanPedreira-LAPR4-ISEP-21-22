@@ -1,0 +1,547 @@
+commit 4da324e9272bff132cb103d4feb234b8b5f67d14
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Sun Jun 19 23:31:42 2022 +0100
+
+    L2S23-115 [Implementation] update class Dashboard
+
+M	base.core/src/main/java/eapli/base/dashboard/Dashboard.java
+
+commit 2a6c5740bc4d045ac7de07455ba4a064017a63f6
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Sun Jun 19 23:09:10 2022 +0100
+
+    L2S23-115 [IMPLEMENTATION] UPADTE SERVICE
+
+M	base.core/src/main/java/eapli/base/dashboard/application/DashboardController.java
+M	base.core/src/main/java/eapli/base/warehousemanagement/service/ListAGVService.java
+
+commit 2907bd74c6b42057f63cf2999f713a1d6b9ad2d1
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Sun Jun 19 23:08:29 2022 +0100
+
+    L2S23-127 [IMPLEMENTATION] update class PositionThread
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/positioning/PositionThread.java
+
+commit 16dceebcd8ec4cfa662d83e41ead6a365b8a6774
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Sun Jun 19 21:15:17 2022 +0100
+
+    L2S23-127 [IMPLEMENTATION] update class PositionThread
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/positioning/PositionThread.java
+
+commit 341e925c20001c513c5c59b303c2d42a146b5f7f
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Sun Jun 19 20:44:58 2022 +0100
+
+    L2S23-115 [IMPLEMENTATION] UPADTE SERVICE
+
+M	base.core/src/main/java/eapli/base/agvmanagement/persistence/AGVRepository.java
+M	base.core/src/main/java/eapli/base/warehousemanagement/service/ListAGVService.java
+
+commit 283d39d4fcdf68b578f7e551fd54fe0632b2b799
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Sun Jun 19 20:44:12 2022 +0100
+
+    L2S23-114 [ANALYSIS] UPDATE
+
+M	docs/SprintD/US2006/ProcessoEngenhariaFuncionalidade.md
+
+commit 94d95175fd09128b8742bdccc5cb67a0a6bb32b7
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Sun Jun 19 20:43:44 2022 +0100
+
+    L2S23-114 [DESIGN] UPDATE SD
+
+M	docs/SprintD/US2006/SD.svg
+M	docs/SprintD/US2006/SD.txt
+
+commit a783c3fbd8f0d8dae796e5d693dc9c73aa1db7f5
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Sun Jun 19 11:48:12 2022 +0100
+
+    update positionthread
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/positioning/PositionThread.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/routePlanner/RoutePlanner.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/shared/SharedMemory.java
+
+commit 3fb9700914c56ab3308175f88d55b1300f5d95f6
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Sun Jun 19 11:22:57 2022 +0100
+
+    commit
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/positioning/PositionThread.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/routePlanner/RoutePlanner.java
+
+commit 3bac297c73ea98f15f718c4410325ac1e56d6f3b
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Sun Jun 19 00:25:46 2022 +0100
+
+    L2S23-127 [IMPLEMENTATION] update class PositionThread
+
+M	base.core/src/main/java/eapli/base/common/util/Pair.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/positioning/PositionThread.java
+
+commit cb01da1616e4afaf92db929e284ea2b01f220b80
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Sat Jun 18 22:47:44 2022 +0100
+
+    L2S23-127 [IMPLEMENTATION] update class RoutePlanner
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/routePlanner/RoutePlanner.java
+
+commit a55937a362736df731e1defab9fed26c1f5b39c6
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Sat Jun 18 22:21:20 2022 +0100
+
+    commit
+
+M	www/ajax.js
+
+commit 2567c9c7bc6c21c45959902db52440a9545b70dd
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Sat Jun 18 17:41:17 2022 +0100
+
+    L2S23-127 [IMPLEMENTATION] update class PositionThread
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/positioning/PositionThread.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/routePlanner/RoutePlanner.java
+
+commit 689a3a9a19ca9f649ca3f00641b998690692f2db
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Fri Jun 17 23:56:49 2022 +0100
+
+    L2S23-115 [Implementation] update code
+
+M	base.core/src/main/java/eapli/base/dashboard/Dashboard.java
+M	base.core/src/main/java/eapli/base/dashboard/DashboardRequest.java
+
+commit 3f6ed218bea9568974f2a49f1fc2b880f34602af
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Fri Jun 17 23:56:03 2022 +0100
+
+    L2S23-115 [Implementation] update www folder
+
+M	www/style.css
+
+commit b8262039b5575f1fc6a65290c6831020313c0f86
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Fri Jun 17 23:55:34 2022 +0100
+
+    L2S23-107 [UPDATE] update code
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/application/DigitalTwinUnit.java
+
+commit 7f934a36f28de5a83cbaf411e6d95f3b47ca6c75
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Fri Jun 17 23:54:59 2022 +0100
+
+    L2S23-130 [IMPLEMENTATION] update class SimulationEngine
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/simulationEngine/SimulationEngineThread.java
+
+commit 6d38482424fecf7374fc930be01866f6814d0cb6
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Fri Jun 17 23:54:01 2022 +0100
+
+    L2S23-127 [IMPLEMENTATION] update class PositionThread
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/positioning/PositionThread.java
+
+commit 7af1137994149cde8775a3a0866d1e88471d0a08
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Fri Jun 17 21:03:33 2022 +0100
+
+    L2S23-115 [Implementation] update class
+
+M	base.core/src/main/java/eapli/base/dashboard/Dashboard.java
+M	base.core/src/main/java/eapli/base/dashboard/DashboardRequest.java
+
+commit be57660d2b286dd5b6bbbd50a51d02cd2de1352a
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Fri Jun 17 20:59:08 2022 +0100
+
+    L2S23-115 [Implementation] update class AGVMapper
+
+M	base.core/src/main/java/eapli/base/agvmanagement/dto/AGVMapper.java
+
+commit bff5843f5d8f253142ed166123eb239c3e00bd43
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Fri Jun 17 20:58:36 2022 +0100
+
+    L2S23-115 [Implementation] update class AGVDTO
+
+M	base.core/src/main/java/eapli/base/agvmanagement/dto/AGVDTO.java
+
+commit f85a1d404440c9cd97bb4640d3279537d6092908
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Fri Jun 17 20:58:19 2022 +0100
+
+    L2S23-115 [Implementation] update class AGV
+
+M	base.core/src/main/java/eapli/base/agvmanagement/domain/AGV.java
+
+commit d6dd73093af5bcf2bd210c1438f14715e9250a5e
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Fri Jun 17 20:57:56 2022 +0100
+
+    L2S23-115 [Implementation] create class GetWarehousePlantService
+
+M	base.core/src/main/java/eapli/base/warehousemanagement/service/GetWarehousePlantService.java
+
+commit 47b71705b86764662d54f5a4a0f70d3d18986a7d
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Fri Jun 17 20:56:58 2022 +0100
+
+    L2S23-115 [Implementation] update class DashboardController
+
+M	base.core/src/main/java/eapli/base/dashboard/application/DashboardController.java
+
+commit 38af2e39fa9c869295c760931a8c6c7adc5fd101
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Fri Jun 17 20:56:30 2022 +0100
+
+    L2S23-115 [Implementation] update class DashboardRequest
+
+M	base.core/src/main/java/eapli/base/dashboard/DashboardRequest.java
+
+commit af4ee9412700064c08982cc7883614d652e269c1
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Fri Jun 17 20:55:59 2022 +0100
+
+    L2S23-115 [Implementation] update class Dashboard
+
+M	base.core/src/main/java/eapli/base/dashboard/Dashboard.java
+
+commit ef36c0649948c333bf852e7e55555d9418661d2d
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Fri Jun 17 20:55:19 2022 +0100
+
+    L2S23-115 [Implementation] change www folder
+
+A	base.core/src/main/java/eapli/base/warehousemanagement/service/GetWarehousePlantService.java
+M	www/ajax.js
+M	www/index.html
+M	www/style.css
+
+commit f22a91d49b29782670a22cc89671fdc31256aecc
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Thu Jun 16 20:12:56 2022 +0000
+
+    Livro De Reclamações.txt edited online with Bitbucket
+
+M	"docs/SprintD/US9002/Livro De Reclama\303\247\303\265es.txt"
+
+commit b938d163e7b99c2226a820ceaaed12221229e6b1
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Thu Jun 16 21:06:46 2022 +0100
+
+    L2S23-115 [Implementation] change code
+
+M	base.core/src/main/java/eapli/base/dashboard/Dashboard.java
+
+commit 241614f189914970c3f76073f22e9f05181d7a0c
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Thu Jun 16 20:55:02 2022 +0100
+
+    L2S23-114 [DESIGN] UPDATE SD
+
+M	docs/SprintD/US2006/SD.svg
+M	docs/SprintD/US2006/SD.txt
+
+commit a7a6c49417a3dfd48d98d7c61f2df765e3acdd41
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Thu Jun 16 20:54:09 2022 +0100
+
+    L2S23-115 [Implementation] change code
+
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse_employee_functionalities/DashboardUI.java
+M	base.core/src/main/java/eapli/base/dashboard/Dashboard.java
+M	base.core/src/main/java/eapli/base/dashboard/DashboardRequest.java
+M	base.core/src/main/java/eapli/base/dashboard/application/DashboardController.java
+
+commit 994838f923e27b3af24507629bab1e8233487244
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Thu Jun 16 19:56:37 2022 +0100
+
+    L2S23-114 [DESIGN] maybe final SD
+
+A	docs/SprintD/US2006/SD.svg
+A	docs/SprintD/US2006/SD.txt
+
+commit 4a8ad17ad849508f6f1918dba72c853e4b290928
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Thu Jun 16 17:14:51 2022 +0100
+
+    L2S23-129: [IMPLEMENTATION] Update on DigitalTwinUnit class
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/application/DigitalTwinUnit.java
+
+commit bc1d2828cb881ae864b25d83509061289dd8a0ac
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Thu Jun 16 17:14:17 2022 +0100
+
+    L2S23-129: [IMPLEMENTATION] Update on RoutePlanner class
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/routePlanner/RoutePlanner.java
+
+commit 1674b338f692de04f89b2e032e3f5c4c6984e00d
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Thu Jun 16 17:13:38 2022 +0100
+
+    L2S23-129: [IMPLEMENTATION] Update on PositionThread class
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/positioning/PositionThread.java
+
+commit 5c58c6e6e3c319ae2a4aee1eb450ff4e146f815c
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Thu Jun 16 17:13:01 2022 +0100
+
+    L2S23-129: [IMPLEMENTATION] Update on SimulationEngine class
+
+A	base.daemon.agvTwin/src/main/java/eapli/base/modules/routePlanner/RoutePlanner.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/simulationEngine/SimulationEngineThread.java
+
+commit 7dd3769cc07a95f06267c76d63dc2085647a6141
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Wed Jun 15 16:46:43 2022 +0100
+
+    L2S23-129: [IMPLEMENTAION] Update on old code
+
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse_employee_functionalities/DashboardUI.java
+M	www/index.html
+
+commit 258e920541095b8efc8cf05a16edf72bf8f3de8d
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Wed Jun 15 16:46:00 2022 +0100
+
+    L2S23-129: [IMPLEMENTAION] Update on old code
+
+M	base.core/src/main/java/eapli/base/agvmanagement/dto/AGVDTO.java
+M	base.core/src/main/java/eapli/base/warehousemanagement/domain/Warehouse/Warehouse.java
+M	base.daemon.agv/src/main/java/eapli/base/protocol/WarehousePlantRequest.java
+
+commit 4eb52fa6ae14819f7d784ca134f56599d40311c3
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Wed Jun 15 16:45:08 2022 +0100
+
+    L2S23-129: [IMPLEMENTAION] Update on  SimulationEngine class
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/simulationEngine/SimulationEngineThread.java
+
+commit 83ed712defbbf3519ff50c7e89177e14f2f65e93
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Wed Jun 15 16:44:38 2022 +0100
+
+    L2S23-129: [IMPLEMENTAION] Update on Positionthread class
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/positioning/PositionThread.java
+
+commit 6d5f5af190b7f57f129907d01e23a0421cae1006
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Wed Jun 15 16:43:46 2022 +0100
+
+    L2S23-129: [IMPLEMENTATION] Update on SharedMemory class
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/shared/SharedMemory.java
+
+commit 8471833adb41c5a974b83d2924bb0aa0a23fd689
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Tue Jun 14 02:03:10 2022 +0100
+
+    L2S23-114 [UPDATE OLD CODE]
+
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse_employee_functionalities/DashboardUI.java
+M	base.core/src/main/java/eapli/base/dashboard/Dashboard.java
+M	base.core/src/main/java/eapli/base/dashboard/DashboardRequest.java
+M	base.core/src/main/java/eapli/base/dashboard/application/DashboardController.java
+M	www/ajax.js
+M	www/index.html
+M	www/style.css
+
+commit 553c2aac84ec203b934cdf9c110785588dea409e
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Sun Jun 12 20:11:20 2022 +0100
+
+    L2S23-114 [UPDATE OLD CODE]
+
+M	base.core/src/main/java/eapli/base/agvmanagement/dto/AGVDTO.java
+M	base.core/src/main/java/eapli/base/dashboard/Dashboard.java
+M	base.core/src/main/java/eapli/base/dashboard/DashboardRequest.java
+M	www/ajax.js
+M	www/index.html
+
+commit c8403a4b3c239c0812fc086e4d680e1a946c5d51
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Sun Jun 12 18:59:41 2022 +0100
+
+    L2S23-112 [UPDATE] update class simulationEngine and SharedMemory
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/application/threads/SimulationEngineThread.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/shared/SharedMemory.java
+
+commit 689256f951394edb55668469d13dbc76e1fc7a19
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Sun Jun 12 18:41:25 2022 +0100
+
+    L2S23-112 [UPDATE] update class SharedMemory
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/shared/SharedMemory.java
+
+commit fe44a44a53931f54b2e122cb4430ce54c1be3bf7
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Sun Jun 12 18:41:02 2022 +0100
+
+    L2S23-112 [UPDATE] update class PositionThread
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/application/threads/PositionThread.java
+
+commit ad6aa1b337e3b758324d1a82de1b7da03d56af32
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Sun Jun 12 18:40:31 2022 +0100
+
+    L2S23-114 [UPDATE OLD CODE]
+
+M	base.core/src/main/java/eapli/base/dashboard/application/DashboardController.java
+
+commit 19deae35f5c8a4aa3f8bd8cf17bf39fd658c3773
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Sun Jun 12 18:40:02 2022 +0100
+
+    L2S23-114 [UPDATE OLD CODE]
+
+M	base.core/src/main/java/eapli/base/dashboard/DashboardRequest.java
+
+commit 517368f7bd56210a52682353b8135fabc8d72543
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Sun Jun 12 18:39:47 2022 +0100
+
+    L2S23-114 [UPDATE OLD CODE]
+
+M	base.core/src/main/java/eapli/base/dashboard/Dashboard.java
+
+commit d90d038917cd5bfa98b259d81907a84641b6b230
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Sun Jun 12 18:39:18 2022 +0100
+
+    L2S23-112 [IMPLENTATION] Dashborad server Certificate
+
+A	SSL/dashboard.jks
+A	SSL/dashboard.pem
+
+commit caf5a5d48915d2d71a8c56a801180fec1bc18a97
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Sat Jun 11 20:43:00 2022 +0100
+
+    L2S23-112 [IMPLEMENTATION] class SimulationEngineThread
+
+A	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/application/threads/SimulationEngineThread.java
+
+commit 9651704584fb9d74ce7bd816f1cbffd1398d3a58
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Sat Jun 11 20:42:19 2022 +0100
+
+    L2S23-112 [UPDATE] update class PositionThread
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/application/threads/PositionThread.java
+
+commit 1a2ee48b87c0a596593b4dd3e56fb67969708ddb
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Sat Jun 11 20:41:50 2022 +0100
+
+    L2S23-112 [UPDATE] update class SharedMemory
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/shared/SharedMemory.java
+
+commit 26275d8048a24d831f5cbe33474c4b5bc80cba97
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Fri Jun 10 19:25:55 2022 +0100
+
+    L2S23-105 [ANALYSIS] update analysis
+
+M	docs/SprintD/US5100/ProcessoEngenhariaFuncionalidade.md
+
+commit 77649fa6cfbfc2630d9722ab3976fc6c49a4bd15
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Fri Jun 10 19:20:18 2022 +0100
+
+    L2S23-112 [UPDATE] update class SharedMemory
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/shared/SharedMemory.java
+
+commit dfc0a3ac33708e2351404fbd652b7dbf2b7a10f1
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Fri Jun 10 19:19:32 2022 +0100
+
+    L2S23-112 [IMPLEMENTAION] class PositionThread
+
+A	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/application/threads/PositionThread.java
+
+commit 834cd1d953676d5ef364405f4993651e2cf52d50
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Thu Jun 9 20:36:15 2022 +0100
+
+    L2S23-112 [UPDATE OLD CODE] update class AGV
+
+M	base.core/src/main/java/eapli/base/agvmanagement/domain/AGV.java
+
+commit 05ef33a95e42728e8598fec1854c5b3a7d8699ea
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Thu Jun 9 20:35:39 2022 +0100
+
+    L2S23-112 [UPDATE] class Position
+
+A	base.core/src/main/java/eapli/base/agvmanagement/domain/Position.java
+
+commit a34fc08d065d3afa86fdf7d377f0bb2b971c3670
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Thu Jun 9 20:35:11 2022 +0100
+
+    L2S23-112 [UPDATE] class speed
+
+A	base.core/src/main/java/eapli/base/agvmanagement/domain/Speed.java
+
+commit a37d1542b094fafcb90bbb2d2df46efe3252687b
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Thu Jun 9 20:34:49 2022 +0100
+
+    L2S23-112 [UPDATE] class SharedMemory
+
+A	base.daemon.agvTwin/src/main/java/eapli/base/shared/SharedMemory.java
+
+commit 13e2e906826b42b49041218b56dfbd09a0498b29
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Wed Jun 8 21:24:50 2022 +0100
+
+    L2S23-112 [UPDATE OLD CODE]
+
+M	base.core/src/main/java/eapli/base/dashboard/DashboardRequest.java
+
+commit 25a62b0ffb8adda08a653e7e403bbd33159be929
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Wed Jun 8 21:18:52 2022 +0100
+
+    L2S23-112 [UPDATE OLD CODE]
+
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse_employee_functionalities/DashboardUI.java
+M	base.core/src/main/java/eapli/base/dashboard/application/DashboardController.java
+A	base.core/src/main/java/eapli/base/httpServerAPI/HttpServerProxy.java
+
+commit 4faa6676b4929aec017d325a6fa0919b516e1a70
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Tue Jun 7 14:47:18 2022 +0100
+
+    L2S23-113 [ANALYSIS] initial analysis
+
+A	docs/SprintD/US2006/ProcessoEngenhariaFuncionalidade.md
+
+commit 6bb1d33b2aca7bbf7ec38f4971b9b7fb5a78932e
+Author: Miguel Chen <1190897@isep.ipp.pt>
+Date:   Tue Jun 7 14:08:22 2022 +0100
+
+    L2S23-105 [ANALYSIS] initial analysis
+
+A	docs/SprintD/US5100/ProcessoEngenhariaFuncionalidade.md

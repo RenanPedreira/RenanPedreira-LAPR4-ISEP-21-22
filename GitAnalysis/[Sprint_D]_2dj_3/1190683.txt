@@ -1,0 +1,598 @@
+commit a9e52bdcf3bfe625dbd635fb82d68ee9cb25b4a8
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 19 18:45:36 2022 +0000
+
+    L2S23-118: Design: update on the Design (addition of Tests)
+
+M	docs/SprintD/US1502/ProcessoEngenhariaFuncionalidade.md
+
+commit 91c49387dea5aa209ff61dc27cba14e308c18470
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 19 18:44:41 2022 +0000
+
+    L2S23-118: Design: update on the Design
+
+M	docs/SprintD/US1502/ProcessoEngenhariaFuncionalidade.md
+
+commit b237dcc30d2f30052588d24998aac0e436f8f64b
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 19 19:43:29 2022 +0100
+
+    L2S23-118: Design: update on the Design (addition of Tests)
+
+M	docs/SprintD/US1502/ProcessoEngenhariaFuncionalidade.md
+A	docs/SprintD/US1502/commentTests.png
+A	docs/SprintD/US1502/orderTests.png
+A	docs/SprintD/US1502/weightTests.png
+
+commit d8e749f74e38732acff53353507765243a5d970f
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 19 19:41:08 2022 +0100
+
+    L2S23-119: Implementation: correcting tests
+
+M	base.core/src/test/java/eapli/base/agvmanagement/domain/WeightTest.java
+
+commit 66687a08f7017674875c15673d9b10b3011f6b08
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 19 19:00:33 2022 +0100
+
+    L2S23-119: Implementation: correcting tests
+
+D	base.core/src/test/java/eapli/base/ordermanagement/domain/OrderTest.java
+
+commit 395aba52e065bf59504a16cbd971cf1ef1bb7823
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 19 18:52:16 2022 +0100
+
+    L2S23-119: Implementation: tests for Order class
+
+M	base.core/src/test/java/eapli/base/ordermanagement/domain/OrdreTest.java
+
+commit 40070fce4503277512273a2d875e17bc057bc966
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 19 18:46:27 2022 +0100
+
+    L2S23-119: Implementation: Corrections on restrictions
+
+M	base.core/src/main/java/eapli/base/ordermanagement/domain/Ordre.java
+
+commit 755840a0e2b6feaa0df141c176c678d4a5520b30
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 19 18:31:43 2022 +0100
+
+    L2S23-119: Implementation: Corrections on restrictions
+
+M	base.core/src/main/java/eapli/base/ordermanagement/domain/PaymentMethod.java
+M	base.core/src/main/java/eapli/base/ordermanagement/domain/SourceChannel.java
+
+commit 33f1d54ed3798c16d74c5fce4804b7d08313442e
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 19 18:22:38 2022 +0100
+
+    L2S23-119: Implementation: Tests for PaymentMethod class and modifications
+
+M	base.core/src/main/java/eapli/base/ordermanagement/domain/PaymentMethod.java
+M	base.core/src/test/java/eapli/base/ordermanagement/domain/CommentTest.java
+A	base.core/src/test/java/eapli/base/ordermanagement/domain/PaymentMethodTest.java
+
+commit ed835477659387e2d745fb68313866102936da40
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 19 18:10:18 2022 +0100
+
+    L2S23-119: Implementation: Tests for Comment class and modifications
+
+M	base.core/src/main/java/eapli/base/ordermanagement/domain/Comment.java
+A	base.core/src/test/java/eapli/base/ordermanagement/domain/CommentTest.java
+
+commit 26ba12cd548b1ecb09706b32cd326480f4d67c47
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 19 16:37:32 2022 +0100
+
+    L2S23-104: Implementation: Tests for Position class
+
+A	base.core/src/test/java/eapli/base/agvmanagement/domain/PositionTest.java
+
+commit 23f9f615e550209ee8b6d4e4f227bb02c706f246
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 19 16:23:03 2022 +0100
+
+    L2S23-104: Implementation: correcting tests
+
+M	base.core/src/test/java/eapli/base/customermanagement/domain/model/BirthdateTest.java
+M	base.core/src/test/java/eapli/base/customermanagement/domain/model/CustomerTest.java
+
+commit beefb2f4020a95b15d96035a1b8510a8f6cc082c
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 19 16:19:14 2022 +0100
+
+    L2S23-104: Implementation: Tests for Speed class and corrections
+
+M	base.core/src/main/java/eapli/base/agvmanagement/domain/AGV.java
+M	base.core/src/main/java/eapli/base/agvmanagement/domain/Speed.java
+M	base.core/src/main/java/eapli/base/agvmanagement/dto/AGVMapper.java
+A	base.core/src/test/java/eapli/base/agvmanagement/domain/SpeedTest.java
+
+commit 313983c33ddab2e2b423faf3215f98de97a8932a
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 19 15:42:00 2022 +0100
+
+    L2S23-118: Design: Update on SD of US1502
+
+M	docs/SprintD/US1502/US1502_SD.puml
+M	docs/SprintD/US1502/US1502_SD.svg
+
+commit ad32ca8ce32f4642ebe363664a5004ac89892d56
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 19 15:24:03 2022 +0100
+
+    L2S23-119: Implementation: Renaming methods in order to be more coherent
+
+M	base.app.user.console/src/main/java/eapli/base/app/user/console/presentation/ViewStatusOfOpenOrdersUI.java
+M	base.app.user.console/src/main/java/eapli/base/app/user/console/viewingstatus/application/ViewStatusOfOpenOrdersController.java
+M	base.core/src/main/java/eapli/base/orderServerAPI/CsvOrderProtocolProxy.java
+
+commit 9f91e700cc983d59eb0b99482f0470e81f3faa5e
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 19 15:06:29 2022 +0100
+
+    L2S23-118: Design: update on Design of US1502
+
+M	docs/SprintD/US1502/ProcessoEngenhariaFuncionalidade.md
+
+commit 69724db8689100bbdfd6fba100fa1a66408860b9
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 19 12:47:35 2022 +0100
+
+    L2S23-119: Implementation: updates/corrections on GetClientOrdersRequest
+
+M	base.daemonOrder/src/main/java/eapli/base/protocol/GetClientOrdersRequest.java
+
+commit 8447ead270e96fafa306d8e149943bf4e54259d5
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 19 12:39:31 2022 +0100
+
+    L2S23-119: Implementation: update/correction on GetClientOrdersRequest
+
+M	base.daemonOrder/src/main/java/eapli/base/protocol/GetClientOrdersRequest.java
+
+commit 867cf95518553a742bd598a20e91623610fbf094
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 19 12:39:06 2022 +0100
+
+    L2S23-119: Implementation: update/correction on ListOrdersStatusService
+
+M	base.daemonOrder/src/main/java/eapli/base/service/ListOrdersStatusService.java
+
+commit 9b2e81b1e91e416bee4664f5e7996022ee350f66
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 19 12:34:36 2022 +0100
+
+    L2S23-119: Implementation: method to get the Customer name
+
+M	base.core/src/main/java/eapli/base/ordermanagement/domain/Ordre.java
+
+commit f86c7c7eb329561c3a5902578307589725c07c9b
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 19 12:29:59 2022 +0100
+
+    L2S23-119: Implementation: Correction on ViewStatusOfOpenOrdersUI
+
+M	base.app.user.console/src/main/java/eapli/base/app/user/console/presentation/ViewStatusOfOpenOrdersUI.java
+
+commit 2346c12fc4148442d27f34ece696dcb36f309366
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sat Jun 18 22:07:08 2022 +0100
+
+    L2S23-119: Implementation: Correction of a method due to the Client requirements
+
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaOrderRepository.java
+
+commit d0d4b373d2cd517c0414746b1201ff018a36dddf
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sat Jun 18 20:50:26 2022 +0100
+
+    L2S23-126: Implementation: Correction of an error on ViewStatusOfOpenOrdersController
+
+M	base.app.user.console/src/main/java/eapli/base/app/user/console/presentation/ViewStatusOfOpenOrdersUI.java
+
+commit 41b2bc01f1cd42c36b2904c1eb5130e4337953f1
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sat Jun 18 17:17:11 2022 +0100
+
+    L2S23-126: Implementation: Update of ViewStatusOfOpenOrdersController
+
+M	base.app.user.console/src/main/java/eapli/base/app/user/console/viewingstatus/application/ViewStatusOfOpenOrdersController.java
+
+commit c853d6c1271525a7694e74977efd978c4b1f0a2c
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sat Jun 18 17:10:52 2022 +0100
+
+    L2S23-126: Implementation: Corrections on GetClientOrdersRequest
+
+M	base.daemonOrder/src/main/java/eapli/base/protocol/GetClientOrdersRequest.java
+
+commit 54dcf09614f979a6de7599d1607ccbcfcfc1ac24
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sat Jun 18 17:09:02 2022 +0100
+
+    L2S23-126: Implementation: updates on BootStrap
+
+M	base.bootstrappers/src/main/java/eapli/base/infrastructure/bootstrapers/BaseBootstrapper.java
+
+commit 570bce6c7b490578bb516c7ac74628dedf1a9e4a
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sat Jun 18 16:20:44 2022 +0100
+
+    L2S23-126: Implementation: updates on BatteryManager class
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/batteryManagement/BatteryManager.java
+
+commit 75ecc95ccb212e95b0f36b09d5dec98de7b49063
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sat Jun 18 16:13:10 2022 +0100
+
+    L2S23-126: Implementation: update on DigitalTwinUnit class
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/application/DigitalTwinUnit.java
+
+commit e6c294a3e3dbad20e8c2479f2793fa0322cc3f67
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sat Jun 18 16:12:40 2022 +0100
+
+    L2S23-126: Implementation: correction on Battery manager module
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/batteryManagement/BatteryManager.java
+
+commit f6ddb1c0da19e9dd3ef396459077c3ac881dc021
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Fri Jun 17 22:30:22 2022 +0100
+
+    L2S23-126: Implementation: Update on DigitalTwinUnit class
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/application/DigitalTwinUnit.java
+
+commit 047c9b13dbcbfa18d46b34b24e73135c964bd4cd
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Fri Jun 17 22:29:48 2022 +0100
+
+    L2S23-126: Implementation: Modifications on SharedMemory class due to the sensors
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/shared/SharedMemory.java
+
+commit 2affd130466afa5d69ca5a08fe8f8f2b894714ef
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Fri Jun 17 22:28:37 2022 +0100
+
+    L2S23-126: Implementation: Update on Sensor module
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/sensor/Sensor.java
+
+commit d25702e8c8c90d5f86c527ac2ab93662c8216b94
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Fri Jun 17 12:28:38 2022 +0100
+
+    L2S23-122: Design: Update on the design of US1902
+
+M	docs/SprintD/US1902/ProcessoEngenhariaFuncionalidade.md
+A	docs/SprintD/US1902/US1902_SD.svg
+
+commit 850aec4af303fdccc2eeb65918f220de26c8ad9a
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Fri Jun 17 12:26:24 2022 +0100
+
+    L2S23-122: Design: Update of SD for US1902
+
+A	docs/SprintD/US1902/US1902_SD.puml
+
+commit dec35f3ed4776f92e1e8a1225ed763efba967f02
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Fri Jun 17 11:55:01 2022 +0100
+
+    L2S23-122: Design: Update on the Design of US1902
+
+M	docs/SprintD/US1902/ProcessoEngenhariaFuncionalidade.md
+
+commit 86d599b15557657b2d02b0ce51ee9c6225ef4d79
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Thu Jun 16 15:15:21 2022 +0100
+
+    L2S23-126: Implementation: Update of DigitalTwinUnit class
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/application/DigitalTwinUnit.java
+
+commit c8911e6038dff21db5ea525b1db1138592653077
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Thu Jun 16 15:14:44 2022 +0100
+
+    L2S23-126: Implementation: Development of the Sensor class
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/sensor/Sensor.java
+
+commit bc0b46e6f1e6b0371e5e7ec48e02a1c1b6b79d7c
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Thu Jun 16 13:19:31 2022 +0100
+
+    L2S23-126: Implementation: Update on SharedMemory class
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/simulationEngine/SimulationEngineThread.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/shared/SharedMemory.java
+
+commit f91e2cdc2641078cfc70b87152d579a8e5b40be0
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Wed Jun 15 15:31:25 2022 +0100
+
+    L2S23-83: Update on "complaint book"
+
+M	"docs/SprintD/US9002/Livro De Reclama\303\247\303\265es.txt"
+
+commit 4057e6a677e2116bc860c2b8f583676c8a9b2b5f
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Wed Jun 15 15:22:40 2022 +0100
+
+    L2S23-126: Implementation: Development of Sensor class
+
+A	base.daemon.agvTwin/src/main/java/eapli/base/modules/sensor/Sensor.java
+
+commit 02fcfeb5f3799957b44086d44aa1ea589e282e5a
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Wed Jun 15 14:36:53 2022 +0100
+
+    L2S23-118: Design: Update on SD
+
+M	docs/SprintD/US1502/US1502_SD.puml
+A	docs/SprintD/US1502/US1502_SD.svg
+
+commit 9fa5bf0e59e15c442a55acb3c6f322e5ba57bbd6
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Wed Jun 15 14:09:32 2022 +0100
+
+    L2S23-129: Implementation: Update/development of the DigitalTwinUnit
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/daemon/agvTwin/application/DigitalTwinUnit.java
+R076	base.daemon.agvTwin/src/main/java/eapli/base/modules/batteryManagement/BatteryThread.java	base.daemon.agvTwin/src/main/java/eapli/base/modules/batteryManagement/BatteryManager.java
+M	base.daemon.agvTwin/src/main/java/eapli/base/shared/SharedMemory.java
+
+commit 570c69cfa5ab23febe0def87abadf65a5c58ad7e
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Wed Jun 15 14:05:35 2022 +0100
+
+    L2S23-129: Implementation: Update/development on BatteryThread
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/modules/batteryManagement/BatteryThread.java
+
+commit 1a6a23cd999cbf97c477e4dab4258f43d6a4b677
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Wed Jun 15 13:38:18 2022 +0100
+
+    L2S23-129: Implementation: Update on SharedMemory class
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/shared/SharedMemory.java
+
+commit 44e03b0e81d762a3618fb3e447f2647c3d1150ac
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Wed Jun 15 11:01:20 2022 +0100
+
+    L2S23-118: Design: Update of US1502 SD
+
+M	docs/SprintD/US1502/ProcessoEngenhariaFuncionalidade.md
+A	docs/SprintD/US1502/US1502_SD.puml
+
+commit b97f1a8646e3e8990995808c278aeec56d60403e
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Wed Jun 15 10:49:26 2022 +0100
+
+    L2S23-129: Implementation: Update on SharedMemory class
+
+M	base.daemon.agvTwin/src/main/java/eapli/base/shared/SharedMemory.java
+
+commit d47258bb2cef39d05a48dccdf33967a8c5c4f5d4
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Wed Jun 15 10:45:38 2022 +0100
+
+    L2S23-118: Design: Update on the Design
+
+M	docs/SprintD/US1502/ProcessoEngenhariaFuncionalidade.md
+
+commit fd02557447f5dc815472e0efb92d91105b43d603
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Wed Jun 15 10:18:24 2022 +0100
+
+    L2S23-117: Analysis: Update of Client clarifications
+
+M	docs/SprintD/US1502/ProcessoEngenhariaFuncionalidade.md
+
+commit 4772eb40fe15fa25c75ffa594d76bfce4de8dca7
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Wed Jun 15 09:53:45 2022 +0100
+
+    L2S23-129: Implementation: Creation of BatteryThread
+
+A	base.daemon.agvTwin/src/main/java/eapli/base/modules/batteryManagement/BatteryThread.java
+
+commit ce6c94d178c965776f585a55dc7b239cc2b38518
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Mon Jun 13 12:45:21 2022 +0100
+
+    L2S23-129: Implementation: Correction of tests
+
+M	base.core/src/test/java/eapli/base/common/domain/model/IdentifierTest.java
+
+commit 07a90e9c001795f1281145a6f00ad2d4f340516c
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Mon Jun 13 12:44:31 2022 +0100
+
+    L2S23-129: Implementation: Correction of tests
+
+M	base.core/src/test/java/eapli/base/common/domain/model/IdentifierTest.java
+M	base.core/src/test/java/eapli/base/warehousemanagement/domain/Assignment/AssignmentTest.java
+
+commit 4a4784352f281fcee138bd56c17340709f098ed7
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Mon Jun 13 12:28:03 2022 +0100
+
+    L2S23-129: Implementation: Creation of value object Battery
+
+A	base.core/src/main/java/eapli/base/agvmanagement/domain/Battery.java
+
+commit 601ee224fc944f7e9f017d1bf9d5355d0585c65a
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 12 18:03:18 2022 +0100
+
+    L2S23-123: Implementation: Order Server Certificate
+
+A	SSL/orderserver.jks
+A	SSL/orderserver.pem
+
+commit ae8b946cecfd9888cd65822e3f132bd87450241d
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 12 16:27:08 2022 +0100
+
+    L2S23-123: Implementation: correction of an error
+
+M	base.daemonOrder/src/main/java/eapli/base/daemon/order/OrderDaemon.java
+
+commit d6489fa91dae889f193ca4d64dba5d19661b730d
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 12 16:25:26 2022 +0100
+
+    L2S23-123: Implementation: update/development of CsvOrderProtocolServer
+
+M	base.daemonOrder/src/main/java/eapli/base/daemon/order/presentation/CsvOrderProtocolServer.java
+
+commit 2f15ecda04b2db833af640a38839985ae4a49691
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 12 16:25:05 2022 +0100
+
+    L2S23-123: Implementation: update/development of CsvOrderProtocolProxy
+
+M	base.core/src/main/java/eapli/base/orderServerAPI/CsvOrderProtocolProxy.java
+
+commit 1ad62a6dd258a9163c383ca84efd13c17712dfed
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 12 16:14:13 2022 +0100
+
+    L2S23-119: Implementation: method to get the client orders by username
+
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaOrderRepository.java
+
+commit f337278dbdd2635c45fd7dc50bbd0101dced688f
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 12 16:11:52 2022 +0100
+
+    L2S23-119: Implementation: Update on ListOrdersStatusService
+
+M	base.daemonOrder/src/main/java/eapli/base/service/ListOrdersStatusService.java
+
+commit 2d702acd063143bb5f692d5d568cc03c891cbafe
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 12 16:10:17 2022 +0100
+
+    L2S23-119: Implementation: Development and update of ViewStatusOfOpenOrdersUI
+
+A	base.app.user.console/src/main/java/eapli/base/app/user/console/presentation/UserBaseUI.java
+A	base.app.user.console/src/main/java/eapli/base/app/user/console/presentation/ViewStatusOfOpenOrdersAction.java
+A	base.app.user.console/src/main/java/eapli/base/app/user/console/presentation/ViewStatusOfOpenOrdersUI.java
+A	base.app.user.console/src/main/java/eapli/base/app/user/console/viewingstatus/csvprotocol/client/CsvProtocolProxy.java
+A	base.app.user.console/src/main/java/eapli/base/app/user/console/viewingstatus/csvprotocol/client/FailedRequestException.java
+
+commit 50c28200c351cccdb0e0364803e312e1bfb1bd6c
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 12 16:09:49 2022 +0100
+
+    L2S23-119: Implementation: Development of ViewStatusOfOpenOrdersController
+
+A	base.app.user.console/src/main/java/eapli/base/app/user/console/viewingstatus/application/ViewStatusOfOpenOrdersController.java
+
+commit 2df864b9c17b30af30d2898fd47cb5a40023d27c
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 12 16:09:04 2022 +0100
+
+    L2S23-119: Implementation: Update on CustomerMenu
+
+A	base.app.user.console/src/main/java/eapli/base/app/user/console/presentation/CustomerMenu.java
+M	base.app.user.console/src/main/java/eapli/base/app/user/console/presentation/FrontMenu.java
+M	base.app.user.console/src/main/java/eapli/base/app/user/console/presentation/MainMenu.java
+
+commit ae8b6056198d98ac0bc23d5f9f213d208639450d
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Sun Jun 12 15:52:01 2022 +0100
+
+    L2S23-119: Implementation: Update on Order DTO
+
+M	base.core/src/main/java/eapli/base/ordermanagement/dto/OrderDTO.java
+
+commit fb572413066d4636813857db445eac0d402cb027
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Fri Jun 10 12:15:42 2022 +0100
+
+    L2S23-119: Implementation: correction on Snapshot version
+
+M	run-user.bat
+M	run-user.sh
+
+commit 408bf78fc7d9eb8501d91f55b097f44ae4b42829
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Thu Jun 9 23:19:18 2022 +0100
+
+    L2S23-119: Implementation: creation of a request to get the Client Orders
+
+A	base.daemonOrder/src/main/java/eapli/base/protocol/GetClientOrdersRequest.java
+
+commit 6b66eb6003ac4b7dcb42d8263b1d8d05d1d42094
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Thu Jun 9 23:18:43 2022 +0100
+
+    L2S23-119: Implementation: creation of ListOrdersStatusService
+
+A	base.daemonOrder/src/main/java/eapli/base/service/ListOrdersStatusService.java
+
+commit a8e45aca374be7c20e1d51aaeefa539c2d0c259e
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Thu Jun 9 23:18:19 2022 +0100
+
+    L2S23-119: Implementation: update on Order Protocol
+
+M	base.daemonOrder/src/main/java/eapli/base/protocol/CsvOrderProtocolMessageParser.java
+
+commit 683080a86d2e1bbda6987b01849a242743dfb3bb
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Thu Jun 9 23:15:06 2022 +0100
+
+    L2S23-119: Implementation: update on Order proxy
+
+M	base.core/src/main/java/eapli/base/orderServerAPI/CsvOrderProtocolProxy.java
+
+commit 5451b52f802160cdba46260bf67584b0edf99f88
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Thu Jun 9 23:13:51 2022 +0100
+
+    L2S23-119: Implementation: update on OrderDTO
+
+M	base.core/src/main/java/eapli/base/ordermanagement/dto/OrderDTO.java
+M	base.core/src/main/java/eapli/base/ordermanagement/dto/OrderMapper.java
+
+commit a15d32018caf23f3022a16f31f03fd7ffc434d5b
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Thu Jun 9 23:12:23 2022 +0100
+
+    L2S23-119: Implementation: method to get the client Orders
+
+M	base.core/src/main/java/eapli/base/ordermanagement/persistence/OrderRepository.java
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaOrderRepository.java
+
+commit fee39953d601254663b7876a6ac2996c9aa31096
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Fri Jun 3 23:39:15 2022 +0100
+
+    L2S23-121: Analysis: Beginning of the analysis of the US1902
+
+A	docs/SprintD/US1902/ProcessoEngenhariaFuncionalidade.md
+
+commit 375468c1147ff69adf73b90dd3760c9f12b67cf5
+Author: Joana Vaz <1190683@isep.ipp.pt>
+Date:   Wed Jun 1 23:44:18 2022 +0100
+
+    L2S23-117: Analysis: Beginning of the analysis of the US1502
+
+A	docs/SprintD/US1502/ProcessoEngenhariaFuncionalidade.md

@@ -1,0 +1,212 @@
+@startuml
+autonumber
+
+
+participant ":BackOfficeApp" as UI
+participant ":AGVDaemon" as CTRL
+participant ":AGVManager" as MAN
+participant ":HandleAGV" as HA
+participant ":FifoRequest" as FR
+participant ":FifoProtocolRequest" as FPR
+participant ":FifoService" as SS
+participant ":OrderListService" as OS
+participant ":AGVListService" as AS
+participant ":PersistenceContext" as PC
+participant ":RepositoryFactory" as RF
+participant ":AssignmentRepository" as AR
+participant ":OrderRepository" as OR
+participant ":AGVRepository" as AGR
+participant ":AssignmentFactory" as AFC
+participant ":Assignment" as A
+participant ":Ordre" as O
+participant ":AGV" as V
+
+
+CTRL -> MAN : new
+
+loop true
+
+CTRL -> MAN : start
+
+activate MAN
+
+MAN -> MAN : accept
+
+UI --> MAN
+
+MAN -> HA : start
+
+deactivate MAN
+
+activate HA
+
+end loop
+
+HA -> FPR
+
+HA -> FR : excute()
+activate FR
+FR -> SS : create()
+
+FR -> SS : fifoAlgorithm()
+
+activate SS 
+
+SS -> PC : repositories()
+
+activate PC
+
+PC -> RF : create()
+
+activate RF
+
+deactivate PC 
+
+RF -> AR : create()
+
+deactivate RF
+SS -> OS : create()
+SS -> OS : listOrdersToBePreparedNormal()
+
+activate OS
+
+OS -> PC : repositories()
+
+activate PC
+
+PC -> RF : create()
+
+activate RF
+
+deactivate PC 
+
+RF -> OR : create()
+
+deactivate RF
+
+OS -> OR : getOrdersToBePrepared(status)
+
+activate OR 
+
+OR --> OS : listOrder
+
+deactivate OR
+OS --> SS : listOrder
+deactivate OS
+
+
+
+SS -> AS : create()
+SS -> AS : listAvailableAGVSNormal()
+activate AS
+
+AS -> PC : repositories()
+
+activate PC
+
+PC -> RF : create()
+
+activate RF
+
+deactivate PC 
+
+RF -> AGR : create()
+deactivate RF
+
+AS -> AGR : getAvailableAGVs(agvStatus)
+
+activate AGR
+
+AGR --> AS : listAgv
+
+deactivate AGR
+AS --> SS : listAgv
+deactivate AS
+
+alt if listOrder and listAgv isNotEmpty
+
+
+
+
+
+loop for each order in listOrder and each agv in listAgv
+
+
+
+
+SS -> AFC : create()
+
+SS -> AFC : sets()
+
+note right
+
+all sets
+
+end note
+
+
+SS -> AFC : build()
+activate AFC
+
+AFC -> A : create(status,order,agv,identifier)
+activate A
+
+note right
+
+identifier gerado automaticamente
+
+end note
+
+A --> AFC : assignment
+deactivate A
+
+AFC --> SS : assignment
+deactivate AFC 
+
+
+SS -> AR : save(assignment)
+activate AR
+deactivate AR
+
+SS -> O : changeStatus(status)
+activate O
+deactivate O
+
+SS -> V : changeStatus(agvStatus)
+activate V
+deactivate V
+
+SS -> OR : save(order)
+activate OR
+deactivate OR
+
+SS -> AGR : save(agv)
+activate AGR
+deactivate AGR
+
+
+
+
+
+end
+
+else
+
+
+note right
+
+break and return String null if alternative
+
+end note
+
+end
+
+deactivate SS
+deactivate FR
+
+deactivate RF
+HA --> UI
+
+deactivate HA
+
+@enduml

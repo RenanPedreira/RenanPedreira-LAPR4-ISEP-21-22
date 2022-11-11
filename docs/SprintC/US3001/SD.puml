@@ -1,0 +1,76 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+actor "Project Manager" as PM
+
+participant ":ValidatingQuestionnaireUI" as UI
+participant ":ValidatingQuestionnaireController" as CTRL
+participant ":ValidatingQuestionnaireService" as SERV
+participant ":QuestionnaireGrammarLexer" as LEXER
+participant ":QuestionnaireGrammarParser" as PARSER
+participant ":QuestionnaireGrammarVisitor" as VISITOR
+
+
+activate PM
+PM -> UI : starts to ask to validate the questionnaires
+activate UI
+
+UI -> CTRL: readingQuestionnaires(file)
+deactivate UI
+activate CTRL
+
+CTRL -> SERV : readingQuestionnaires(file)
+deactivate CTRL
+
+activate SERV
+
+
+SERV -> LEXER: QuestionnairesLexer()
+activate LEXER
+LEXER --> SERV: create()
+deactivate LEXER
+
+SERV -> PARSER: QuestionnairesParser()
+activate PARSER
+PARSER --> SERV: create()
+deactivate PARSER
+
+SERV -> VISITOR: QuestionnairesVisitor()
+activate VISITOR
+VISITOR --> SERV: parserTree()
+deactivate VISITOR
+
+
+SERV --> CTRL: parserTree()
+deactivate SERV
+activate CTRL
+
+CTRL --> UI: parserTree()
+deactivate CTRL
+activate UI
+UI --> PM: validates the questionnaires and show the parse tree
+deactivate UI
+
+deactivate PM
+
+@enduml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

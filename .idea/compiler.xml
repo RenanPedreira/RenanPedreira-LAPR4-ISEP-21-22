@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="base.persistence.impl" />
+        <module name="base.app.agvTwin" />
+        <module name="base.daemonOrder" />
+        <module name="base.app.other.console" />
+        <module name="base.daemon.agvTwin" />
+        <module name="base.app.user.console" />
+        <module name="base.core" />
+        <module name="base.app.common.console" />
+        <module name="base.app.backoffice.console" />
+        <module name="base.bootstrappers" />
+        <module name="base.app.bootstrap" />
+        <module name="base.daemon.agv" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="base" target="11" />
+      <module name="base.app.agvTwin" target="11" />
+      <module name="base.app.backoffice.console" target="11" />
+      <module name="base.app.bootstrap" target="11" />
+      <module name="base.app.common.console" target="11" />
+      <module name="base.app.other.console" target="11" />
+      <module name="base.app.user.console" target="11" />
+      <module name="base.bootstrappers" target="11" />
+      <module name="base.core" target="11" />
+      <module name="base.daemon.agv" target="11" />
+      <module name="base.daemon.agvTwin" target="11" />
+      <module name="base.daemonOrder" target="11" />
+      <module name="base.persistence.impl" target="11" />
+      <module name="LAPR4" target="11" />
+      <module name="LAPR4_V2" target="11" />
+      <module name="lei21_22_s4_2dj_3" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="base.core" options="" />
+    </option>
+  </component>
+</project>

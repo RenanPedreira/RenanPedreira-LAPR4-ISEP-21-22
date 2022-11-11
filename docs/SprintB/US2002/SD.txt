@@ -1,0 +1,199 @@
+@startuml
+autonumber
+'hide footbox
+actor "WhareHouse Empoyee" as SC
+
+participant ":ConfigAGVUI" as UI
+participant ":ConfigAGVController" as CTRL
+participant ":ConfigAVGService" as AS
+participant ":PersistenceContext" as PC
+participant ":RepositoryFactory" as RF
+participant ":AGVRepository" as PR
+participant ":AGVBuilder" as PF
+participant ":AGVDockRepository" as ADR
+participant ":AGV" as P
+participant ":AgvDock" as PA
+participant ":DockDTO" as DT
+participant ":AGVDTO" as AD
+
+activate SC
+SC -> UI : asks to config AGV
+activate UI
+
+UI --> SC : requests the data(model,taskStatus,autonomyStatus,description)
+
+UI -> CTRL : retrieveAllAvailableDocks()
+activate CTRL
+CTRL -> AS : create()
+activate AS
+AS -> PC : repositories()
+activate PC
+
+PC -> RF : create()
+activate RF
+
+deactivate PC
+
+RF -> ADR : create()
+deactivate RF
+
+deactivate AS
+CTRL -> AS : retrieveAllAvailableDocks()
+
+
+activate AS
+
+AS -> ADR : findAll()
+activate ADR 
+
+ADR --> AS : listDocks
+deactivate ADR
+
+loop 
+
+AS -> PA :toDTO()
+activate PA
+PA -> DT : create()
+
+PA --> AS : dockDto
+deactivate PA
+end
+
+AS --> CTRL : dockDTOList
+deactivate AS
+CTRL --> UI : dockDTOList
+
+deactivate CTRL 
+
+UI --> SC : Present and Asks to select one Dock 
+deactivate UI
+
+SC -> UI : selects one Dock
+activate UI
+
+UI -> CTRL : configureAGV(model, description, taskStatus, batteryAutonomy, dockIdentifier)
+
+activate CTRL 
+
+CTRL -> AS : configureAGV(model, description, taskStatus, batteryAutonomy, dockIdentifier)
+
+activate AS
+
+AS -> ADR : findAll()
+activate ADR 
+deactivate ADR
+
+AS -> PF :create()
+
+AS -> PF : sets(all)
+
+note right
+
+all sets
+
+end note
+
+AS -> PF : build()
+activate PF
+
+PF -> P : create(model, description, taskStatus, batteryAutonomy, dockIdentifier)
+activate P
+
+P --> PF : agv
+deactivate P
+
+
+PF --> AS : agv
+deactivate PF
+
+AS -> P : toDTO(agv)
+activate P
+P -> AD : create()
+
+
+P --> AS : agvDto
+
+deactivate P
+
+AS --> CTRL : agvDto
+
+deactivate AS
+
+
+
+CTRL --> UI : agvDto
+
+
+deactivate CTRL
+
+UI--> SC: shows the agvDto and asks to corfirm 
+deactivate UI
+
+SC -> UI: Confirm
+activate UI
+UI -> CTRL : persistAGV(agvDto)
+
+activate CTRL 
+
+
+
+CTRL -> AS : persistAGV(agvDto)
+
+activate AS
+
+AS -> PC : repositories()
+
+activate PC
+
+PC -> RF : create()
+activate RF
+
+RF -> PR : create
+
+deactivate RF
+
+deactivate PC
+
+AS -> ADR : findALL()
+activate ADR 
+deactivate ADR
+AS -> PF :create()
+
+AS -> PF : sets(all)
+
+note right
+
+all sets
+
+end note
+
+AS -> PF : build()
+activate PF
+
+PF -> P : create(model, description, taskStatus, batteryAutonomy, dockIdentifier)
+activate P
+
+P --> PF : agv
+deactivate P
+
+
+PF --> AS : agv
+deactivate PF
+
+AS -> PR : save(agv)
+activate PR
+deactivate PR
+deactivate AS
+
+deactivate CTRL
+
+UI --> SC : informs the success
+
+deactivate UI
+
+
+
+
+
+deactivate SC
+@enduml

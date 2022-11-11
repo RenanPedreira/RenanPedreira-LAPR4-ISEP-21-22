@@ -1,0 +1,40 @@
+@startuml
+autonumber
+'hide footbox
+
+
+participant ":CategoryMapper" as M
+participant "dtoCategoryList: List<categoryDTO>" as D
+participant "dto: categoryDTO" as D1
+participant "c: Category " as T
+participant "categoryList: List<Category>" as L
+-> M : toDTO(categoryList)
+activate M
+M --> D**:create()
+loop for each Category in categoryList 
+
+        M -> L : c = getCategory(i)
+        activate L
+        deactivate L
+        M -> T : category = getCategory()
+        activate T
+        deactivate T
+        
+        
+        M -> T: superCategory = getSuperCategory()
+        activate T
+        deactivate T
+        M -> D1** : create(category,superCategory)
+        
+        M -> D : add(dto)
+        activate D
+        deactivate D
+    end
+<- M : dtoCategoryList
+deactivate M
+
+
+
+
+
+@enduml

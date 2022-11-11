@@ -1,0 +1,40 @@
+@startuml
+
+participant "Kiosk" as KIOSK << client >>
+participant "AgvTwinDaemon" as DAEMON
+participant "AgvTwinServer" as SERVER
+participant "AgvTwinHandler" as HANDLE << thread >>
+participant "MessageParser" as MSG
+participant "UpdateStatusRequest" as PROTOCOL << abstract >>
+
+DAEMON -> SERVER: new
+
+loop true
+
+DAEMON -> SERVER: start
+activate SERVER
+
+SERVER -> SERVER: accept
+
+KIOSK  --> SERVER: request
+
+activate HANDLE
+SERVER  -> HANDLE: start
+deactivate SERVER
+
+end loop
+
+HANDLE  -> MSG: parse(request)
+MSG  -> PROTOCOL** : new
+
+HANDLE  -> PROTOCOL: execute
+activate PROTOCOL
+PROTOCOL  -> PROTOCOL: buildResponse
+
+PROTOCOL  --> HANDLE: response
+deactivate PROTOCOL
+HANDLE  --> KIOSK : response
+deactivate HANDLE
+
+
+@enduml

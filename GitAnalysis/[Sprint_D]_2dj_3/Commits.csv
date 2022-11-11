@@ -1,0 +1,468 @@
+f1f1407,2022-06-19 23:58:54 +0100,Miguel Alecrim,1200621@isep.ipp.pt,apresentação
+4da324e,2022-06-19 23:31:42 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-115 [Implementation] update class Dashboard
+f5396ba,2022-06-19 23:30:08 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-95 Updated design [IMPLEMENTATION]
+2d14318,2022-06-19 23:19:11 +0100,Miguel Alecrim,1200621@isep.ipp.pt,L2S23-84 unitests
+2a6c574,2022-06-19 23:09:10 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-115 [IMPLEMENTATION] UPADTE SERVICE
+2907bd7,2022-06-19 23:08:29 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-127 [IMPLEMENTATION] update class PositionThread
+665a0d2,2022-06-19 22:56:31 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated battery manager [IMPLEMENTATION]
+3c36e9d,2022-06-19 22:56:03 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Twin proxy [IMPLEMENTATION]
+b5b0ec4,2022-06-19 22:55:41 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated bootstrap [IMPLEMENTATION]
+397412c,2022-06-19 22:55:02 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated digital twin simulation [IMPLEMENTATION]
+324d884,2022-06-19 22:54:31 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated positioning [IMPLEMENTATION]
+7c90ca9,2022-06-19 22:54:07 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Commented some tests [IMPLEMENTATION]
+b15ca74,2022-06-19 22:53:42 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated AgvsCurrentLocationRequest [IMPLEMENTATION]
+16dceeb,2022-06-19 21:15:17 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-127 [IMPLEMENTATION] update class PositionThread
+341e925,2022-06-19 20:44:58 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-115 [IMPLEMENTATION] UPADTE SERVICE
+283d39d,2022-06-19 20:44:12 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-114 [ANALYSIS] UPDATE
+94d9517,2022-06-19 20:43:44 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-114 [DESIGN] UPDATE SD
+a9e52bd,2022-06-19 18:45:36 +0000,Joana Vaz,1190683@isep.ipp.pt,L2S23-118: Design: update on the Design (addition of Tests)
+91c4938,2022-06-19 18:44:41 +0000,Joana Vaz,1190683@isep.ipp.pt,L2S23-118: Design: update on the Design
+b237dcc,2022-06-19 19:43:29 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-118: Design: update on the Design (addition of Tests)
+d8e749f,2022-06-19 19:41:08 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-119: Implementation: correcting tests
+66687a0,2022-06-19 19:00:33 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-119: Implementation: correcting tests
+395aba5,2022-06-19 18:52:36 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-119: Implementation: tests for Order class
+fac4373,2022-06-19 18:47:28 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class HistoryMapper.
+fd32010,2022-06-19 18:47:20 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class HistoryDTO.
+3a8e27b,2022-06-19 18:46:50 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class AnswerQuestionnaireUI.
+983bc38,2022-06-19 18:46:38 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class AnswerQuestionnaireService.
+40070fc,2022-06-19 18:46:27 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-119: Implementation: Corrections on restrictions
+17102af,2022-06-19 18:46:02 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class AnswerQuestionnaireController.
+6e7772a,2022-06-19 18:45:41 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class AnswerQuestionnaireAction.
+d83f003,2022-06-19 18:45:02 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of file Questionnaire3.txt.
+e2accba,2022-06-19 18:44:49 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of file pom.xml.
+eb991f2,2022-06-19 18:44:41 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of file persistence.xml.
+5e492f6,2022-06-19 18:44:28 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of interface CustomerRepository.
+a0ea79a,2022-06-19 18:44:16 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of class JpaCustomerRepository.
+bcbaf86,2022-06-19 18:44:03 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of class InMemoryCustomerRepository.
+81b4c54,2022-06-19 18:43:53 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of class RegisterCustomerService.
+a8e7bec,2022-06-19 18:43:40 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of class ViewStatusOfOpenOrdersUI.
+bcd1134,2022-06-19 18:43:24 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of class Section.
+58776bc,2022-06-19 18:43:07 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of Test Planning of US3002.
+b307a20,2022-06-19 18:41:51 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated DigitalTwinControlUnit [IMPLEMENTATION]
+c49e325,2022-06-19 18:41:17 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated DigitalTwinSimulator [IMPLEMENTATION]
+a69c953,2022-06-19 18:41:11 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-91 - Update of file QuestionnaireGrammar.g4.
+a09b5cc,2022-06-19 18:40:59 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-91 - Update of files generated by ANTLR.
+6654c95,2022-06-19 18:40:49 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated PositionThread [IMPLEMENTATION]
+6b1229d,2022-06-19 18:40:48 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-91 - Update of interfaces generated by ANTLR.
+f663632,2022-06-19 18:40:28 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated DigitalTwinUnit [IMPLEMENTATION]
+db89c24,2022-06-19 18:40:21 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of classes generated by ANTLR.
+4adbe1e,2022-06-19 18:40:01 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated RoutePlanner [IMPLEMENTATION]
+980fde4,2022-06-19 18:39:48 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of class QuestionMapper.
+c162988,2022-06-19 18:39:38 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated Sensor [IMPLEMENTATION]
+1bf2279,2022-06-19 18:39:30 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of class QuestionBuilder.
+e8dfd01,2022-06-19 18:39:22 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of class Question.
+a835156,2022-06-19 18:39:05 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of test OrdreTest.
+75e4b83,2022-06-19 18:38:48 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of class Interrogation.
+dea251d,2022-06-19 18:38:34 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of class Instruction.
+36e1275,2022-06-19 18:38:21 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of class CustomerMenu.
+029c537,2022-06-19 18:38:14 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated SharedMemory [IMPLEMENTATION]
+72128fd,2022-06-19 18:38:08 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of class CustomerMapper.
+097f57e,2022-06-19 18:37:59 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of class CustomerDTO.
+21fcdd6,2022-06-19 18:37:53 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated SimulationEngine [IMPLEMENTATION]
+a859e5e,2022-06-19 18:37:50 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of class CustomerBuilder.
+ce261ba,2022-06-19 18:37:42 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of class Customer.
+2c09ac0,2022-06-19 18:37:29 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of test ClerkOrderTest.
+0ffab56,2022-06-19 18:37:19 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of test CartTest.
+3d7f6dd,2022-06-19 18:37:11 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated TwinServerProxy [IMPLEMENTATION]
+9ddf942,2022-06-19 18:37:03 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of class BaseBootstrapper.
+755840a,2022-06-19 18:31:43 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-119: Implementation: Corrections on restrictions
+33f1d54,2022-06-19 18:22:38 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-119: Implementation: Tests for PaymentMethod class and modifications
+ed83547,2022-06-19 18:10:18 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-119: Implementation: Tests for Comment class and modifications
+26ba12c,2022-06-19 16:37:32 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-104: Implementation: Tests for Position class
+23f9f61,2022-06-19 16:23:03 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-104: Implementation: correcting tests
+beefb2f,2022-06-19 16:19:14 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-104: Implementation: Tests for Speed class and corrections
+313983c,2022-06-19 15:42:00 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-118: Design: Update on SD of US1502
+ad32ca8,2022-06-19 15:24:03 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-119: Implementation: Renaming methods in order to be more coherent
+9f91e70,2022-06-19 15:06:29 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-118: Design: update on Design of US1502
+e157111,2022-06-19 14:59:43 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated BaseBootstrapper [IMPLEMENTATION]
+f12163e,2022-06-19 14:38:55 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated CsvAgvManagerBackofficeProtocolProxyManager [IMPLEMENTATION]
+ded9567,2022-06-19 14:38:30 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated CsvAGVProtocolMessageParserProtocolP [IMPLEMENTATION]
+9c5590a,2022-06-19 14:37:51 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated DigitalTwinUnit [IMPLEMENTATION]
+cd66b87,2022-06-19 14:37:32 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated DigitalTwinProxy [IMPLEMENTATION]
+5c67190,2022-06-19 14:37:13 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated Identifier [IMPLEMENTATION]
+2ddd95b,2022-06-19 14:36:54 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated DigitalTwinSimulator [IMPLEMENTATION]
+809be68,2022-06-19 14:36:33 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated JpaAssignmentRepository [IMPLEMENTATION]
+041e865,2022-06-19 14:36:05 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated RoutePlanner [IMPLEMENTATION]
+1bbad17,2022-06-19 14:35:45 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated SharedMemory [IMPLEMENTATION]
+356cabf,2022-06-19 14:35:21 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated SimulationEngineThread [IMPLEMENTATION]
+123ba44,2022-06-19 14:34:54 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated BaseBootstrapper [IMPLEMENTATION]
+04aded3,2022-06-19 14:34:05 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated AGVProtocolRequest [IMPLEMENTATION]
+69724db,2022-06-19 12:47:35 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-119: Implementation: updates/corrections on GetClientOrdersRequest
+8447ead,2022-06-19 12:39:31 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-119: Implementation: update/correction on GetClientOrdersRequest
+867cf95,2022-06-19 12:39:06 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-119: Implementation: update/correction on ListOrdersStatusService
+9b2e81b,2022-06-19 12:34:36 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-119: Implementation: method to get the Customer name
+f86c7c7,2022-06-19 12:30:21 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-119: Implementation: Correction on ViewStatusOfOpenOrdersUI
+a783c3f,2022-06-19 11:48:12 +0100,Miguel Chen,1190897@isep.ipp.pt,update positionthread
+3fb9700,2022-06-19 11:22:57 +0100,Miguel Chen,1190897@isep.ipp.pt,commit
+458be9b,2022-06-19 06:31:42 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated SimulationEngineThread [IMPLEMENTATION]
+5beab75,2022-06-19 06:31:19 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated SharedMemory [IMPLEMENTATION]
+7cba638,2022-06-19 06:30:22 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated RoutePlanner [IMPLEMENTATION]
+e925072,2022-06-19 06:29:40 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated DigitalTwinSimulator [IMPLEMENTATION]
+4f67149,2022-06-19 06:29:09 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated BatteryManager [IMPLEMENTATION]
+72c4500,2022-06-19 04:08:58 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated SimulationEngineThread [IMPLEMENTATION]
+e8e8884,2022-06-19 04:08:25 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated SharedMemory [IMPLEMENTATION]
+f7bd008,2022-06-19 04:07:57 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated PositionThread [IMPLEMENTATION]
+2a6269f,2022-06-19 04:07:25 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated JpaAssignmentRepository [IMPLEMENTATION]
+7c47b92,2022-06-19 04:06:54 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated DigitalTwinProxy [IMPLEMENTATION]
+bc72dbb,2022-06-19 02:49:16 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated DigitalTwinSimulator [IMPLEMENTATION]
+1d48a86,2022-06-19 02:48:51 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated DigitalTwinProxy [IMPLEMENTATION]
+42accaf,2022-06-19 02:48:25 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated CsvAGVProtocolServer [IMPLEMENTATION]
+c7d5b9d,2022-06-19 02:47:54 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated BatteryManager [IMPLEMENTATION]
+a612dd6,2022-06-19 02:47:25 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated Bootstrapper [IMPLEMENTATION]
+9f3202a,2022-06-19 02:46:58 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated DigitalTwinUnit [IMPLEMENTATION]
+71b07f6,2022-06-19 02:46:30 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated Position [IMPLEMENTATION]
+5f919b4,2022-06-19 02:46:03 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated RoutePlanner [IMPLEMENTATION]
+b1a16de,2022-06-19 02:45:43 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated WarehousePlantRequest [IMPLEMENTATION]
+9c41c27,2022-06-19 02:45:20 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated SimulationEngine [IMPLEMENTATION]
+6090a34,2022-06-19 02:44:55 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated Sensor [IMPLEMENTATION]
+11a8fbf,2022-06-19 02:44:33 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated AGVRepository [IMPLEMENTATION]
+5d1bf1a,2022-06-19 02:44:01 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated AGVProtocolRequest [IMPLEMENTATION]
+3bac297,2022-06-19 00:25:46 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-127 [IMPLEMENTATION] update class PositionThread
+cb01da1,2022-06-18 22:47:44 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-127 [IMPLEMENTATION] update class RoutePlanner
+a55937a,2022-06-18 22:21:20 +0100,Miguel Chen,1190897@isep.ipp.pt,commit
+2346c12,2022-06-18 22:07:08 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-119: Implementation: Correction of a method due to the Client requirements
+405d11a,2022-06-18 22:03:54 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated dashboard [IMPLEMENTATION]
+f8120b8,2022-06-18 21:43:24 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated Position [IMPLEMENTATION]
+ba97400,2022-06-18 21:43:05 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated Location [IMPLEMENTATION]
+a0c4a7e,2022-06-18 21:42:45 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated Bootstrap [IMPLEMENTATION]
+c923d83,2022-06-18 21:35:08 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated AGV [IMPLEMENTATION]
+a2c9343,2022-06-18 21:34:48 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated Position [IMPLEMENTATION]
+649df0f,2022-06-18 21:33:17 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated jpa repo [IMPLEMENTATION]
+742b475,2022-06-18 21:33:00 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated twin proxy [IMPLEMENTATION]
+5e19292,2022-06-18 21:32:26 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated bootstrap [IMPLEMENTATION]
+d0d4b37,2022-06-18 20:50:26 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-126: Implementation: Correction of an error on ViewStatusOfOpenOrdersController
+d66c57e,2022-06-18 19:09:06 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated RoutePlanner [IMPLEMENTATION]
+e0f91d4,2022-06-18 19:08:47 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated SimulationEngineThread [IMPLEMENTATION]
+189ba00,2022-06-18 19:08:05 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated PositionThread [IMPLEMENTATION]
+0f405b7,2022-06-18 19:07:45 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated DigitalTwinUnit [IMPLEMENTATION]
+7c8192e,2022-06-18 19:07:19 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated CurrentStatusRequest [IMPLEMENTATION]
+0bdada1,2022-06-18 19:06:46 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated CurrentPositionRequest [IMPLEMENTATION]
+5913c83,2022-06-18 19:05:42 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated SharedMemory to have synchronization [IMPLEMENTATION]
+35f55a5,2022-06-18 18:03:45 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of file Questionnaire3.txt.
+9bab74c,2022-06-18 18:03:34 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of interface StatisticalReportRepository.
+8254a4f,2022-06-18 18:03:16 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of interface DataStrategy.
+147b136,2022-06-18 18:03:07 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of interface FileStrategy.
+21e4df4,2022-06-18 18:02:55 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class TargetAudience.
+cc087d5,2022-06-18 18:02:23 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class StatisticalReportBuilder.
+e51932e,2022-06-18 18:02:08 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class RawDataStrategy.
+9512206,2022-06-18 18:01:48 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class StatisticalReport and StatisticalData.
+302f19b,2022-06-18 18:00:58 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class SectionBuilder.
+88afa0f,2022-06-18 18:00:50 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class QuestionnaireBuilder.
+c3e1b3d,2022-06-18 18:00:41 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class QuestionBuilder.
+c14c383,2022-06-18 18:00:23 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class PercentageDataStrategy.
+765e609,2022-06-18 18:00:10 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class Parameter.
+a99b95d,2022-06-18 18:00:01 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class ObtainStatisticalReportUI.
+df9faff,2022-06-18 17:59:38 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class ObtainStatisticalReportService.
+0d38653,2022-06-18 17:59:28 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class ObtainStatisticalReportController.
+034be61,2022-06-18 17:59:21 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class ObtainStatisticalReportAction.
+3b79a3f,2022-06-18 17:59:10 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class JPAStatisticalRepository.
+0c89c41,2022-06-18 17:58:57 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class FileContext.
+ee302cb,2022-06-18 17:58:51 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class ExcelFileStrategy.
+d41fa34,2022-06-18 17:58:40 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class DataParameter.
+fcb6fc0,2022-06-18 17:56:44 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class DataContext.
+a0b75ca,2022-06-18 17:56:36 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class CustomerMapper.
+6fdd1ac,2022-06-18 17:56:13 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of class Visitor, due to changes related to used DTO classes.
+3a192d9,2022-06-18 17:55:12 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of class Type. Added method toString().
+78940a0,2022-06-18 17:54:57 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of class Title. Updated method toString().
+72d353a,2022-06-18 17:54:32 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of classes TargetAudienceDTO and TargetAudienceMapper.
+ca5c57a,2022-06-18 17:54:14 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class TargetAudienceBuilder.
+9e28b34,2022-06-18 17:53:40 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update and correction of classes SectionDTO and SectionMapper.
+77919aa,2022-06-18 17:53:12 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update class Section. Added method toString().
+eb73679,2022-06-18 17:52:52 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update class SalesManagerMenu. Added functionality relative to generation of a Statistical Report of a given Questionnaire.
+9bfba22,2022-06-18 17:51:58 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update class RepositoryFactory. Added methods statisticalRepository(). Removed multiple unused methods.
+a961b60,2022-06-18 17:50:51 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update class Repeatability. Added method toString().
+a6690a3,2022-06-18 17:50:18 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Removed unused Repository classes.
+11aafe2,2022-06-18 17:49:49 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of interface QuestionnaireValidationService and removed duplicate file. Added method validateQuestionnaireStringFormat.
+699eb7c,2022-06-18 17:48:59 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of interface QuestionnaireRepository. Added method answeredQuestionnaires().
+0f62e0d,2022-06-18 17:48:18 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of file QuestionnaireGrammar.g4.
+cc66a69,2022-06-18 17:47:54 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of class QuestionnaireDTO and QuestionnaireMapper.
+f4256c2,2022-06-18 17:47:34 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of class Questionnaire. Added method toString().
+a180418,2022-06-18 17:47:12 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of class QuestionDTO and QuestionMapper.
+ad1ce43,2022-06-18 17:46:44 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of class Question. Added method toString().
+9dfaa0a,2022-06-18 17:46:14 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of file pom.xml. Added ApachePOI dependencies required for generation of excel file.
+b68efbc,2022-06-18 17:45:30 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of file persistence.xml. Added classes TargetAudience and StatisticalReport to Persistence Unit.
+0291d62,2022-06-18 17:44:37 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of Class Message. Updated method toString().
+592b70c,2022-06-18 17:43:12 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of Class Message. Added method toString().
+3a84d52,2022-06-18 17:42:52 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of Class JpaRepositoryFactory. Added method statisticalReportRepository().
+84a3eaf,2022-06-18 17:42:17 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of Class JpaQuestionnaireRepository. Added method answeredQuestionnaires(). Note: JPQL Function SIZE not functioning properly.
+2567c9c,2022-06-18 17:41:17 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-127 [IMPLEMENTATION] update class PositionThread
+e7cc492,2022-06-18 17:40:37 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Removed multiple unused repository classes.
+db5bea3,2022-06-18 17:40:03 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,    L2S23-85 - Update Class Instruction. Added of method toString.
+5dcb290,2022-06-18 17:39:42 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,    L2S23-85 - Update Class Instruction. Correction of method toString.
+d6a766b,2022-06-18 17:39:01 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,    L2S23-85 - Update Class InMemoryRepositoryFactory.
+b602609,2022-06-18 17:38:50 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,    L2S23-85 - Update Class Identifier.
+51008e2,2022-06-18 17:38:41 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,    L2S23-85 - Update Class Description.
+3d3c0f9,2022-06-18 17:38:29 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,    L2S23-85 - Update Class FifoService.
+7a692f7,2022-06-18 17:38:09 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,    L2S23-85 - Update Class Customer and CustomerBuilder.
+8c0dda7,2022-06-18 17:37:42 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update Class BaseBootstrapper. Added method registerQuestionnaire.
+807fde1,2022-06-18 17:37:11 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update Class AssignmentService.
+7715ddc,2022-06-18 17:36:57 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update Class Answer.
+d0b2358,2022-06-18 17:36:44 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update Class AGVBuilder.
+ca8e7e4,2022-06-18 17:36:33 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update Class Address.
+393bfa3,2022-06-18 17:36:05 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Changed package of class IdentifierGenerator.
+47bc6e4,2022-06-18 17:34:56 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Removed classes AnswerRepository.
+afab827,2022-06-18 17:34:45 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Removed classes AnswerDTO and AnswerMapper.
+c59e2f2,2022-06-18 17:34:05 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of Sequence Diagram of US3002.
+736b51e,2022-06-18 17:33:38 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of Sequence Diagram of US3002.
+19a38fa,2022-06-18 17:33:10 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of Rationale and Test Planning of US3002.
+41b2bc0,2022-06-18 17:17:11 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-126: Implementation: Update of ViewStatusOfOpenOrdersController
+c853d6c,2022-06-18 17:10:52 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-126: Implementation: Corrections on GetClientOrdersRequest
+54dcf09,2022-06-18 17:09:02 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-126: Implementation: updates on BootStrap
+570bce6,2022-06-18 16:20:44 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-126: Implementation: updates on BatteryManager class
+75ecc95,2022-06-18 16:13:10 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-126: Implementation: update on DigitalTwinUnit class
+e6c294a,2022-06-18 16:12:40 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-126: Implementation: correction on Battery manager module
+64623a4,2022-06-18 01:50:15 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated other agvs location request[IMPLEMENTATION]
+689a3a9,2022-06-17 23:56:49 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-115 [Implementation] update code
+3f6ed21,2022-06-17 23:56:03 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-115 [Implementation] update www folder
+b826203,2022-06-17 23:55:34 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-107 [UPDATE] update code
+7f934a3,2022-06-17 23:54:59 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-130 [IMPLEMENTATION] update class SimulationEngine
+6d38482,2022-06-17 23:54:01 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-127 [IMPLEMENTATION] update class PositionThread
+56a0c57,2022-06-17 23:31:40 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated agv manager parser [IMPLEMENTATION]
+cf3c118,2022-06-17 23:21:31 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated twin simulator [IMPLEMENTATION]
+3b5eb44,2022-06-17 23:20:55 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated route planner request [IMPLEMENTATION]
+2311c0b,2022-06-17 23:20:12 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated product's location [IMPLEMENTATION]
+e98ee32,2022-06-17 23:18:46 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated the request for pickup order [IMPLEMENTATION]
+d84971a,2022-06-17 23:18:08 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated the request for current position [IMPLEMENTATION]
+8d6fb5c,2022-06-17 23:17:48 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated the request for current status [IMPLEMENTATION]
+04f3737,2022-06-17 23:17:17 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Created a query to get the assignments of an agv [IMPLEMENTATION]
+f6ddb1c,2022-06-17 22:30:22 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-126: Implementation: Update on DigitalTwinUnit class
+047c9b1,2022-06-17 22:29:48 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-126: Implementation: Modifications on SharedMemory class due to the sensors
+2affd13,2022-06-17 22:28:37 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-126: Implementation: Update on Sensor module
+7af1137,2022-06-17 21:03:33 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-115 [Implementation] update class
+be57660,2022-06-17 20:59:08 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-115 [Implementation] update class AGVMapper
+bff5843,2022-06-17 20:58:36 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-115 [Implementation] update class AGVDTO
+f85a1d4,2022-06-17 20:58:19 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-115 [Implementation] update class AGV
+d6dd730,2022-06-17 20:57:56 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-115 [Implementation] create class GetWarehousePlantService
+47b7170,2022-06-17 20:56:58 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-115 [Implementation] update class DashboardController
+38af2e3,2022-06-17 20:56:30 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-115 [Implementation] update class DashboardRequest
+af4ee94,2022-06-17 20:55:59 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-115 [Implementation] update class Dashboard
+ef36c06,2022-06-17 20:55:19 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-115 [Implementation] change www folder
+d25702e,2022-06-17 12:28:38 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-122: Design: Update on the design of US1902
+850aec4,2022-06-17 12:26:24 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-122: Design: Update of SD for US1902
+dec35f3,2022-06-17 11:55:01 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-122: Design: Update on the Design of US1902
+cc0e1c5,2022-06-17 03:49:59 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Proxy starts the connection and ends it when no longer needed [IMPLEMENTATION]
+bcd28f8,2022-06-17 03:49:09 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated the digital twin unit [IMPLEMENTATION]
+8256299,2022-06-17 03:48:08 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Updated position on common data [IMPLEMENTATION]
+85cbbef,2022-06-17 03:47:23 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Altered the Proxy class name [IMPLEMENTATION]
+45e1685,2022-06-17 03:46:12 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Changed how the position is get and updated[IMPLEMENTATION]
+902e66f,2022-06-17 03:42:55 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104 Created the class responsible for starting the twins [IMPLEMENTATION]
+f22a91d,2022-06-16 20:12:56 +0000,Miguel Chen,1190897@isep.ipp.pt,Livro De Reclamações.txt edited online with Bitbucket
+b938d16,2022-06-16 21:06:46 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-115 [Implementation] change code
+241614f,2022-06-16 20:55:02 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-114 [DESIGN] UPDATE SD
+a7a6c49,2022-06-16 20:54:09 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-115 [Implementation] change code
+994838f,2022-06-16 19:56:37 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-114 [DESIGN] maybe final SD
+4a8ad17,2022-06-16 17:14:51 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-129: [IMPLEMENTATION] Update on DigitalTwinUnit class
+bc1d282,2022-06-16 17:14:17 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-129: [IMPLEMENTATION] Update on RoutePlanner class
+1674b33,2022-06-16 17:13:38 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-129: [IMPLEMENTATION] Update on PositionThread class
+5c58c6e,2022-06-16 17:13:01 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-129: [IMPLEMENTATION] Update on SimulationEngine class
+dfae681,2022-06-16 16:10:06 +0100,Miguel Alecrim,1200621@isep.ipp.pt,L2S23-108 OrderDeliveredAction
+86d599b,2022-06-16 15:15:21 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-126: Implementation: Update of DigitalTwinUnit class
+c8911e6,2022-06-16 15:14:44 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-126: Implementation: Development of the Sensor class
+bc0b46e,2022-06-16 13:19:31 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-126: Implementation: Update on SharedMemory class
+d68f388,2022-06-16 00:06:20 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-125: Updated the control unit to send shared data to the parser [IMPLEMENTATION]
+9126bcd,2022-06-16 00:05:50 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-125: Updated all agvs request [IMPLEMENTATION]
+7dd3769,2022-06-15 16:46:43 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-129: [IMPLEMENTAION] Update on old code
+258e920,2022-06-15 16:46:00 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-129: [IMPLEMENTAION] Update on old code
+4eb52fa,2022-06-15 16:45:08 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-129: [IMPLEMENTAION] Update on  SimulationEngine class
+83ed712,2022-06-15 16:44:38 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-129: [IMPLEMENTAION] Update on Positionthread class
+6d5f5af,2022-06-15 16:43:46 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-129: [IMPLEMENTATION] Update on SharedMemory class
+f91e2cd,2022-06-15 15:31:25 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-83: Update on "complaint book"
+4057e6a,2022-06-15 15:22:40 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-126: Implementation: Development of Sensor class
+02fcfeb,2022-06-15 14:37:16 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-118: Design: Update on SD
+94d4636,2022-06-15 14:36:01 +0100,Miguel Alecrim,1200621@isep.ipp.pt,L2S23-108 SalesClerkMenu corrections
+9fa5bf0,2022-06-15 14:09:32 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-129: Implementation: Update/development of the DigitalTwinUnit
+570c69c,2022-06-15 14:05:35 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-129: Implementation: Update/development on BatteryThread
+1a6a23c,2022-06-15 13:38:18 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-129: Implementation: Update on SharedMemory class
+44e03b0,2022-06-15 11:01:20 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-118: Design: Update of US1502 SD
+b97f1a8,2022-06-15 10:49:26 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-129: Implementation: Update on SharedMemory class
+d47258b,2022-06-15 10:45:38 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-118: Design: Update on the Design
+fd02557,2022-06-15 10:18:24 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-117: Analysis: Update of Client clarifications
+4772eb4,2022-06-15 09:53:45 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-129: Implementation: Creation of BatteryThread
+f08ab43,2022-06-15 02:13:53 +0100,Miguel Alecrim,1200621@isep.ipp.pt,L2S23-108 SD upgrade
+ac637cb,2022-06-15 02:05:25 +0100,Miguel Alecrim,1200621@isep.ipp.pt,L2S23-108 US1006 upgrade
+56c251e,2022-06-15 01:55:26 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-125: Updated the control unit [IMPLEMENTATION]
+585c1e7,2022-06-15 01:53:18 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104: Updated some classes to support the shared memory [IMPLEMENTATION]
+9782cc4,2022-06-15 01:51:59 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104: Updated some classes to support the shared memory [IMPLEMENTATION]
+281e11b,2022-06-15 01:50:05 +0100,Miguel Alecrim,1200621@isep.ipp.pt,L2S23-108 US1006 OrderDeliveredUI class
+081e3b9,2022-06-15 01:49:38 +0100,Miguel Alecrim,1200621@isep.ipp.pt,L2S23-108 US1006 OrderDeliveredAction class
+b81eed0,2022-06-15 01:48:57 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104: Updated position class [IMPLEMENTATION]
+40a47e4,2022-06-15 01:47:32 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104: Created the class that starts the threads [IMPLEMENTATION]
+37977c2,2022-06-15 01:46:38 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104: Sent some classes to Modules package [IMPLEMENTATION]
+01fbd41,2022-06-15 01:45:50 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-104: Altered the Shared Memory class [IMPLEMENTATION]
+9f85582,2022-06-14 23:13:36 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of interface AnswerRepository.java.
+e9cf458,2022-06-14 23:13:26 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of interface SectionRepository.java.
+7969cd4,2022-06-14 23:13:19 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of interface QuestionRepository.java.
+6b246c9,2022-06-14 23:13:06 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class JpaSectionRepository.java.
+f46073f,2022-06-14 23:12:53 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class JpaQuestionRepository.java.
+df95333,2022-06-14 23:12:33 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class JpaAnswerRepository.java.
+210ea45,2022-06-14 23:12:23 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class AnswerMapper.java.
+d47febf,2022-06-14 23:12:12 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class AnswerDTO.java.
+b52003e,2022-06-14 23:11:31 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of class Visitor.java.
+418153d,2022-06-14 23:11:22 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of class Section.java.
+29e262a,2022-06-14 23:11:12 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of class QuestionnaireValidationService.java.
+a99585f,2022-06-14 23:11:01 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class Type.java.
+c787ab1,2022-06-14 23:10:40 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update interface RepositoryFactory.java.
+e0bfde5,2022-06-14 23:10:26 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update interface QuestionnaireRepository.java.
+7f33451,2022-06-14 23:10:13 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update file multiple ANTLR Generated files.
+680c067,2022-06-14 23:09:55 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update file multiple ANTLR Generated files.
+aff9409,2022-06-14 23:09:17 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update file QuestionnaireGrammar.g4.
+3c2eb8a,2022-06-14 23:09:06 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update file Questionnaire 2.txt.
+a28be49,2022-06-14 23:08:52 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update class QuestionMapper.java.
+b859d72,2022-06-14 23:08:44 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update class QuestionDTO.java.
+6a5f64f,2022-06-14 23:08:28 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Removed class QuestionContent.java.
+f3b48c5,2022-06-14 23:08:12 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update class Question.java.
+b851138,2022-06-14 23:07:58 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update file persistence.xml.
+2763c12,2022-06-14 23:07:48 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update class JpaRepositoryFactory.java.
+81cb5df,2022-06-14 23:07:37 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update class JpaQuestionnaireRepository.java.
+8e63a32,2022-06-14 23:07:26 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update class InMemoryRepositoryFactory.java.
+2e97e5c,2022-06-14 23:07:12 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update class Answer.java.
+8471833,2022-06-14 02:03:10 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-114 [UPDATE OLD CODE]
+071a43e,2022-06-13 17:24:14 +0100,Miguel Alecrim,1200621@isep.ipp.pt,error correction
+c8bb008,2022-06-13 17:19:19 +0100,Miguel Alecrim,1200621@isep.ipp.pt,error correction
+32470b1,2022-06-13 16:22:29 +0100,Miguel Alecrim,1200621@isep.ipp.pt,L2S23-83 US9002 txt
+5e58fa4,2022-06-13 15:31:54 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-125: Created Current status request, made by the agv manager to the twin server [IMPLEMENTATION]
+d15ca2d,2022-06-13 15:31:33 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-125: Created Current position request, made by the agv manager to the twin server [IMPLEMENTATION]
+69e68df,2022-06-13 15:30:52 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-125: Created Control Unit module [IMPLEMENTATION]
+4e2d70a,2022-06-13 15:28:53 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-124: Created pick-up order request, mad eby the communications module of the twin [IMPLEMENTATION]
+a20e4fe,2022-06-13 15:28:18 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-124: Created All other agvs' location request, mad eby the communications module of the twin [IMPLEMENTATION]
+261c3df,2022-06-13 15:26:52 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-125: Added new requests to TwinServerProxy to support requests made by the agv manager to the twin server [IMPLEMENTATION]
+7fb4db9,2022-06-13 15:25:37 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-124: Added new requests to AGV Manager parser to support requests made by the Communications module [IMPLEMENTATION]
+849112e,2022-06-13 15:24:48 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-125: Updated commtest and discomm on the twin [IMPLEMENTATION]
+01c183c,2022-06-13 15:24:01 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-125: Updated the superclass of TwinRequests to accept the agv the twin is simulating [IMPLEMENTATION]
+75a8a23,2022-06-13 15:23:00 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-125: Added more request options to twin parser [IMPLEMENTATION]
+96d3490,2022-06-13 15:22:22 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-124: Added the Twin Server and TwinClientProxy to communications module [IMPLEMENTATION]
+de6d244,2022-06-13 15:20:00 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-124: Updated some imports [IMPLEMENTATION]
+52aa5f5,2022-06-13 15:18:04 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-124: Sent the DigitalTwinProxy to the communications module [IMPLEMENTATION]
+887fc83,2022-06-13 15:15:30 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-124: Created a query for one of the requests made by the digital twin [IMPLEMENTATION]
+ce6c94d,2022-06-13 12:45:21 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-129: Implementation: Correction of tests
+07a90e9,2022-06-13 12:44:31 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-129: Implementation: Correction of tests
+4a47843,2022-06-13 12:28:03 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-129: Implementation: Creation of value object Battery
+4330def,2022-06-12 23:27:07 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class "SelectFileAction".
+b4a03a3,2022-06-12 23:26:55 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of class "Number".
+978737b,2022-06-12 23:26:17 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Removed unused Class.
+4d2aeaf,2022-06-12 23:26:00 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Corrections to Class "Visitor".
+6a34fdc,2022-06-12 23:25:41 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Corrections to Interface "SectionMapper".
+99f5f73,2022-06-12 23:25:34 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Corrections to Interface "SectionDTO".
+8c17c1a,2022-06-12 23:25:27 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Corrections to Interface "Section".
+1399e7b,2022-06-12 23:25:17 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Corrections to Interface "RepositoryFactory".
+86681e9,2022-06-12 23:24:56 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Corrections to Class "Repeatability".
+dfa30b4,2022-06-12 23:24:40 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Corrections to Class "QuestionnaireValidationUI".
+1f17b23,2022-06-12 23:24:30 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Corrections to Class "QuestionnaireValidationService".
+9228b3c,2022-06-12 23:24:19 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Corrections to Class "QuestionnaireValidationController".
+2abfb51,2022-06-12 23:24:03 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Corrections to Class "QuestionnaireMapper".
+9feddf8,2022-06-12 23:23:56 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Corrections to Class "QuestionnaireDTO".
+6973525,2022-06-12 23:23:36 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Corrections to grammatical error in file "Questionnaire2.txt".
+485e11d,2022-06-12 23:23:13 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Corrections to Class "Questionnaire".
+f84da54,2022-06-12 23:23:02 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Corrections to Class "QuestionMapper".
+246cc36,2022-06-12 23:22:53 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Corrections to Class "QuestionDTO".
+2c7763a,2022-06-12 23:22:44 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Corrections to Class "QuestionContent".
+9193d3d,2022-06-12 23:22:33 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Corrections to Class "Question".
+31fc73c,2022-06-12 23:22:09 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Added new dependency required for splitting Strings and corrections to the version of ANTLR dependency.
+e350d5b,2022-06-12 23:20:35 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Added entities "Questionnaire", "Section" and "Question" to the Persistence Unit.
+1a5978d,2022-06-12 23:19:46 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update to class "Obligatoriness". Changed access modifier to Nested Enumerate Class "ObligatorinessType"
+96fe045,2022-06-12 23:19:03 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update and corrections to class "Message".
+344a996,2022-06-12 23:18:41 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update class "JpaRepositoryFactory".
+e17e6e9,2022-06-12 23:18:18 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update class "JpaCustomerRepository".
+c870776,2022-06-12 23:17:58 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update class "InMemoryRepositoryFactory".
+60ee3b1,2022-06-12 23:17:19 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Updated regex in class "Identifier".
+fd4be25,2022-06-12 23:16:51 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Changed access modifier in Nested Enumerate Class "DescriptionType".
+756ac84,2022-06-12 23:15:57 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Correction to class "AGVBuilder".
+3efc40d,2022-06-12 23:15:26 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Correction to class "AGV". Added new Constructor.
+553c2aa,2022-06-12 20:11:20 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-114 [UPDATE OLD CODE]
+c8403a4,2022-06-12 18:59:41 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-112 [UPDATE] update class simulationEngine and SharedMemory
+689256f,2022-06-12 18:41:25 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-112 [UPDATE] update class SharedMemory
+fe44a44,2022-06-12 18:41:02 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-112 [UPDATE] update class PositionThread
+ad6aa1b,2022-06-12 18:40:31 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-114 [UPDATE OLD CODE]
+19deae3,2022-06-12 18:40:02 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-114 [UPDATE OLD CODE]
+517368f,2022-06-12 18:39:47 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-114 [UPDATE OLD CODE]
+d90d038,2022-06-12 18:39:18 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-112 [IMPLENTATION] Dashborad server Certificate
+601ee22,2022-06-12 18:03:18 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-123: Implementation: Order Server Certificate
+ae8b946,2022-06-12 16:27:08 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-123: Implementation: correction of an error
+d6489fa,2022-06-12 16:25:26 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-123: Implementation: update/development of CsvOrderProtocolServer
+2f15ecd,2022-06-12 16:25:05 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-123: Implementation: update/development of CsvOrderProtocolProxy
+1ad62a6,2022-06-12 16:14:13 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-119: Implementation: method to get the client orders by username
+f337278,2022-06-12 16:11:52 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-119: Implementation: Update on ListOrdersStatusService
+2d702ac,2022-06-12 16:10:17 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-119: Implementation: Development and update of ViewStatusOfOpenOrdersUI
+50c2820,2022-06-12 16:09:49 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-119: Implementation: Development of ViewStatusOfOpenOrdersController
+2df864b,2022-06-12 16:09:04 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-119: Implementation: Update on CustomerMenu
+ae8b605,2022-06-12 15:52:01 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-119: Implementation: Update on Order DTO
+1ee1288,2022-06-11 22:37:50 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Completed Sequence Diagram of US3002 in .svg format.
+1757bd1,2022-06-11 22:37:21 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Completed Sequence Diagram of US3002 and renamed file to "US3002-SD.pu".
+767f18b,2022-06-11 22:36:34 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Added TestPlanning to the Design of US3002.
+caf5a5d,2022-06-11 20:43:00 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-112 [IMPLEMENTATION] class SimulationEngineThread
+9651704,2022-06-11 20:42:19 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-112 [UPDATE] update class PositionThread
+1a2ee48,2022-06-11 20:41:50 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-112 [UPDATE] update class SharedMemory
+fc6871c,2022-06-11 17:55:26 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-92: Created tests for the agv manager SSL [IMPLEMENTATION]
+32c41bd,2022-06-11 17:53:34 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-92: Created a fake keystore to test user class [IMPLEMENTATION]
+652ba6e,2022-06-11 17:49:56 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-92: Updated backoffice permissions [IMPLEMENTATION]
+20aed3e,2022-06-11 16:52:49 +0100,Miguel Alecrim,1200621@isep.ipp.pt,L2S23-108 US1006 Order class upgrade
+846b99d,2022-06-11 16:52:19 +0100,Miguel Alecrim,1200621@isep.ipp.pt,L2S23-108 US1006 upgrade
+54c24ef,2022-06-11 16:52:07 +0100,Miguel Alecrim,1200621@isep.ipp.pt,L2S23-108 US1006 OrderRepository upgrade
+3666095,2022-06-11 16:51:51 +0100,Miguel Alecrim,1200621@isep.ipp.pt,L2S23-108 US1006 JpaOrderRepository upgrade
+e326d19,2022-06-11 16:51:28 +0100,Miguel Alecrim,1200621@isep.ipp.pt,L2S23-108 US1006 controller
+aa29a99,2022-06-11 16:51:14 +0100,Miguel Alecrim,1200621@isep.ipp.pt,L2S23-108 US1006 controller
+26275d8,2022-06-10 19:25:55 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-105 [ANALYSIS] update analysis
+77649fa,2022-06-10 19:20:18 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-112 [UPDATE] update class SharedMemory
+dfc0a3a,2022-06-10 19:19:32 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-112 [IMPLEMENTAION] class PositionThread
+124cf46,2022-06-10 18:42:47 +0100,Miguel Alecrim,1200621@isep.ipp.pt,L2S23-108 US1006 final SD
+fb57241,2022-06-10 12:15:42 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-119: Implementation: correction on Snapshot version
+408bf78,2022-06-09 23:19:18 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-119: Implementation: creation of a request to get the Client Orders
+6b66eb6,2022-06-09 23:18:43 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-119: Implementation: creation of ListOrdersStatusService
+a8e45ac,2022-06-09 23:18:19 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-119: Implementation: update on Order Protocol
+683080a,2022-06-09 23:15:06 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-119: Implementation: update on Order proxy
+5451b52,2022-06-09 23:13:51 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-119: Implementation: update on OrderDTO
+a15d320,2022-06-09 23:12:23 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-119: Implementation: method to get the client Orders
+e957300,2022-06-09 22:47:10 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-103: Digital Twin Client Keystore and Truststore [IMPLEMENTATION]
+1351b85,2022-06-09 22:46:45 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-103: Digital Twin Client certificate [IMPLEMENTATION]
+57c7df3,2022-06-09 22:46:03 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-102: System Diagram [DESISGN]
+825296d,2022-06-09 22:41:47 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-101: User Story analysis [ANALYSIS]
+13fafa3,2022-06-09 22:36:19 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-98: Digital Twin Server Certificate [IMPLEMENTATION]
+945ed62,2022-06-09 22:35:47 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-98: Digital Twin Client Keystore and Truststore [IMPLEMENTATION]
+30d20ba,2022-06-09 22:34:48 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-98: System Diagram [DESIGN]
+ac41e47,2022-06-09 22:29:23 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-97: User Strory analysis [ANALYSIS]
+834cd1d,2022-06-09 20:36:15 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-112 [UPDATE OLD CODE] update class AGV
+05ef33a,2022-06-09 20:35:39 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-112 [UPDATE] class Position
+a34fc08,2022-06-09 20:35:11 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-112 [UPDATE] class speed
+a37d154,2022-06-09 20:34:49 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-112 [UPDATE] class SharedMemory
+e506c74,2022-06-09 14:22:02 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-94: Backoffice's Keystore and Truststore  [IMPLEMENTATION]
+653e8fb,2022-06-09 14:21:23 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-94: Added some requests to teh server [IMPLEMENTATION]
+1e82d2f,2022-06-09 14:20:49 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-94: Fixed previous digital twin classes affected by agvbackoffice proxy's alteration [IMPLEMENTATION]
+86a9da6,2022-06-09 14:18:44 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-94: Updated AGV manager to run SSL [IMPLEMENTATION]
+1e8c070,2022-06-09 14:16:57 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-94: Updated classes that used the Backoffice proxy to communicate with the AGV Manager [IMPLEMENTATION]
+af05786,2022-06-09 14:13:28 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-94: Updated the proxy for the Backoffice to send requests to the AGV Manager [IMPLEMENTATION]
+f801e7c,2022-06-09 14:12:37 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-94: Created a proxy for the Twin Client to send requests to the AGV Manager [IMPLEMENTATION]
+a5cb8d1,2022-06-09 14:11:09 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-94: AGV Manager's Keystore and Truststore[IMPLEMENTATION]
+3d07e75,2022-06-09 01:05:14 +0100,Miguel Alecrim,1200621@isep.ipp.pt,L2S23-108 Initial SD
+087f216,2022-06-09 01:05:03 +0100,Miguel Alecrim,1200621@isep.ipp.pt,L2S23-108 US1009 initial analysis
+e618664,2022-06-08 23:29:13 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of Sequence Diagram of US3002 and general corrections to file "Read Me-US3002".
+13e2e90,2022-06-08 21:24:50 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-112 [UPDATE OLD CODE]
+25a62b0,2022-06-08 21:18:52 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-112 [UPDATE OLD CODE]
+8ba70ba,2022-06-08 21:14:43 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-94: System Diagram update[DESIGN]
+4b24899,2022-06-08 21:13:52 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-93: Analysis update[Analysis]
+7eaf391,2022-06-08 12:13:45 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-94: User story System Diagram[IMPLEMENTATION]
+94ccfda,2022-06-08 11:11:20 +0100,Renan Pedreira,1200623@isep.ipp.pt,#L2S23-92: User story analysis[IMPLEMENTATION]
+6c990fe,2022-06-07 23:30:48 +0100,Paulo Proença,prp@isep.ipp.pt,Repository Analysis
+8251434,2022-06-07 23:26:04 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Initial commit of Sequence Diagram of US3002.
+2a7b71c,2022-06-07 23:25:24 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of Rationale and minor corrections to Analysis.
+4faa667,2022-06-07 14:47:18 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-113 [ANALYSIS] initial analysis
+6bb1d33,2022-06-07 14:08:22 +0100,Miguel Chen,1190897@isep.ipp.pt,L2S23-105 [ANALYSIS] initial analysis
+fee3995,2022-06-03 23:39:15 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-121: Analysis: Beginning of the analysis of the US1902
+acb8412,2022-06-03 15:22:45 +0100,Renan Pedreira,1200623@isep.ipp.pt,#Digital Twin Update: Small change on a method that did not habdle exceptions[IMPLEMENTATION]
+7d40230,2022-06-03 15:17:35 +0100,Renan Pedreira,1200623@isep.ipp.pt,#AGV Manager Update: Updated communication between agv manager and twin server/client[IMPLEMENTATION]
+1973253,2022-06-03 15:16:43 +0100,Renan Pedreira,1200623@isep.ipp.pt,#Digital Twin Update: Created more requests and updated the twin client's UI[IMPLEMENTATION]
+0bac2ee,2022-06-03 14:09:14 +0100,Renan Pedreira,1200623@isep.ipp.pt,#Project Update: Renamed the agv server api package name(all files that imported classes from that package were altered on their import statement)[IMPLEMENTATION]
+940ae64,2022-06-03 13:53:36 +0100,Renan Pedreira,1200623@isep.ipp.pt,#Digital Twin Client Update: Added some requests tests [IMPLEMENTATION]
+7c96e42,2022-06-03 03:37:12 +0100,Renan Pedreira,1200623@isep.ipp.pt,#Order Server: Added some requests [IMPLEMENTATION]
+af61c25,2022-06-03 02:57:13 +0100,Renan Pedreira,1200623@isep.ipp.pt,#AGV Project: Small changes on the auto connection to servers [IMPLEMENTATION]
+706356d,2022-06-03 02:54:58 +0100,Renan Pedreira,1200623@isep.ipp.pt,#AGV Manager update: Added more requests [IMPLEMENTATION]
+3ba211d,2022-06-03 00:21:47 +0100,Renan Pedreira,1200623@isep.ipp.pt,#Project update: Deleted an old module's POM [IMPLEMENTATION]
+8f7b59e,2022-06-03 00:17:30 +0100,Renan Pedreira,1200623@isep.ipp.pt,#Project update: Deleted an old module [IMPLEMENTATION]
+c279ae9,2022-06-03 00:07:12 +0100,Renan Pedreira,1200623@isep.ipp.pt,#Project update: Order proxy has a socket attribute to ensure only one connection is shared in the whole session [IMPLEMENTATION]
+1f57e8d,2022-06-03 00:05:49 +0100,Renan Pedreira,1200623@isep.ipp.pt,#US 1501 update: The connection is the one established on the application's start [IMPLEMENTATION]
+9ff5bb9,2022-06-03 00:02:22 +0100,Renan Pedreira,1200623@isep.ipp.pt,#Project update: Servers connections are now done once the user has logged in [IMPLEMENTATION]
+10628a4,2022-06-02 23:12:17 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Update of file "ListaFuncionalidadesEstudante".
+48a6995,2022-06-02 23:09:56 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Commit of Analysis of US-3002.
+536567d,2022-06-02 23:07:58 +0100,Gonçalo Monteiro,1190624@isep.ipp.pt,L2S23-85 - Removed duplicate files related to the Domain Model.
+375468c,2022-06-01 23:44:18 +0100,Joana Vaz,1190683@isep.ipp.pt,L2S23-117: Analysis: Beginning of the analysis of the US1502
+826ed13,2022-06-01 14:29:29 +0100,Miguel Alecrim,1200621@isep.ipp.pt,L2S23-59 Analysis md
+ec453fe,2022-05-30 00:39:57 +0100,Paulo Proença,prp@isep.ipp.pt,Repository Analysis

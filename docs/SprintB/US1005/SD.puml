@@ -1,0 +1,157 @@
+@startuml
+'http://plantuml.com/skinparam.html
+    skinparam handwritten true
+    skinparam monochrome true
+    skinparam packageStyle rect
+    skinparam defaultFontName FG Virgil
+    skinparam shadowing false
+
+actor Admin as Actor
+participant AddCategoryUI as UI <<presentation>>
+participant AddCategoryController as Controller <<application>>
+participant CategoryBuilder as Builder <<builder>>
+participant "category:Category" as Domain <<domain>>
+participant PersistenceContext as Persistence <<persistence>>
+participant RepositoryFactory as Factory <<factory>>
+participant CategoriesMapper as Mapper <<dto>>
+participant listCategoriesDTO
+participant objDto
+database CategoryRepository as Repository <<repository>>
+
+
+
+Actor --> UI: asks to create a new product category
+activate UI
+    UI -> Controller: create
+    UI --> Actor: asks to type the alphanumeric code
+    Actor -> UI: type the alphanumeric code
+    UI --> Actor: asks to type the description
+    Actor -> UI: type the description
+    UI --> Actor: asks if there's a super category
+    Actor -> UI: type the option
+
+    opt option == yes
+
+        UI -> Controller: getListOfCategories(...)
+        activate Controller
+
+        Controller -> Persistence: repositories()
+        activate Persistence
+
+
+        Persistence --> Repository: create()
+        activate Repository
+        deactivate Repository
+
+
+
+        Persistence --> Controller: factory
+        deactivate Persistence
+
+
+        Controller -> Factory: categoryRepository
+        activate Factory
+
+        Factory --> Repository: create()
+        activate Repository
+        deactivate Repository
+
+
+        Factory --> Controller: listCategories
+        deactivate Factory
+
+
+
+
+
+
+
+
+
+
+
+        Controller -> Mapper: toDto(listCategories)
+        activate Mapper
+
+        Mapper --> listCategoriesDTO: create()
+
+
+
+        loop
+
+        Mapper -> Repository: obj = get(i)
+        activate Repository
+        deactivate Repository
+
+        Mapper -> Mapper: objDto = toDTO(obj)
+
+        Mapper --> objDto: create(...)
+
+
+        Mapper -> listCategoriesDTO: add(objDto)
+        activate listCategoriesDTO
+        deactivate listCategoriesDTO
+        end loop
+
+
+
+
+
+        Mapper --> Controller: listCategoriesDTO
+        deactivate Mapper
+
+        Controller --> UI: listCategoriesDTO
+
+        deactivate Controller
+
+
+
+        UI --> Actor: Show List\nof Product Categories
+        Actor --> UI: Product Categories
+    end
+
+    
+
+
+    UI -> Controller: addCategory(alphanumeric code , \ndescription, product categories)
+    activate Controller
+
+        Controller -> Builder: create
+
+        Controller -> Builder:createProductCategory()
+        activate Builder
+            Builder -> Domain: create (alphanumeric code , \ndescription, product categories)
+            Domain->Builder: category
+            Builder -> Controller: category
+        deactivate Builder
+
+
+        UI-->Actor: shows data and asks for confirmation
+
+        Actor -> UI: confirms the data
+
+
+        opt option == no
+
+        Controller -> Persistence: repositories()
+        activate Persistence
+
+            Persistence -> Factory: create
+            Persistence -> Controller: factory
+        deactivate Persistence
+
+        Controller -> Factory: productCategory()
+        activate Factory
+            Factory -> Repository: create
+            Factory -> Controller: categoryRepository
+        deactivate Factory
+
+        Controller->Repository:save(category)
+        Controller->UI: category
+    deactivate Controller
+        end
+
+        UI -->Actor: informs operation success
+
+deactivate UI
+@enduml

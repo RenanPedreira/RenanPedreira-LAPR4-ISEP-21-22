@@ -1,0 +1,161 @@
+@startuml
+autonumber
+actor "Warehouse Employee" as WE
+
+participant ":SetWarehousePlantUI" as UI
+participant ":SetWarehousePlantController" as CTRL
+participant ":ImportFileService" as SVC
+participant ":PersistenceContext" as PC
+participant ":RepositoryFactory" as REPOFAC
+participant ":WarehouseRepository" as WARREPO
+participant ":AisleRepository" as AISLEREPO
+participant ":RowRepository" as ROWREPO
+participant ":AgvDockRepository" as AGVREPO
+participant ":WarehouseMapper" as MAPPER
+participant ":WarehouseDTO" as DTO
+participant ":WarehousePlant" as WPLANT
+participant ":Warehouse" as WAREHOUSE
+participant ":Aisle" as AISLE
+participant ":Row" as ROW
+participant ":AgvDock" as AGVDOCK
+
+activate WE
+WE -> UI : starts to set up the warehouse plant
+activate UI
+
+UI --> WE : requests data (path of the JSON file, warehouseName)
+deactivate UI
+
+WE -> UI : types requested data
+activate UI
+
+UI -> CTRL: create()
+activate CTRL
+
+CTRL -> SVC: create()
+deactivate CTRL
+
+activate SVC
+SVC -> PC: repositories()
+deactivate SVC
+
+activate PC
+PC -> REPOFAC: create()
+deactivate PC
+activate REPOFAC
+
+REPOFAC -> WARREPO: create()
+activate WARREPO
+deactivate WARREPO
+
+REPOFAC -> AISLEREPO: create()
+activate AISLEREPO
+deactivate AISLEREPO
+
+REPOFAC -> ROWREPO: create()
+activate ROWREPO
+deactivate ROWREPO
+
+REPOFAC -> AGVREPO: create()
+activate AGVREPO
+deactivate AGVREPO
+
+deactivate REPOFAC
+
+UI -> CTRL: warehouses()
+activate CTRL
+
+CTRL -> SVC: warehouses()
+deactivate CTRL
+
+activate SVC
+SVC -> WARREPO: findAll()
+activate WARREPO
+deactivate WARREPO
+
+SVC -> MAPPER: toDTO(list)
+activate MAPPER
+deactivate MAPPER
+deactivate SVC
+
+UI -> CTRL: findWarehouseByName(name)
+activate CTRL
+
+CTRL -> SVC: findWarehouseByName(name)
+
+activate SVC
+SVC -> WARREPO: getWarehouseByName(warehouseName)
+deactivate SVC
+
+deactivate CTRL
+activate WARREPO
+deactivate WARREPO
+
+UI -> CTRL : importFile(warehouseDTO, path)
+deactivate WARREPO
+activate CTRL
+
+CTRL -> SVC: importPlantFromJsonFile(warehouseDTO, path)
+activate SVC
+
+SVC -> WARREPO: warehouse = getWarehouseByName(warehouseName)
+activate WARREPO
+deactivate WARREPO
+
+SVC -> WPLANT: warehousePlant = create(description, length, width, square, unit)
+activate WPLANT
+deactivate WPLANT
+
+SVC -> SVC: importAisles(warehouse, mainJsonObject)
+SVC -> AISLE: aisle = create(aisleId, begin, end, depth, accessibility, warehouse)
+activate AISLE
+deactivate AISLE
+
+SVC -> AISLEREPO: save(aisle)
+activate AISLEREPO
+deactivate AISLEREPO
+
+SVC -> ROW: row = create(rowId, rowBeginSquare, rowEndSquare, shelves, aisle)
+activate ROW
+deactivate ROW
+
+SVC -> ROWREPO: save(row)
+activate ROWREPO
+deactivate ROWREPO
+
+SVC -> SVC: importAgvDocks(warehouse, mainJsonObject)
+
+SVC -> AGVDOCK: agvDock = create(agvDockId, begin, end, depth, accessibility, warehouse)
+activate AGVDOCK
+deactivate AGVDOCK
+
+SVC -> AGVREPO: save(agvDock)
+activate AGVREPO
+deactivate AGVREPO
+
+
+SVC -> WAREHOUSE: setPlant(warehousePlant)
+activate WAREHOUSE
+deactivate WAREHOUSE
+
+SVC -> WARREPO: save(warehouse)
+activate WARREPO
+deactivate WARREPO
+
+deactivate SVC
+
+deactivate CTRL
+UI --> WE : imports the data and shows it
+
+deactivate UI
+
+WE -> UI : visualizes the data
+activate UI
+
+UI --> WE : informs operation success
+deactivate CTRL
+
+deactivate UI
+deactivate WE
+
+@enduml

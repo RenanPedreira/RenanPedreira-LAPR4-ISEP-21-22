@@ -1,0 +1,331 @@
+actor "Sales Clerk" as sc
+participant ":CreateOrderUI" as ui
+participant ":CreateOrderForClientController" as ctr
+
+participant ": :ProductFilterService" as serv
+
+
+
+participant ": CreateOrderService" as serv2
+
+participant ":PersistenceContext" as pc
+participant ":RepositoryFactory" as rf
+participant ":ProductRepository" as repo
+
+
+participant ":OrderRepository" as repo2
+participant ":ClientRepository" as repo3
+
+
+
+participant "productList1" as l1
+
+participant "productList2" as l2
+
+
+
+participant ":ClerkOrderCreator" as creator
+participant ":OrderItemCreator" as creator2
+participant ":ClerkOrder" as order
+participant ":ClerOrderMapper" as map2
+
+participant ":ClerOrderDTO" as dto2
+
+
+
+
+
+participant ":OrderItem" as orderItem
+participant ":ProductMapper" as map
+participant ":ProductDTO" as dto
+participant ":listProductDTO" as list
+
+participant ":orderItemList" as list4
+participant ":OrdeItemMapper" as map3
+participant ":OrdeItemDTO" as dto3
+participant ":listOrdeItemDTO" as list3
+
+
+activate sc
+
+sc->ui: create a new products order on behalf of a given customer
+activate ui
+
+ui->ui: doShow()
+
+ui->ctr: create()
+activate ctr
+ctr->serv: create()
+activate serv
+
+serv->*l1: create()
+serv->*l2: create()
+
+serv->pc: repositories()
+activate pc
+pc->rf: create()
+activate rf
+deactivateafter rf
+pc-->serv: factory
+deactivateafter pc
+
+serv->rf: porductRepository()
+activate rf
+
+rf->repo: create()
+activate repo
+deactivateafter repo
+rf-->serv: productRepo
+
+deactivateafter rf
+
+serv->repo: productList1 = getAllProducts()
+deactivateafter serv
+
+activate repo
+deactivateafter repo
+
+
+ctr->serv2: create()
+activate serv2
+
+serv2->*list4: create()
+serv2->pc: repositories()
+activate pc
+pc->rf: create()
+activate rf
+deactivateafter rf
+pc-->serv2: factory
+deactivateafter pc
+
+serv2->rf: orderRepository()
+activate rf
+
+rf->repo2: create()
+activate repo2
+deactivateafter repo2
+rf-->serv2: orderRepo
+
+serv2->rf: clientRepository()
+rf->repo3: create()
+activate repo3
+deactivateafter repo3
+rf-->serv2: clientRepo
+
+deactivateafter serv2
+deactivateafter rf
+
+
+
+
+
+ui-->sc: requests data about the clerk (clerkEmail)
+
+sc->ui: types requested data
+
+ui-->sc: requests data about the order (sourceChannel, comment, paymentMethod)
+
+sc->ui: types requested data
+
+ui-->sc: requests data about the client (clientEmail, billingAddress, deliveringAddress)
+
+
+sc->ui: types requested data
+
+ui->ctr: createOrderForClient(sourceChannel, comment, paymentMethod, clientEmail, billingAddress, deliveringAddress)
+
+ctr->serv2: createOrderForClient(sourceChannel, comment, paymentMethod, clientEmail, billingAddress, deliveringAddress)
+activate serv2
+
+serv2->AuthzRegistry: session()
+activate AuthzRegistry
+AuthzRegistry-->serv2: clerk
+deactivateafter AuthzRegistry
+
+serv2->repo3: getClientByEmail(clientEmail)
+activate repo3
+repo3-->serv2: client
+deactivateafter repo3
+
+serv2->creator: create(clerk, sourceChannel, comment, paymentMethod, client, billingAddress, deliveringAddress)
+
+activate creator
+
+creator->*order: create(clerk, sourceChannel, comment, paymentMethod, client, billingAddress, deliveringAddress)
+
+creator-->serv2: clerkOrder
+deactivateafter creator
+
+serv2->map2: toDTO(clerkOrder)
+activate map2
+map2->dto2: create(clerkOrder)
+activate dto2
+dto2-->map2: clerkOrderDTO
+deactivateafter dto2
+
+
+map2-->serv2: clerkOrderDTO
+deactivateafter map2
+serv2-->ctr: clerkOrderDTO
+
+
+ctr-->ui: clerkOrderDTO
+ui-->sc: shows all inputed data and asks for confrimation
+
+sc->ui: confirms data
+
+
+ui--> sc: asks user which filters should be applied to search  products for the order
+
+
+
+loop user adds products from multiple filters
+loop add filters
+
+sc->ui: selects a filter
+
+alt category
+ui-->sc: asks for a category
+sc->ui: inputs category
+ui->ctr: filterByCategory(category)
+ctr->serv: filterByCategory(category)
+activate serv
+serv->repo: productList2 = getProductsFromCategory(category)
+activate repo
+deactivateafter repo
+serv->serv: commonProducts()
+end
+
+alt description
+ui-->sc: asks for a description
+sc->ui: inputs description
+ui->ctr: filterByDescription(description)
+ctr->serv: filterByDescription(description)
+serv->repo: productList2 = getProductsFromDescription(description)
+activate repo
+deactivateafter repo
+serv->serv: commonProducts()
+end
+
+alt brand
+ui-->sc: asks for a brand
+sc->ui: inputs brand
+ui->ctr: filterByBrand(brand)
+ctr->serv: filterByBrand(brand)
+serv->repo: productList2 = getProductsFromBrand(brand)
+activate repo
+deactivateafter repo
+serv->serv: commonProducts()
+end
+
+alt reset filters
+ui-->sc: asks for confirmation of filter reset
+sc->ui: confirms reset
+ui->ctr: resetFilters()
+ctr->serv: resetFilters()
+serv->repo: productList1 = getAllProducts()
+activate repo
+serv->repo: productList2 = getAllProducts()
+
+deactivateafter repo
+end
+
+end
+
+ui-->sc: asks user which sort method should be applied on the search
+sc->ui: select a sort method
+
+
+
+ui->ctr: filterResult(sort)
+ctr->serv: filterResult(sort)
+
+serv->serv: sortProductList(sort)
+
+serv->map: toDTO(productList1)
+activate map
+
+map->*dtol: create()
+
+loop for each product 
+map->dto: productDTO = create(product)
+activate dto
+deactivateafter dto
+map->dtol:add(productDTO)
+activate dtol
+deactivateafter dtol
+end
+
+map-->serv: listProductDTO
+deactivateafter map
+
+serv-->ctr: listProductDTO
+deactivateafter serv
+ctr-->ui: listProductDTO
+
+loop for each ProductDTO in listProductDTO
+ui->dto: showBasicInformation()
+activate dto
+deactivateafter dto
+end
+
+ui-->sc: shows list of filtered products
+sc->ui: starts adding products data
+
+loop adds one or more products from filter result
+ui-->sc: asks user to select a product by list index
+sc->ui: inputs the product's index
+ui->ui: selectsIndex(index)
+ui-->sc: asks for product quantity
+sc->ui: inputs the product's quantity
+ui->ctr: createOrderItem(product, quantity)
+
+ctr->serv2: createOrderItem(product, quantity)
+
+
+
+serv2->creator2: addOrderItem(product, quantity)
+activate creator2
+creator2->*orderItem: create()
+creator2-->serv2: orderItem
+deactivateafter creator2
+
+serv2 -> order: addOrderItem(orderItem)
+activate order
+deactivateafter order 
+end
+end
+
+ui->ctr: getAllOrderItensAdded()
+ctr->serv2: getAllOrderItensAdded()
+
+serv2->map3: toDTO(orderItemList)
+activate map3
+
+map3->*list3: create()
+
+loop for each product 
+map3->dto3: productDTO = create(product)
+activate dto3
+deactivateafter dto3
+map3->list3:add(productDTO)
+activate list3
+deactivateafter list3
+end
+
+map3-->serv2: listOrderItemDTO
+deactivateafter map3
+
+serv2-->ctr: listOrderItemDTO
+ctr-->ui: listOrderItemDTO
+deactivateafter serv2
+
+ui-->sc: shows complete list of products to be ordered and asks for confirmation
+
+sc->ui: confirms operation
+ui->ctr: confirm order(order)
+ctr->repo2: add(order)
+activate repo2
+deactivateafter repo2
+
+ui-->sc: informs of operation success

@@ -1,0 +1,52 @@
+@startuml
+autonumber
+'hide footbox
+
+
+participant ":RowMapper" as M
+participant "dtoRowList: List<RowDTO>" as D
+participant "dto: rowDTO" as D1
+participant "r: Row " as T
+participant "rowList: List<Row>" as L
+-> M : toDTO(rowList)
+activate M
+M --> D**:create()
+loop for each Row in rowList 
+
+        M -> L : r = getCategory(i)
+        activate L
+        deactivate L
+        M -> T : rowId = getRowId()
+        activate T
+        deactivate T
+        
+        
+        M -> T: aisle = getAisleFromRow()
+        activate T
+        deactivate T
+
+         M -> T: shelveQuantity = getShelveQuantity()
+        activate T
+        deactivate T
+
+         M -> T: end = getEnd()
+        activate T
+        deactivate T
+
+        M -> T: begin = getBegin()
+        activate T
+        deactivate T
+        M -> D1** : create(rowId,aisle,end,begin,shelveQuantity)
+        
+        M -> D : add(dto)
+        activate D
+        deactivate D
+    end
+<- M : dtoRowList
+deactivate M
+
+
+
+
+
+@enduml

@@ -1,0 +1,270 @@
+@startuml
+
+actor "Sales\nManager"
+participant "<U+226A>Presentation<U+226B>\n: ObtainStatisticalReportUI"
+participant "<U+226A>Application<U+226B>\n: ObtainStatisticalReportController"
+participant "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService"
+participant "<U+226A>Service<U+226B>\n: QuestionnaireValidationService"
+participant "<U+226A>Persistence<U+226B>\n: PersistenceContext"
+participant "<U+226A>Factory<U+226B>\nfactory : RepositoryFactory"
+database "<U+226A>Repository<U+226B>\nquestionnaireRepository : QuestionnaireRepository"
+database "<U+226A>Repository<U+226B>\nstatisticalReportRepository : StatisticalReportRepository"
+participant "<U+226A>Domain<U+226B>\nansweredQuestionnaires : List<Questionnaire>"
+participant "<U+226A>Domain<U+226B>\nquestionnaireDTOList : List<QuestionnaireDTO>"
+participant "<U+226A>Domain<U+226B>\n: QuestionnaireMapper"
+participant "<U+226A>Domain<U+226B>\nquestionnaire : Questionnaire"
+participant "<U+226A>Domain<U+226B>\nquestionnaireDTO: QuestionnaireDTO"
+participant "<U+226A>Builder<U+226B>\nstatisticalReportBuilder : StatisticalReportBuilder"
+participant "<U+226A>Domain<U+226B>\nstatisticalReport: StatisticalReport"
+participant "<U+226A>Domain<U+226B>\nsectionList: List<Section>"
+participant "<U+226A>Domain<U+226B>\nsection: Section"
+participant "<U+226A>Domain<U+226B>\ncontent: List<Question>"
+participant "<U+226A>Domain<U+226B>\nquestion: Question"
+participant "<U+226A>Strategy<U+226B>\ndataContext: DataContext"
+participant "<U+226A>Builder<U+226B>\nstatisticalDataBuilder : StatisticalDataBuilder"
+participant "<U+226A>Domain<U+226B>\nstatisticalData: StatisticalData"
+participant "<U+226A>Domain<U+226B>\nrawDataList: List<StatisticalData>"
+participant "<U+226A>Domain<U+226B>\npercentageDataList: List<StatisticalData>"
+participant "<U+226A>Strategy<U+226B>\nparameter: Parameter"
+participant "<U+226A>Strategy<U+226B>\nrawDataStrategy: RawDataStrategy"
+participant "<U+226A>Strategy<U+226B>\npercentageDataStrategy: PercentageDataStrategy"
+participant "<U+226A>Domain<U+226B>\nstatisticalReport: StatisticalReport"
+participant "<U+226A>Strategy<U+226B>\nfileContext: FileContext"
+participant "<U+226A>Strategy<U+226B>\nexcelFileStrategy: ExcelFileStrategy"
+
+"Sales\nManager" -> "<U+226A>Presentation<U+226B>\n: ObtainStatisticalReportUI": The Sales Manager initializes the process of obtaining Statistical Data\nregarding a given Questionnaire answered by a minimum of 30 Customers;
+activate "<U+226A>Presentation<U+226B>\n: ObtainStatisticalReportUI"
+
+"<U+226A>Presentation<U+226B>\n: ObtainStatisticalReportUI" -> "<U+226A>Application<U+226B>\n: ObtainStatisticalReportController": create
+activate "<U+226A>Application<U+226B>\n: ObtainStatisticalReportController"
+
+"<U+226A>Application<U+226B>\n: ObtainStatisticalReportController" -> "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService": create
+activate "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService"
+
+"<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Persistence<U+226B>\n: PersistenceContext": repositories()
+activate "<U+226A>Persistence<U+226B>\n: PersistenceContext"
+
+"<U+226A>Persistence<U+226B>\n: PersistenceContext" -> "<U+226A>Factory<U+226B>\nfactory : RepositoryFactory": create
+"<U+226A>Persistence<U+226B>\n: PersistenceContext" --> "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService": factory
+deactivate "<U+226A>Persistence<U+226B>\n: PersistenceContext"
+
+"<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Factory<U+226B>\nfactory : RepositoryFactory": questionnaireRepository()
+activate "<U+226A>Factory<U+226B>\nfactory : RepositoryFactory"
+
+"<U+226A>Factory<U+226B>\nfactory : RepositoryFactory" -> "<U+226A>Repository<U+226B>\nquestionnaireRepository : QuestionnaireRepository": create
+"<U+226A>Factory<U+226B>\nfactory : RepositoryFactory" --> "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService": questionnaireRepository
+deactivate "<U+226A>Factory<U+226B>\nfactory : RepositoryFactory"
+
+"<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Factory<U+226B>\nfactory : RepositoryFactory": statisticalReportRepository()
+activate "<U+226A>Factory<U+226B>\nfactory : RepositoryFactory"
+
+"<U+226A>Factory<U+226B>\nfactory : RepositoryFactory" -> "<U+226A>Repository<U+226B>\nstatisticalReportRepository : StatisticalReportRepository": create
+"<U+226A>Factory<U+226B>\nfactory : RepositoryFactory" --> "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService": statisticalReportRepository
+deactivate "<U+226A>Factory<U+226B>\nfactory : RepositoryFactory"
+
+deactivate "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService"
+deactivate "<U+226A>Application<U+226B>\n: ObtainStatisticalReportController"
+
+"<U+226A>Presentation<U+226B>\n: ObtainStatisticalReportUI" -> "<U+226A>Application<U+226B>\n: ObtainStatisticalReportController": listAllAnsweredQuestionnaires()
+activate "<U+226A>Application<U+226B>\n: ObtainStatisticalReportController"
+
+"<U+226A>Application<U+226B>\n: ObtainStatisticalReportController" -> "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService": listAllAnsweredQuestionnaires()
+activate "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService"
+
+"<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Repository<U+226B>\nquestionnaireRepository : QuestionnaireRepository": answeredQuestionnaires()
+activate "<U+226A>Repository<U+226B>\nquestionnaireRepository : QuestionnaireRepository"
+
+"<U+226A>Repository<U+226B>\nquestionnaireRepository : QuestionnaireRepository" -> "<U+226A>Domain<U+226B>\nansweredQuestionnaires : List<Questionnaire>": create
+"<U+226A>Repository<U+226B>\nquestionnaireRepository : QuestionnaireRepository" --> "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService": answeredQuestionnaires
+deactivate "<U+226A>Repository<U+226B>\nquestionnaireRepository : QuestionnaireRepository"
+
+create "<U+226A>Domain<U+226B>\nquestionnaireDTOList : List<QuestionnaireDTO>"
+"<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Domain<U+226B>\nquestionnaireDTOList : List<QuestionnaireDTO>": create
+
+loop foreach
+    "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Domain<U+226B>\nansweredQuestionnaires : List<Questionnaire>": getNext()
+    activate "<U+226A>Domain<U+226B>\nansweredQuestionnaires : List<Questionnaire>"
+
+    "<U+226A>Domain<U+226B>\nansweredQuestionnaires : List<Questionnaire>" --> "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService": questionnaire
+    deactivate "<U+226A>Domain<U+226B>\nansweredQuestionnaires : List<Questionnaire>"
+
+    "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Domain<U+226B>\n: QuestionnaireMapper": toDTO(questionnaire)
+    activate "<U+226A>Domain<U+226B>\n: QuestionnaireMapper"
+    
+    create "<U+226A>Domain<U+226B>\nquestionnaireDTO: QuestionnaireDTO"
+    "<U+226A>Domain<U+226B>\n: QuestionnaireMapper" -> "<U+226A>Domain<U+226B>\nquestionnaireDTO: QuestionnaireDTO": create
+
+    "<U+226A>Domain<U+226B>\n: QuestionnaireMapper" --> "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService": questionnaireDTO
+    deactivate "<U+226A>Domain<U+226B>\n: QuestionnaireMapper"
+
+    "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Domain<U+226B>\nquestionnaireDTOList : List<QuestionnaireDTO>": add(questionnaireDTO)
+end
+
+"<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" --> "<U+226A>Application<U+226B>\n: ObtainStatisticalReportController": questionnaireDTOList
+deactivate "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService"
+
+"<U+226A>Application<U+226B>\n: ObtainStatisticalReportController" --> "<U+226A>Presentation<U+226B>\n: ObtainStatisticalReportUI": questionnaireDTOList
+deactivate "<U+226A>Application<U+226B>\n: ObtainStatisticalReportController"
+
+"<U+226A>Presentation<U+226B>\n: ObtainStatisticalReportUI" --> "Sales\nManager": The System presents a list of Questionnaires that have been answered by a\nminimun of 30 Customers and asks the Sales Manager to select one of the\nQuestionnaires at hand;
+deactivate "<U+226A>Presentation<U+226B>\n: ObtainStatisticalReportUI"
+
+"Sales\nManager" -> "<U+226A>Presentation<U+226B>\n: ObtainStatisticalReportUI": The Sales Manager selects the Questionnaire whose answers are to be\ncompiled and converted to a Statistical Report;
+
+activate "<U+226A>Presentation<U+226B>\n: ObtainStatisticalReportUI"
+"<U+226A>Presentation<U+226B>\n: ObtainStatisticalReportUI" -> "<U+226A>Application<U+226B>\n: ObtainStatisticalReportController": validateAndCompileQuestionnaire(questionnaireDTO)
+
+activate "<U+226A>Application<U+226B>\n: ObtainStatisticalReportController"
+"<U+226A>Application<U+226B>\n: ObtainStatisticalReportController" -> "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService": validateAndCompileQuestionnaire(questionnaireDTO)
+
+activate "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService"
+"<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Domain<U+226B>\n: QuestionnaireMapper": toQuestionnaire(questionnaireDTO)
+
+activate "<U+226A>Domain<U+226B>\n: QuestionnaireMapper"
+"<U+226A>Domain<U+226B>\n: QuestionnaireMapper" -> "<U+226A>Domain<U+226B>\nquestionnaire : Questionnaire": create
+"<U+226A>Domain<U+226B>\n: QuestionnaireMapper" --> "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService": questionnaire
+deactivate "<U+226A>Domain<U+226B>\n: QuestionnaireMapper"
+
+"<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Service<U+226B>\n: QuestionnaireValidationService": create
+
+"<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Domain<U+226B>\nquestionnaire : Questionnaire": toString()
+activate "<U+226A>Domain<U+226B>\nquestionnaire : Questionnaire"
+
+"<U+226A>Domain<U+226B>\nquestionnaire : Questionnaire" --> "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService": questionnaireToString
+deactivate "<U+226A>Domain<U+226B>\nquestionnaire : Questionnaire"
+
+"<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Service<U+226B>\n: QuestionnaireValidationService": validateQuestionnaireStringFormat(questionnaireToString)
+activate "<U+226A>Service<U+226B>\n: QuestionnaireValidationService"
+deactivate "<U+226A>Service<U+226B>\n: QuestionnaireValidationService"
+
+"<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Builder<U+226B>\nstatisticalReportBuilder : StatisticalReportBuilder": setQuestionnaire(questionnaire)
+
+"<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Domain<U+226B>\nquestionnaire : Questionnaire": sectionList()
+
+activate "<U+226A>Domain<U+226B>\nquestionnaire : Questionnaire"
+"<U+226A>Domain<U+226B>\nquestionnaire : Questionnaire" --> "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService": sectionList
+deactivate "<U+226A>Domain<U+226B>\nquestionnaire : Questionnaire"
+
+create "<U+226A>Strategy<U+226B>\ndataContext: DataContext"
+"<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Strategy<U+226B>\ndataContext: DataContext": create
+
+create "<U+226A>Domain<U+226B>\nrawDataList: List<StatisticalData>"
+"<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Domain<U+226B>\nrawDataList: List<StatisticalData>": create
+create "<U+226A>Domain<U+226B>\npercentageDataList: List<StatisticalData>"
+"<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Domain<U+226B>\npercentageDataList: List<StatisticalData>": create
+
+loop foreach
+    "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Domain<U+226B>\nsectionList: List<Section>": getNext()
+    
+    activate "<U+226A>Domain<U+226B>\nsectionList: List<Section>"
+    create "<U+226A>Domain<U+226B>\nsection: Section"
+    "<U+226A>Domain<U+226B>\nsectionList: List<Section>" -> "<U+226A>Domain<U+226B>\nsection: Section": create
+
+    "<U+226A>Domain<U+226B>\nsectionList: List<Section>" --> "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService": section
+    deactivate "<U+226A>Domain<U+226B>\nsectionList: List<Section>"
+
+    "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Domain<U+226B>\nsection: Section": content()
+    activate "<U+226A>Domain<U+226B>\nsection: Section"
+
+    "<U+226A>Domain<U+226B>\nsection: Section" --> "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService": content
+    deactivate "<U+226A>Domain<U+226B>\nsection: Section"
+    
+    loop foreach
+        "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Domain<U+226B>\ncontent: List<Question>": getNext()
+        activate "<U+226A>Domain<U+226B>\ncontent: List<Question>"
+
+        create "<U+226A>Domain<U+226B>\nquestion: Question"
+        "<U+226A>Domain<U+226B>\ncontent: List<Question>" -> "<U+226A>Domain<U+226B>\nquestion: Question": create
+        "<U+226A>Domain<U+226B>\ncontent: List<Question>" --> "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService": question
+        deactivate "<U+226A>Domain<U+226B>\ncontent: List<Question>"
+
+        create "<U+226A>Strategy<U+226B>\nrawDataStrategy: RawDataStrategy"
+        "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Strategy<U+226B>\nrawDataStrategy: RawDataStrategy": create
+
+        "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Strategy<U+226B>\ndataContext: DataContext": setDataStrategy(rawDataStrategy)
+        activate "<U+226A>Strategy<U+226B>\ndataContext: DataContext"
+        deactivate "<U+226A>Strategy<U+226B>\ndataContext: DataContext"
+
+        create "<U+226A>Strategy<U+226B>\nparameter: Parameter"
+        "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Strategy<U+226B>\nparameter: Parameter": create(question)
+
+        "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Strategy<U+226B>\ndataContext: DataContext": executeStrategy(parameter)
+        activate "<U+226A>Strategy<U+226B>\ndataContext: DataContext"
+
+        "<U+226A>Strategy<U+226B>\ndataContext: DataContext" -> "<U+226A>Strategy<U+226B>\nrawDataStrategy: RawDataStrategy": execute(parameter)
+        activate "<U+226A>Strategy<U+226B>\nrawDataStrategy: RawDataStrategy"
+
+        "<U+226A>Strategy<U+226B>\nrawDataStrategy: RawDataStrategy" --> "<U+226A>Strategy<U+226B>\ndataContext: DataContext": questionRawDataList
+        deactivate "<U+226A>Strategy<U+226B>\nrawDataStrategy: RawDataStrategy"
+
+        "<U+226A>Strategy<U+226B>\ndataContext: DataContext" --> "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService": questionRawDataList
+        deactivate "<U+226A>Strategy<U+226B>\ndataContext: DataContext"
+
+        "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Domain<U+226B>\nrawDataList: List<StatisticalData>": addAll(questionRawDataList)
+        activate "<U+226A>Domain<U+226B>\nrawDataList: List<StatisticalData>"
+        deactivate "<U+226A>Domain<U+226B>\nrawDataList: List<StatisticalData>"
+
+        create "<U+226A>Strategy<U+226B>\npercentageDataStrategy: PercentageDataStrategy"
+        "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Strategy<U+226B>\npercentageDataStrategy: PercentageDataStrategy": create
+
+        "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Strategy<U+226B>\ndataContext: DataContext": setDataStrategy(percentageDataStrategy)
+        activate "<U+226A>Strategy<U+226B>\ndataContext: DataContext"
+        deactivate "<U+226A>Strategy<U+226B>\ndataContext: DataContext"
+
+        create "<U+226A>Strategy<U+226B>\nparameter: Parameter"
+        "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Strategy<U+226B>\nparameter: Parameter": create(question, questionRawDataList)
+
+        "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Strategy<U+226B>\ndataContext: DataContext": executeStrategy(parameter)
+        activate "<U+226A>Strategy<U+226B>\ndataContext: DataContext"
+
+        "<U+226A>Strategy<U+226B>\ndataContext: DataContext" -> "<U+226A>Strategy<U+226B>\npercentageDataStrategy: PercentageDataStrategy": execute(parameter)
+        activate "<U+226A>Strategy<U+226B>\npercentageDataStrategy: PercentageDataStrategy"
+
+        "<U+226A>Strategy<U+226B>\npercentageDataStrategy: PercentageDataStrategy" --> "<U+226A>Strategy<U+226B>\ndataContext: DataContext": questionPercentageDataList
+        deactivate "<U+226A>Strategy<U+226B>\npercentageDataStrategy: PercentageDataStrategy"
+
+        "<U+226A>Strategy<U+226B>\ndataContext: DataContext" --> "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService": questionPercentageDataList
+        deactivate "<U+226A>Strategy<U+226B>\ndataContext: DataContext"
+
+        "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Domain<U+226B>\npercentageDataList: List<StatisticalData>": addAll(questionPercentageDataList)
+        activate "<U+226A>Domain<U+226B>\nrawDataList: List<StatisticalData>"
+        deactivate "<U+226A>Domain<U+226B>\nrawDataList: List<StatisticalData>"
+    end
+end
+
+"<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Builder<U+226B>\nstatisticalReportBuilder : StatisticalReportBuilder": setRawDataList(rawDataList)
+"<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Builder<U+226B>\nstatisticalReportBuilder : StatisticalReportBuilder": setPercentageDataList(percentageDataList)
+"<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Builder<U+226B>\nstatisticalReportBuilder : StatisticalReportBuilder": build()
+activate "<U+226A>Builder<U+226B>\nstatisticalReportBuilder : StatisticalReportBuilder"
+
+"<U+226A>Builder<U+226B>\nstatisticalReportBuilder : StatisticalReportBuilder" -> "<U+226A>Domain<U+226B>\nstatisticalReport: StatisticalReport": create
+"<U+226A>Builder<U+226B>\nstatisticalReportBuilder : StatisticalReportBuilder" --> "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService": statisticalReport
+deactivate "<U+226A>Builder<U+226B>\nstatisticalReportBuilder : StatisticalReportBuilder"
+
+create "<U+226A>Strategy<U+226B>\nfileContext: FileContext"
+"<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Strategy<U+226B>\nfileContext: FileContext": create
+
+create "<U+226A>Strategy<U+226B>\nexcelFileStrategy: ExcelFileStrategy"
+"<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Strategy<U+226B>\nexcelFileStrategy: ExcelFileStrategy": create
+
+"<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Strategy<U+226B>\nfileContext: FileContext": setFileStrategy(excelFileStrategy)
+activate "<U+226A>Strategy<U+226B>\nfileContext: FileContext"
+deactivate "<U+226A>Strategy<U+226B>\nfileContext: FileContext"
+
+"<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Strategy<U+226B>\nfileContext: FileContext": executeStrategy(statisticalReport)
+activate "<U+226A>Strategy<U+226B>\nfileContext: FileContext"
+
+"<U+226A>Strategy<U+226B>\nfileContext: FileContext" -> "<U+226A>Strategy<U+226B>\nexcelFileStrategy: ExcelFileStrategy": execute(strategyReport)
+activate "<U+226A>Strategy<U+226B>\nexcelFileStrategy: ExcelFileStrategy"
+deactivate "<U+226A>Strategy<U+226B>\nexcelFileStrategy: ExcelFileStrategy"
+deactivate "<U+226A>Strategy<U+226B>\nfileContext: FileContext"
+
+"<U+226A>Service<U+226B>\n: ObtainStatisticalReportService" -> "<U+226A>Repository<U+226B>\nstatisticalReportRepository : StatisticalReportRepository": save(statisticalReport)
+
+deactivate "<U+226A>Service<U+226B>\n: ObtainStatisticalReportService"
+deactivate "<U+226A>Application<U+226B>\n: ObtainStatisticalReportController"
+
+"<U+226A>Presentation<U+226B>\n: ObtainStatisticalReportUI" --> "Sales\nManager": The System informs the Sales Manager of the operation success;
+deactivate "<U+226A>Presentation<U+226B>\n: ObtainStatisticalReportUI"
+
+@enduml

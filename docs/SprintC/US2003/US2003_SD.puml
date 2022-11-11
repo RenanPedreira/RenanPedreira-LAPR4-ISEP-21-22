@@ -1,0 +1,202 @@
+@startuml
+autonumber
+actor "Warehouse Employee" as WE
+
+participant ":PrepareOrderUI" as UI
+participant ":PrepareOrderController" as CTRL
+participant ":ListOrderToBePreparedService" as ORDERSVC
+participant ":ListAGVService" as AGVSVC
+participant ":AssignmentService" as ASSIGSVC
+participant ":PersistenceContext" as PC
+participant ":RepositoryFactory" as REPOFAC
+participant ":OrderRepository" as ORDERREPO
+participant ":AGVRepository" as AGVREPO
+participant ":AssignmentRepository" as ASSIGREPO
+participant ":OrderMapper" as ORDERMAPPER
+participant "orderDto\n:OrderDTO" as ORDERDTO
+participant "agvDto\n:AGVDTO" as AGVDTO
+participant ":AGVMapper" as AGVMAPPER
+participant ":Order" as ORDER
+participant ":AGV" as AGV
+participant ":Assignment" as ASSIG
+
+activate WE
+WE -> UI : starts to access the list of orders that need to be prepared
+activate UI
+
+UI -> CTRL: create()
+activate CTRL
+
+CTRL -> ORDERSVC: create()
+deactivate CTRL
+
+activate ORDERSVC
+ORDERSVC -> PC: repositories()
+deactivate ORDERSVC
+
+activate PC
+PC -> REPOFAC: create()
+deactivate PC
+activate REPOFAC
+
+REPOFAC -> ORDERREPO: create()
+deactivate REPOFAC
+activate ORDERREPO
+
+UI -> CTRL: listOrdersToBePrepared()
+deactivate ORDERREPO
+activate CTRL
+
+CTRL -> ORDERSVC: listOrdersToBePrepared()
+activate ORDERSVC
+
+ORDERSVC -> ORDERREPO: orderList = getOrdersByStatus(TOBEPREPARED)
+activate ORDERREPO
+deactivate ORDERREPO
+
+ORDERSVC -> ORDERMAPPER: toDTO(orderList)
+activate ORDERMAPPER
+deactivate ORDERMAPPER
+
+deactivate ORDERSVC
+
+deactivate CTRL
+
+UI --> WE : requests data (order that needs to be prepared)
+deactivate UI
+
+WE -> UI : selects requested data
+activate UI
+
+deactivate REPOFAC
+
+UI -> CTRL: create()
+activate CTRL
+
+CTRL -> AGVSVC: create()
+deactivate CTRL
+
+activate AGVSVC
+AGVSVC -> PC: repositories()
+deactivate AGVSVC
+
+activate PC
+PC -> REPOFAC: create()
+deactivate PC
+activate REPOFAC
+
+REPOFAC -> AGVREPO: create()
+deactivate REPOFAC
+activate AGVREPO
+
+UI -> CTRL: listAvailableAGVS(orderDto)
+deactivate AGVREPO
+activate CTRL
+
+CTRL -> AGVSVC: listAvailableAGVS(orderDto)
+activate AGVSVC
+
+AGVSVC -> AGVREPO: agvList = getAGVsByStatus(FREE)
+activate AGVREPO
+deactivate AGVREPO
+
+AGVSVC -> AGVMAPPER: toDTO(agvList)
+activate AGVMAPPER
+deactivate AGVMAPPER
+
+deactivate AGVSVC
+
+deactivate CTRL
+
+UI --> WE : requests data (an available AGV)
+
+deactivate UI
+
+WE -> UI : selects requested data
+activate UI
+
+UI -> CTRL: create()
+activate CTRL
+
+CTRL -> ASSIGSVC: create()
+deactivate CTRL
+
+activate ASSIGSVC
+ASSIGSVC -> PC: repositories()
+deactivate ASSIGSVC
+
+activate PC
+PC -> REPOFAC: create()
+deactivate PC
+
+activate REPOFAC
+
+REPOFAC -> ORDERREPO: create()
+activate ORDERREPO
+deactivate ORDERREPO
+
+REPOFAC -> AGVREPO: create()
+activate AGVREPO
+deactivate AGVREPO
+
+REPOFAC -> ASSIGREPO: create()
+activate ASSIGREPO
+deactivate ASSIGREPO
+deactivate REPOFAC
+
+UI -> CTRL:  assignment(orderDto, agvDto)
+deactivate ASSIGREPO
+activate CTRL
+
+CTRL -> ORDERSVC: assignOrderToAGV(orderDto, agvDto)
+activate ORDERSVC
+
+ORDERSVC -> ORDERDTO: orderId = getNumericIdentifier()
+activate ORDERDTO
+deactivate ORDERDTO
+
+ORDERSVC -> ORDERREPO: order = ofIdentity(orderId)
+activate ORDERREPO
+deactivate ORDERREPO
+
+ORDERSVC -> ORDER: changeStatus(PREPARED)
+activate ORDER
+deactivate ORDER
+
+ORDERSVC -> ORDERREPO: save(order)
+activate ORDERREPO
+deactivate ORDERREPO
+
+ORDERSVC -> AGVDTO: agvId = getIdentifier()
+activate AGVDTO
+deactivate AGVDTO
+
+ORDERSVC -> AGVREPO: agv = ofIdentity(agvId)
+activate AGVREPO
+deactivate AGVREPO
+
+ORDERSVC -> AGV: changeStatus(ASSIGNED)
+activate AGV
+deactivate AGV
+
+ORDERSVC -> AGVREPO: save(agv)
+activate AGVREPO
+deactivate AGVREPO
+
+ORDERSVC -> ASSIG**: assignment = create(assignmentId, agv, DOING, order)
+
+ORDERSVC -> ASSIGREPO: save(assignment)
+activate ASSIGREPO
+deactivate ASSIGREPO
+
+deactivate ORDERSVC
+
+deactivate CTRL
+
+UI --> WE: informs operation success
+deactivate CTRL
+
+deactivate UI
+deactivate WE
+
+@enduml

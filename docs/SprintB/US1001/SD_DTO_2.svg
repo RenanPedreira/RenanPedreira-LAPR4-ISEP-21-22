@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="677px" preserveAspectRatio="none" style="width:820px;height:677px;background:#FFFFFF;" version="1.1" viewBox="0 0 820 677" width="820px" zoomAndPan="magnify"><defs/><g><rect fill="#FFFFFF" height="556.7891" style="stroke:#181818;stroke-width:1.0;" width="10" x="129" y="67.4297"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="328.5" y="558.0859"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="604.5" y="221.125"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="604.5" y="280.2578"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="604.5" y="339.3906"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="604.5" y="398.5234"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="604.5" y="457.6563"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="722.5" y="161.9922"/><rect height="472.3594" style="stroke:#000000;stroke-width:1.5;fill:none;" width="742" x="72" y="123.7266"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="134" x2="134" y1="36.2969" y2="642.2188"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="333" x2="333" y1="106.0781" y2="642.2188"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="515" x2="515" y1="526.3047" y2="642.2188"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="609" x2="609" y1="36.2969" y2="642.2188"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="727" x2="727" y1="36.2969" y2="642.2188"/><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="104" x="82" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="89" y="24.9951">:RowMapper</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="104" x="82" y="641.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="89" y="661.2139">:RowMapper</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="213" x="227" y="641.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="199" x="234" y="661.2139">dtoRowList: List&lt;RowDTO&gt;</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="105" x="463" y="641.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="91" x="470" y="661.2139">dto: rowDTO</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="63" x="578" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="585" y="24.9951">r: Row</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="63" x="578" y="641.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="585" y="661.2139">r: Row</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="153" x="651" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139" x="658" y="24.9951">rowList: List&lt;Row&gt;</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="153" x="651" y="641.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139" x="658" y="661.2139">rowList: List&lt;Row&gt;</text><rect fill="#FFFFFF" height="556.7891" style="stroke:#181818;stroke-width:1.0;" width="10" x="129" y="67.4297"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="328.5" y="558.0859"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="604.5" y="221.125"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="604.5" y="280.2578"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="604.5" y="339.3906"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="604.5" y="398.5234"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="604.5" y="457.6563"/><rect fill="#FFFFFF" height="30" style="stroke:#181818;stroke-width:1.0;" width="10" x="722.5" y="161.9922"/><polygon fill="#181818" points="117,63.4297,127,67.4297,117,71.4297,121,67.4297" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="0" x2="123" y1="67.4297" y2="67.4297"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="7" y="62.3638">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="97" x="20" y="62.3638">toDTO(rowList)</text><polygon fill="#181818" points="215,92.5625,225,96.5625,215,100.5625,219,96.5625" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="139" x2="221" y1="96.5625" y2="96.5625"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="146" y="91.4966">2</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="159" y="91.4966">create()</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="213" x="227" y="75.4297"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="199" x="234" y="95.4248">dtoRowList: List&lt;RowDTO&gt;</text><path d="M72,123.7266 L150,123.7266 L150,130.8594 L140,140.8594 L72,140.8594 L72,123.7266 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/><rect fill="none" height="472.3594" style="stroke:#000000;stroke-width:1.5;" width="742" x="72" y="123.7266"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="33" x="87" y="136.7935">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="168" x="165" y="135.937">[for each Row in rowList]</text><polygon fill="#181818" points="710.5,157.9922,720.5,161.9922,710.5,165.9922,714.5,161.9922" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="139" x2="716.5" y1="161.9922" y2="161.9922"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="8" x="146" y="156.9263">3</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="158" y="156.9263">r = getCategory(i)</text><polygon fill="#181818" points="592.5,217.125,602.5,221.125,592.5,225.125,596.5,221.125" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="139" x2="598.5" y1="221.125" y2="221.125"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="146" y="216.0591">4</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="123" x="159" y="216.0591">rowId = getRowId()</text><polygon fill="#181818" points="592.5,276.2578,602.5,280.2578,592.5,284.2578,596.5,280.2578" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="139" x2="598.5" y1="280.2578" y2="280.2578"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="146" y="275.1919">5</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="169" x="159" y="275.1919">aisle = getAisleFromRow()</text><polygon fill="#181818" points="592.5,335.3906,602.5,339.3906,592.5,343.3906,596.5,339.3906" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="139" x2="598.5" y1="339.3906" y2="339.3906"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="146" y="334.3247">6</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="244" x="159" y="334.3247">shelveQuantity = getShelveQuantity()</text><polygon fill="#181818" points="592.5,394.5234,602.5,398.5234,592.5,402.5234,596.5,398.5234" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="139" x2="598.5" y1="398.5234" y2="398.5234"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="146" y="393.4575">7</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="97" x="159" y="393.4575">end = getEnd()</text><polygon fill="#181818" points="592.5,453.6563,602.5,457.6563,592.5,461.6563,596.5,457.6563" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="139" x2="598.5" y1="457.6563" y2="457.6563"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="146" y="452.5903">8</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="119" x="159" y="452.5903">begin = getBegin()</text><polygon fill="#181818" points="451,512.7891,461,516.7891,451,520.7891,455,516.7891" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="139" x2="457" y1="516.7891" y2="516.7891"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="146" y="511.7231">9</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="287" x="159" y="511.7231">create(rowId,aisle,end,begin,shelveQuantity)</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="105" x="463" y="495.6563"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="91" x="470" y="515.6514">dto: rowDTO</text><polygon fill="#181818" points="316.5,554.0859,326.5,558.0859,316.5,562.0859,320.5,558.0859" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="139" x2="322.5" y1="558.0859" y2="558.0859"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="19" x="146" y="553.02">10</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55" x="169" y="553.02">add(dto)</text><polygon fill="#181818" points="11,620.2188,1,624.2188,11,628.2188,7,624.2188" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="5" x2="133" y1="624.2188" y2="624.2188"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="18" x="17" y="619.1528">11</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="71" x="39" y="619.1528">dtoRowList</text><!--MD5=[eedcd9218edec6201a1d488552e7282a]
+@startuml
+autonumber
+'hide footbox
+
+
+participant ":RowMapper" as M
+participant "dtoRowList: List<RowDTO>" as D
+participant "dto: rowDTO" as D1
+participant "r: Row " as T
+participant "rowList: List<Row>" as L
+-> M : toDTO(rowList)
+activate M
+M - -> D**:create()
+loop for each Row in rowList 
+
+        M -> L : r = getCategory(i)
+        activate L
+        deactivate L
+        M -> T : rowId = getRowId()
+        activate T
+        deactivate T
+        
+        
+        M -> T: aisle = getAisleFromRow()
+        activate T
+        deactivate T
+
+         M -> T: shelveQuantity = getShelveQuantity()
+        activate T
+        deactivate T
+
+         M -> T: end = getEnd()
+        activate T
+        deactivate T
+
+        M -> T: begin = getBegin()
+        activate T
+        deactivate T
+        M -> D1** : create(rowId,aisle,end,begin,shelveQuantity)
+        
+        M -> D : add(dto)
+        activate D
+        deactivate D
+    end
+<- M : dtoRowList
+deactivate M
+@enduml
+
+@startuml
+autonumber
+
+
+participant ":RowMapper" as M
+participant "dtoRowList: List<RowDTO>" as D
+participant "dto: rowDTO" as D1
+participant "r: Row " as T
+participant "rowList: List<Row>" as L
+-> M : toDTO(rowList)
+activate M
+M - -> D**:create()
+loop for each Row in rowList 
+
+        M -> L : r = getCategory(i)
+        activate L
+        deactivate L
+        M -> T : rowId = getRowId()
+        activate T
+        deactivate T
+        
+        
+        M -> T: aisle = getAisleFromRow()
+        activate T
+        deactivate T
+
+         M -> T: shelveQuantity = getShelveQuantity()
+        activate T
+        deactivate T
+
+         M -> T: end = getEnd()
+        activate T
+        deactivate T
+
+        M -> T: begin = getBegin()
+        activate T
+        deactivate T
+        M -> D1** : create(rowId,aisle,end,begin,shelveQuantity)
+        
+        M -> D : add(dto)
+        activate D
+        deactivate D
+    end
+<- M : dtoRowList
+deactivate M
+@enduml
+
+PlantUML version 1.2022.4beta2(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
